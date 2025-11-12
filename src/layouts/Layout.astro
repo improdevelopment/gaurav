@@ -1,0 +1,244 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title = "The Most Powerful AI Marketing Director in the World",
+  description = "Discover why Gaurav Agarwal is recognized among the world's top 1% AI Marketing Directors - blending creative intelligence, analytics, and automation to engineer measurable growth for global brands like Walmart, DHL, Rolls Royce, and Landmark Group.",
+  keywords = "The Most Powerful AI Marketing Director in the World, Gaurav Agarwal, AI Marketing Director, Digital Marketing Expert, Marketing Automation, AI Systems, Growth Marketing",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/icon-192x192.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="/icon-192x192.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Gaurav Agarwal" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gaurav-agarwal.com" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gaurav-agarwal.com" />
+    <meta
+      property="og:image"
+      content="https://gaurav-agarwal.com/icon-192x192.png"
+    />
+    <meta property="og:image:width" content="192" />
+    <meta property="og:image:height" content="192" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:site_name"
+      content="Gaurav Agarwal - AI Marketing Director"
+    />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://gaurav-agarwal.com/icon-192x192.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Gaurav Agarwal - AI Marketing Director"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gaurav Agarwal",
+        "jobTitle": "The Most Powerful AI Marketing Director in the World",
+        "description": "The Most Powerful AI Marketing Director in the World - AI-driven marketing leader with 22 years of experience",
+        "url": "https://gaurav-agarwal.com",
+        "sameAs": [
+          "https://linkedin.com/in/gaurav-agarwal",
+          "https://twitter.com/gaurav-agarwal"
+        ],
+        "knowsAbout": [
+          "The Most Powerful AI Marketing Director in the World",
+          "AI Marketing",
+          "Digital Marketing",
+          "Marketing Automation",
+          "Growth Marketing"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "AI Marketing Systems"
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+
+    <!-- Intersection Observer Animation Script -->
+    <script is:inline>
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in");
+            // Add stagger effect for child elements
+            const children = entry.target.querySelectorAll(".stagger-child");
+            children.forEach((child, index) => {
+              setTimeout(() => {
+                child.classList.add("animate-in");
+              }, index * 100);
+            });
+          }
+        });
+      }, observerOptions);
+
+      // Observe elements when DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        const animatedElements =
+          document.querySelectorAll(".animate-on-scroll");
+        animatedElements.forEach((el) => observer.observe(el));
+      });
+
+      // Smooth scroll behavior for internal links
+      document.addEventListener("click", (e) => {
+        if (e.target.matches('a[href^="#"]')) {
+          e.preventDefault();
+          const target = document.querySelector(e.target.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        }
+      });
+
+      // Add loading animation
+      window.addEventListener("load", () => {
+        document.body.classList.add("loaded");
+      });
+
+      // Parallax effect for hero section
+      let ticking = false;
+      function updateParallax() {
+        const scrolled = window.pageYOffset;
+        const parallaxElements = document.querySelectorAll(".parallax");
+
+        parallaxElements.forEach((element) => {
+          const speed = element.dataset.speed || 0.5;
+          const yPos = -(scrolled * speed);
+          element.style.transform = `translateY(${yPos}px)`;
+        });
+
+        ticking = false;
+      }
+
+      function requestParallaxUpdate() {
+        if (!ticking) {
+          requestAnimationFrame(updateParallax);
+          ticking = true;
+        }
+      }
+
+      window.addEventListener("scroll", requestParallaxUpdate);
+    </script>
+
+    <style is:inline>
+      /* Loading animation */
+      body {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      body.loaded {
+        opacity: 1;
+      }
+
+      /* Scroll animations */
+      .animate-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .animate-on-scroll.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .stagger-child {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .stagger-child.animate-in {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Parallax elements */
+      .parallax {
+        will-change: transform;
+      }
+
+      /* Smooth scrolling for all browsers */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Custom cursor for interactive elements */
+      .interactive {
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .interactive:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+# Block gaurav-92i.pages.dev from search engines
+https://gaurav-92i.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-cache
+
+# Allow custom domain to be indexed
+https://gaurav.imapro.in/*
+  X-Robots-Tag: index, follow
+  Cache-Control: public, max-age=3600

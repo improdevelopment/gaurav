@@ -1,0 +1,54 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+
+// This layout wraps complete HTML pages while preserving their styles and scripts
+// Just pass your HTML content in the slot
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Fonts for site navigation/footer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Site Navigation -->
+    <Navigation />
+    
+    <!-- Isolated HTML Content Container -->
+    <div id="html-wrapper-content">
+      <slot />
+    </div>
+    
+    <!-- Site Footer -->
+    <Footer />
+
+    <style is:global>
+      /* Isolate the HTML content from site styles */
+      #html-wrapper-content {
+        all: initial;
+        display: block;
+        margin-top: 80px; /* Space for fixed navigation */
+      }
+      
+      /* Allow slotted content to use its own styles completely */
+      #html-wrapper-content * {
+        all: revert;
+      }
+      
+      /* Ensure the wrapper doesn't interfere with positioning */
+      #html-wrapper-content > * {
+        position: relative;
+      }
+    </style>
+  </body>
+</html>

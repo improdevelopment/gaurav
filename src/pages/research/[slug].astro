@@ -1,0 +1,174 @@
+---
+import Navigation from "../../components/Navigation.astro";
+import { readFile, readdir } from 'node:fs/promises';
+import { join } from 'node:path';
+
+// Generate static paths for all HTML files
+export async function getStaticPaths() {
+  const researchDir = join(process.cwd(), 'research');
+  
+  try {
+    const files = await readdir(researchDir);
+    const htmlFiles = files.filter(file => file.endsWith('.html'));
+    
+    return htmlFiles.map(file => ({
+      params: { slug: file.replace('.html', '') }
+    }));
+  } catch (error) {
+    console.error('Error reading research directory:', error);
+    return [];
+  }
+}
+
+// Get the slug from the URL
+const { slug } = Astro.params;
+
+// Read the HTML file and extract SEO metadata
+let htmlContent = '';
+let pageTitle = 'Research Report';
+let pageDescription = 'Comprehensive research and analysis by Gaurav Agarwal';
+let pageKeywords = 'research, analysis, AI, marketing, strategy';
+let ogImage = 'https://gaurav.imapro.in/icon-192x192.png';
+let author = 'Gaurav Agarwal';
+let publishDate = new Date().toISOString();
+let articleType = 'article';
+
+try {
+  const filePath = join(process.cwd(), 'research', `${slug}.html`);
+  htmlContent = await readFile(filePath, 'utf-8');
+  
+  // Extract SEO metadata from HTML
+  const titleMatch = htmlContent.match(/<title>(.*?)<\/title>/i);
+  if (titleMatch) {
+    pageTitle = titleMatch[1];
+  }
+  
+  const descMatch = htmlContent.match(/<meta\s+name=["']description["']\s+content=["'](.*?)["']/i);
+  if (descMatch) {
+    pageDescription = descMatch[1];
+  }
+  
+  const keywordsMatch = htmlContent.match(/<meta\s+name=["']keywords["']\s+content=["'](.*?)["']/i);
+  if (keywordsMatch) {
+    pageKeywords = keywordsMatch[1];
+  }
+  
+  const ogImageMatch = htmlContent.match(/<meta\s+property=["']og:image["']\s+content=["'](.*?)["']/i);
+  if (ogImageMatch) {
+    ogImage = ogImageMatch[1];
+  }
+  
+  const authorMatch = htmlContent.match(/<meta\s+name=["']author["']\s+content=["'](.*?)["']/i);
+  if (authorMatch) {
+    author = authorMatch[1];
+  }
+  
+} catch (error) {
+  console.error('Error reading HTML file:', error);
+  htmlContent = '<div style="padding: 2rem; text-align: center;"><h1>Page not found</h1></div>';
+}
+
+// Generate canonical URL
+const canonicalURL = `https://gaurav.imapro.in/research/${slug}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{pageTitle}</title>
+    <meta name="title" content={pageTitle} />
+    <meta name="description" content={pageDescription} />
+    <meta name="keywords" content={pageKeywords} />
+    <meta name="author" content={author} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={articleType} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Gaurav Agarwal - AI Marketing Director" />
+    <meta property="article:author" content={author} />
+    <meta property="article:published_time" content={publishDate} />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    
+    <!-- Structured Data for SEO -->
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": pageTitle,
+      "description": pageDescription,
+      "author": {
+        "@type": "Person",
+        "name": author,
+        "url": "https://gaurav.imapro.in"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Gaurav Agarwal",
+        "url": "https://gaurav.imapro.in"
+      },
+      "datePublished": publishDate,
+      "dateModified": publishDate,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalURL
+      },
+      "image": ogImage,
+      "keywords": pageKeywords
+    })} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Fonts for site navigation/footer -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Site Navigation -->
+    <Navigation />
+    
+    <!-- Injected HTML Content -->
+    <article id="html-content-wrapper" itemscope itemtype="https://schema.org/Article">
+      <meta itemprop="headline" content={pageTitle} />
+      <meta itemprop="description" content={pageDescription} />
+      <meta itemprop="author" content={author} />
+      <meta itemprop="datePublished" content={publishDate} />
+      
+      <Fragment set:html={htmlContent} />
+    </article>
+    
+    <style is:global>
+      /* Isolate injected HTML from site styles */
+      #html-content-wrapper {
+        margin-top: 80px; /* Space for fixed navigation */
+      }
+      
+      /* Ensure HTML content styles don't leak */
+      #html-content-wrapper {
+        isolation: isolate;
+      }
+    </style>
+  </body>
+</html>

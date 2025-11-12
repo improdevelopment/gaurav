@@ -1,0 +1,258 @@
+---
+---
+
+<section id="profile" class="profile-section">
+  <div class="container">
+    <div class="profile-content">
+      <div class="profile-info">
+        <h2>Profile Overview</h2>
+        <div class="profile-details">
+          <div class="detail-item">
+            <span class="detail-label">Name</span>
+            <span class="detail-value">Gaurav Agarwal</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Designation</span>
+            <span class="detail-value">AI Marketing Systems Director & Creative Intelligence Architect</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Experience</span>
+            <span class="detail-value">22 Years in Digital Marketing & AI Transformation</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Industries</span>
+            <span class="detail-value">E-Commerce, Fintech, Banking, Hospitality, SaaS, Real Estate</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Regions</span>
+            <span class="detail-value">GCC (Bahrain, Saudi Arabia, UAE, Qatar), India, Europe</span>
+          </div>
+        </div>
+      </div>
+      <div class="clients-section">
+        <h3>Notable Clients</h3>
+        <div class="clients-grid">
+          <div class="client-card">
+            <div class="client-logo">Walmart</div>
+            <div class="client-type">Retail</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">DHL</div>
+            <div class="client-type">Logistics</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">McDonald's</div>
+            <div class="client-type">F&B</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Rolls-Royce</div>
+            <div class="client-type">Luxury</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Landmark Group</div>
+            <div class="client-type">Retail</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Zain</div>
+            <div class="client-type">Telecom</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Al Salam Bank</div>
+            <div class="client-type">Banking</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Four Seasons</div>
+            <div class="client-type">Hospitality</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Braxtone</div>
+            <div class="client-type">Technology</div>
+          </div>
+          <div class="client-card">
+            <div class="client-logo">Danube Properties</div>
+            <div class="client-type">Real Estate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .profile-section {
+    padding: 120px 0;
+    background: #fafafa;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  .profile-content {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .profile-info h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 48px;
+    color: #000;
+    letter-spacing: -1px;
+  }
+
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .detail-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    align-items: start;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .detail-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .detail-label {
+    font-weight: 700;
+    color: #000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .detail-value {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  .clients-section h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+    letter-spacing: -0.5px;
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+  }
+
+  .client-card {
+    background: white;
+    padding: 28px 20px;
+    border-radius: 16px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  }
+
+  .client-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .client-card:hover::before {
+    transform: scaleX(1);
+  }
+
+  .client-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  .client-logo {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .client-type {
+    font-size: 0.8rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
+
+  @media (max-width: 1024px) {
+    .profile-content {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .profile-section {
+      padding: 80px 0;
+    }
+
+    .container {
+      padding: 0 20px;
+    }
+
+    .profile-info h2 {
+      font-size: 2.2rem;
+      margin-bottom: 36px;
+    }
+
+    .clients-section h3 {
+      font-size: 1.6rem;
+      margin-bottom: 32px;
+    }
+
+    .detail-item {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+    }
+
+    .client-card {
+      padding: 24px 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .profile-info h2 {
+      font-size: 1.8rem;
+    }
+
+    .clients-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+</style>

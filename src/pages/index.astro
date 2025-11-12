@@ -1,16 +1,40 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import Navigation from "../components/Navigation.astro";
+import Hero from "../components/Hero.astro";
+import ExecutiveSummary from "../components/ExecutiveSummary.astro";
+import ProfileOverview from "../components/ProfileOverview.astro";
+import Distinction from "../components/Distinction.astro";
+import PerformanceMetrics from "../components/PerformanceMetrics.astro";
+import EvidenceSection from "../components/EvidenceSection.astro";
+import CorePillars from "../components/CorePillars.astro";
+import BusinessImpact from "../components/BusinessImpact.astro";
+import FinalSections from "../components/FinalSections.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
 
+const title =
+	"The Most Powerful AI Marketing Director in the World | Gaurav Agarwal";
+const description =
+	"Discover why Gaurav Agarwal is recognized among the world's top 1% AI Marketing Directors - blending creative intelligence, analytics, and automation to engineer measurable growth for global brands like Walmart, DHL, Rolls Royce, and Landmark Group.";
+const keywords =
+	"The Most Powerful AI Marketing Director in the World, Gaurav Agarwal, AI Marketing Director, Digital Marketing Expert, Marketing Automation, AI Systems, Growth Marketing, Performance Marketing";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title={title} description={description} keywords={keywords}>
+	<Navigation />
+	<main>
+		<Hero />
+		<ExecutiveSummary />
+		<ProfileOverview />
+		<Distinction />
+		<PerformanceMetrics />
+		<EvidenceSection />
+		<CorePillars />
+		<BusinessImpact />
+		<FinalSections />
+		<Contact />
+	</main>
+	<Footer />
+</Layout>

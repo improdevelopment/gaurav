@@ -1,0 +1,23 @@
+{
+  "name": "Gaurav Agarwal - The Most Powerful AI Marketing Director in the World",
+  "short_name": "Gaurav Agarwal",
+  "description": "Discover why Gaurav Agarwal is recognized among the world's top 1% AI Marketing Directors - blending creative intelligence, analytics, and automation to engineer measurable growth for global brands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
