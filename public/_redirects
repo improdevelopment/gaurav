@@ -1,2 +1,0 @@
-# Permanent 301 redirect from .pages.dev to custom domain
-https://gaurav-92i.pages.dev/* https://gaurav.imapro.in/:splat 301!
