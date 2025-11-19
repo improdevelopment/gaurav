@@ -1,3 +1,5 @@
+export const prerender = false;
+
 export async function GET({ url }: { url: URL }) {
   const hostname = url.hostname;
   
@@ -17,10 +19,10 @@ Disallow: /
     );
   }
   
-  // If on custom domain (gaurav.imapro.in), allow everything
+  // If on custom domain (gaurav.imapro.in), allow everything including AI training
   return new Response(
-    `# Allow all crawlers on custom domain
-User-agent: *
+    `User-agent: *
+Content-signal: search=yes,ai-input=yes,ai-train=yes
 Allow: /
 
 # Sitemap location

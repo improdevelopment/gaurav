@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Get More Demo Requests for Developer Hiring SaaS: A HackerEarth Marketing Framework</title>
+    <meta name="description"
+        content="Learn effective strategies for increasing demo requests for developer hiring SaaS using a proven HackerEarth-style marketing framework approach." />
+    <meta name="keywords"
+        content="developer hiring, SaaS marketing, demo requests, lead generation, HackerEarth framework, B2B SaaS" />
+    <meta name="author" content="gaurav-agarwal" />
+    <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Canela:wght@300;400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --secondary: #64748b;
+            --accent: #0f172a;
+            --surface: #f8fafc;
+            --muted: #94a3b8;
+        }
+        
+        .font-canela { font-family: 'Canela', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        }
+        
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .backdrop-blur {
+            backdrop-filter: blur(8px);
+        }
+        
+        .toc {
+            position: fixed;
+            left: 0;
+            top: 20;
+            width: 280px;
+            height: 100vh;
+            background: rgba(248, 250, 252, 0.95);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid #e2e8f0;
+            z-index: 40;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+        }
+        
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        
+        .toc a {
+            transition: all 0.2s ease;
+        }
+        
+        .toc a:hover {
+            color: #0f172a;
+            padding-left: 0.5rem;
+        }
+        
+        .bento-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 1.5rem;
+            height: 70vh;
+        }
+        
+        .bento-main {
+            grid-row: 1 / 3;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bento-stat {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1.1;
+            background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, #e2e8f0 50%, transparent 100%);
+            margin: 4rem 0;
+        }
+        
+        .insight-highlight {
+            border-left: 4px solid #0f172a;
+            background: #f8fafc;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+        
+        .citation {
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid #cbd5e1;
+            transition: all 0.2s ease;
+        }
+        
+        .citation:hover {
+            color: #334155;
+            border-bottom-color: #334155;
+        }
+        
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin: 2rem 0;
+        }
+        
+        .data-point {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid #cbd5e1;
+        }
+        
+        @media (max-width: 1024px) {
+            .toc {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            
+            .toc.open {
+                transform: translateX(0);
+            }
+            
+            .main-content {
+                margin-left: 0;
+            }
+            
+            .bento-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto auto;
+                height: auto;
+            }
+            
+            .bento-main {
+                grid-row: 1;
+                height: 50vh;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: clamp(1.5rem, 5vw, 2.5rem);
+            }
+            
+            .bento-grid {
+                gap: 1rem;
+            }
+            
+            .bento-main {
+                height: 40vh;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-slate-50 font-inter text-slate-800">
+    <!-- Table of Contents -->
+    <nav class="toc">
+      <div class="mb-8">
+        <h3 class="font-canela text-lg font-bold text-slate-900 mb-4">Contents</h3>
+      </div>
+
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#executive-summary">Executive Summary</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#market-overview">Market Overview</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#competitive-landscape">Competitive Landscape</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#current-position">Current Market Position</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#swot-analysis">SWOT Analysis</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#gap-analysis">Gap Analysis</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#growth-plan">1-Year Growth Plan</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#implementation">Implementation Timeline</a>
+        </li>
+        <li>
+          <a class="block py-2 text-slate-600 hover:text-slate-900" href="#expected-outcomes">Expected Outcomes</a>
+        </li>
+      </ul>
+
+      <div class="mt-8 pt-8 border-t border-slate-200">
+        <p class="text-xs text-slate-500 leading-relaxed">
+          A comprehensive marketing framework for HackerEarth&#39;s developer hiring SaaS platform
+        </p>
+      </div>
+    </nav>
+
+    <!-- Mobile TOC Toggle -->
+    <button class="lg:hidden fixed top-4 left-4 z-50 bg-white p-2 rounded-lg shadow-lg" onclick="toggleTOC()">
+      <i class="fas fa-bars text-slate-700"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-gradient relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+
+        <div class="relative z-10 container mx-auto px-4 md:px-8 py-12 md:py-16">
+          <div class="bento-grid">
+            <!-- Main Hero Content -->
+            <div class="bento-main flex flex-col justify-center relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-slate-900/30 to-transparent"></div>
+              <div class="relative z-10">
+                <h1 class="hero-title font-canela font-bold mb-6 text-shadow">
+                  <em>How to Get More Demo Requests</em>
+                  <br/>
+                  for Developer Hiring SaaS
+                </h1>
+                <p class="text-xl text-slate-300 mb-8 max-w-2xl leading-relaxed">
+                  A comprehensive marketing framework for HackerEarth to significantly increase qualified demo requests through strategic positioning, competitive differentiation, and optimized conversion funnels.
+                </p>
+                <div class="flex items-center space-x-6 text-sm text-slate-400">
+                  <span><i class="fas fa-chart-line mr-2"></i>Market Analysis</span>
+                  <span><i class="fas fa-target mr-2"></i>Growth Strategy</span>
+                  <span><i class="fas fa-rocket mr-2"></i>12-Month Plan</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="bento-stat bg-white/10 backdrop-blur rounded-lg">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">$1.2B</div>
+                <div class="text-slate-300 text-sm">Market Size 2024</div>
+              </div>
+            </div>
+
+            <div class="bento-stat bg-white/10 backdrop-blur rounded-lg">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-2">12.5%</div>
+                <div class="text-slate-300 text-sm">CAGR Growth Rate</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Executive Summary -->
+      <section class="py-16 bg-white" id="executive-summary">
+        <div class="container mx-auto px-8">
+          <div class="max-w-4xl mx-auto">
+            <header class="mb-12 text-center">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Executive Summary</h2>
+              <p class="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                A strategic framework to transform HackerEarth&#39;s market position and drive sustainable growth through qualified demo requests.
+              </p>
+            </header>
+
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+              <div class="insight-highlight">
+                <h3 class="font-canela text-xl font-bold text-slate-900 mb-3">Core Objective</h3>
+                <p class="text-slate-700 leading-relaxed">
+                  Develop and execute a comprehensive 12-month growth plan focused on significantly increasing qualified demo requests for HackerEarth&#39;s developer hiring SaaS product, addressing challenges in converting high-intent visitors into tangible sales pipeline opportunities.
+                </p>
+              </div>
+
+              <div class="insight-highlight">
+                <h3 class="font-canela text-xl font-bold text-slate-900 mb-3">Market Opportunity</h3>
+                <p class="text-slate-700 leading-relaxed">
+                  Global code assessment platform market valued at <strong>$1.2 billion in 2024</strong>, projected to reach <strong>$3.5 billion by 2033</strong> at 12.5% CAGR, driven by remote work adoption and skills-based hiring trends.
+                </p>
+              </div>
+            </div>
+
+            <!-- Key Metrics Overview -->
+            <div class="grid md:grid-cols-4 gap-6 mb-12">
+              <div class="data-point text-center">
+                <div class="text-2xl font-bold text-slate-900 mb-2">$1.2B</div>
+                <div class="text-sm text-slate-600">Market Value 2024</div>
+              </div>
+              <div class="data-point text-center">
+                <div class="text-2xl font-bold text-slate-900 mb-2">12.5%</div>
+                <div class="text-sm text-slate-600">Annual Growth Rate</div>
+              </div>
+              <div class="data-point text-center">
+                <div class="text-2xl font-bold text-slate-900 mb-2">10M+</div>
+                <div class="text-sm text-slate-600">Developer Community</div>
+              </div>
+              <div class="data-point text-center">
+                <div class="text-2xl font-bold text-slate-900 mb-2">0.65%</div>
+                <div class="text-sm text-slate-600">Current Market Share</div>
+              </div>
+            </div>
+
+            <!-- Strategic Imperatives -->
+            <div class="bg-slate-50 rounded-lg p-8">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-6">Strategic Imperatives</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Competitive Positioning</h4>
+                  <p class="text-slate-700 text-sm leading-relaxed">
+                    Enhance positioning against rivals by highlighting unique all-in-one platform combining assessments, hackathons, and developer community.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Marketing Funnel Optimization</h4>
+                  <p class="text-slate-700 text-sm leading-relaxed">
+                    Implement AI-powered conversational tools to engage visitors in real-time and streamline demo booking process.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Market Expansion</h4>
+                  <p class="text-slate-700 text-sm leading-relaxed">
+                    Focus on high-growth APAC region where SaaS market is forecasted to reach $50 billion ARR by 2030.
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-2">Product Innovation</h4>
+                  <p class="text-slate-700 text-sm leading-relaxed">
+                    Leverage AI and machine learning for sophisticated assessment capabilities and superior candidate experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Market Overview -->
+      <section class="py-16 bg-slate-50" id="market-overview">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Market Overview and Opportunity</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                The developer hiring SaaS market presents substantial growth opportunities driven by digital transformation and skills-based hiring trends.
+              </p>
+            </header>
+
+            <!-- Market Size Analysis -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Market Size and Growth Projections</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="chart-container">
+                  <h4 class="font-semibold text-slate-900 mb-4">Global Code Assessment Platform Market</h4>
+                  <div class="h-64">
+                    <canvas id="marketSizeChart"></canvas>
+                  </div>
+                  <p class="text-sm text-slate-600 mt-4">
+                    Source: <a class="citation" href="https://www.datainsightsmarket.com/reports/code-assessment-platform-1939480" target="_blank">Data Insights Market Research</a>
+                  </p>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">2024 Market Valuation</h4>
+                    <p class="text-3xl font-bold text-slate-900 mb-2">$1.2 Billion</p>
+                    <p class="text-slate-600 text-sm">Current global code assessment platform market value</p>
+                  </div>
+
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">2033 Projection</h4>
+                    <p class="text-3xl font-bold text-slate-900 mb-2">$3.5 Billion</p>
+                    <p class="text-slate-600 text-sm">Projected market value with sustained growth trajectory</p>
+                  </div>
+
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Growth Rate</h4>
+                    <p class="text-3xl font-bold text-slate-900 mb-2">12.5%</p>
+                    <p class="text-slate-600 text-sm">Compound annual growth rate (CAGR) 2024-2033</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- TAM Analysis -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">TAM, SAM, and SOM Analysis</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-canela text-lg font-bold text-slate-900 mb-3">Total Addressable Market (TAM)</h4>
+                  <p class="text-3xl font-bold text-slate-900 mb-2">$254.84B</p>
+                  <p class="text-slate-600 text-sm mb-4">Global HR technology and recruitment software market</p>
+                  <p class="text-slate-500 text-xs">
+                    Includes all companies hiring for technical roles, with 86% of enterprise buyers planning to boost SaaS budgets.
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-canela text-lg font-bold text-slate-900 mb-3">Serviceable Addressable Market (SAM)</h4>
+                  <p class="text-3xl font-bold text-slate-900 mb-2">$1.2B</p>
+                  <p class="text-slate-600 text-sm mb-4">Global technical skills screening market</p>
+                  <p class="text-slate-500 text-xs">
+                    Companies requiring tools to evaluate coding and technical skills for software developers and tech professionals.
+                  </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-canela text-lg font-bold text-slate-900 mb-3">Serviceable Obtainable Market (SOM)</h4>
+                  <p class="text-3xl font-bold text-slate-900 mb-2">$15.6M</p>
+                  <p class="text-slate-600 text-sm mb-4">Realistic 1-year target (1.3% market share)</p>
+                  <p class="text-slate-500 text-xs">
+                    Current 0.65% market share represents significant growth opportunity through focused execution.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Market Trends -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Key Market Trends and Growth Drivers</h3>
+
+              <div class="space-y-8">
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-laptop-house mr-2"></i>Shift to Skills-Based Hiring and Remote Work
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed">
+                    Remote and hybrid work models have dismantled geographical barriers, creating unprecedented demand for robust online assessment platforms. The move towards skills-based hiring prioritizes practical abilities over formal credentials, making technical assessment platforms essential for objective, data-driven recruitment decisions.
+                  </p>
+                </div>
+
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-robot mr-2"></i>Rising Demand for AI-Powered Automation
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed">
+                    AI integration in recruitment workflows is revolutionizing the industry through automated resume screening, intelligent code evaluation, advanced plagiarism detection, and AI-powered initial interviews. HackerEarth&#39;s AI Screening Agent and proctoring tools position the company well, but continued innovation is crucial.
+                  </p>
+                </div>
+
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-cloud mr-2"></i>Increasing SaaS Adoption in HR Tech
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed">
+                    Digital transformation drives organizations to adopt cloud-based SaaS solutions across all departments, including HR. Benefits include cost-effectiveness, scalability, accessibility, and rapid innovation. HackerEarth&#39;s ATS integrations align perfectly with this trend.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Market Segmentation -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Market Segmentation Analysis</h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-4">Geographic Segmentation</h4>
+                  <div class="space-y-4">
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">North America</span>
+                      <span class="font-semibold text-slate-900">47% market share</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">Europe</span>
+                      <span class="font-semibold text-slate-900">Mature market</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">APAC</span>
+                      <span class="font-semibold text-slate-900">25% CAGR</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-4">Enterprise Size</h4>
+                  <div class="space-y-4">
+                    <div class="p-4 bg-white rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Large Enterprises (501+)</h5>
+                      <p class="text-slate-600 text-sm">High-volume hiring, complex workflows, premium solutions</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">SMEs (10-500)</h5>
+                      <p class="text-slate-600 text-sm">Price-sensitive, simpler requirements, growth opportunity</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-4">Industry Verticals</h4>
+                  <div class="space-y-4">
+                    <div class="p-4 bg-white rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Technology</h5>
+                      <p class="text-slate-600 text-sm">Core market, sophisticated users, high demand</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Financial Services</h5>
+                      <p class="text-slate-600 text-sm">Digital transformation, security focus, regulated</p>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">E-commerce</h5>
+                      <p class="text-slate-600 text-sm">Tech talent demand, innovation focus, scale needs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Competitive Landscape -->
+      <section class="py-16 bg-white" id="competitive-landscape">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Competitive Landscape and Benchmarking</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Analysis of key competitors, market positioning, and strategic differentiators in the developer hiring SaaS market.
+              </p>
+            </header>
+
+            <!-- Competitor Overview -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Key Competitor Analysis</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <!-- HackerRank -->
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                      <i class="fas fa-code text-green-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900">HackerRank</h4>
+                      <p class="text-slate-600 text-sm">Market Leader</p>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">User Base</span>
+                      <span class="font-semibold">25M+ developers</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Pricing</span>
+                      <span class="font-semibold">From $165/month</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Skills Coverage</span>
+                      <span class="font-semibold">150+ skills</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-200">
+                      <p class="text-slate-600 text-sm">
+                        Strong AI investment with AI-powered interviewer, proctoring mode, and AI tutor features.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Codility -->
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                      <i class="fas fa-shield-alt text-blue-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900">Codility</h4>
+                      <p class="text-slate-600 text-sm">Security Focus</p>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Question Bank</span>
+                      <span class="font-semibold">2,500 questions</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Proctoring</span>
+                      <span class="font-semibold text-green-600">Advanced</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Enterprise Clients</span>
+                      <span class="font-semibold">Microsoft, others</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-200">
+                      <p class="text-slate-600 text-sm">
+                        Strong reputation for advanced proctoring capabilities including device fingerprinting and real-time cheat detection.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <!-- TestGorilla -->
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                      <i class="fas fa-users text-purple-600"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900">TestGorilla</h4>
+                      <p class="text-slate-600 text-sm">Generalist Platform</p>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Test Library</span>
+                      <span class="font-semibold">300+ tests</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Pricing</span>
+                      <span class="font-semibold">From $75/month</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Free Plan</span>
+                      <span class="font-semibold text-green-600">Available</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-200">
+                      <p class="text-slate-600 text-sm">
+                        Broad assessment range beyond coding, with cognitive ability and personality tests.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- HackerEarth -->
+                <div class="bg-green-50 rounded-lg p-6 border-2 border-green-200">
+                  <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-green-200 rounded-lg flex items-center justify-center mr-4">
+                      <i class="fas fa-star text-green-700"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-900">HackerEarth</h4>
+                      <p class="text-green-600 text-sm font-semibold">Target Position</p>
+                    </div>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Question Bank</span>
+                      <span class="font-semibold">25,000+ questions</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">Developer Community</span>
+                      <span class="font-semibold text-green-600">10M+ users</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span class="text-slate-600">G2 Rating</span>
+                      <span class="font-semibold">4.5/5 (121 reviews)</span>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-green-200">
+                      <p class="text-slate-600 text-sm">
+                        All-in-one platform with unique hackathon capabilities and strong developer community network effect.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Feature Comparison -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Feature and Offering Comparison</h3>
+
+              <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-lg border border-slate-200">
+                  <thead class="bg-slate-50">
+                    <tr>
+                      <th class="px-6 py-4 text-left font-semibold text-slate-900">Feature</th>
+                      <th class="px-6 py-4 text-center font-semibold text-slate-900">HackerEarth</th>
+                      <th class="px-6 py-4 text-center font-semibold text-slate-900">HackerRank</th>
+                      <th class="px-6 py-4 text-center font-semibold text-slate-900">Codility</th>
+                      <th class="px-6 py-4 text-center font-semibold text-slate-900">TestGorilla</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200">
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">Question Library</td>
+                      <td class="px-6 py-4 text-center">25,000+</td>
+                      <td class="px-6 py-4 text-center">Extensive</td>
+                      <td class="px-6 py-4 text-center">2,500</td>
+                      <td class="px-6 py-4 text-center">300+</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">Programming Languages</td>
+                      <td class="px-6 py-4 text-center">40+</td>
+                      <td class="px-6 py-4 text-center">150+ skills</td>
+                      <td class="px-6 py-4 text-center">Limited</td>
+                      <td class="px-6 py-4 text-center">Various</td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">AI Proctoring</td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                        <span class="text-xs text-green-600 ml-1">Advanced</span>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">ATS Integrations</td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-times text-red-600"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">Hackathons</td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                        <span class="text-xs text-green-600 ml-1">Unique</span>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="px-6 py-4 font-medium text-slate-900">Developer Community</td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                        <span class="text-xs text-green-600 ml-1">10M+</span>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-check text-green-600"></i>
+                        <span class="text-xs text-green-600 ml-1">25M+</span>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                      <td class="px-6 py-4 text-center">
+                        <i class="fas fa-minus text-slate-400"></i>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Pricing Strategy Analysis -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Pricing Strategy Analysis</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="chart-container">
+                  <h4 class="font-semibold text-slate-900 mb-4">Pricing Comparison</h4>
+                  <div class="h-64">
+                    <canvas id="pricingChart"></canvas>
+                  </div>
+                  <p class="text-sm text-slate-600 mt-4">
+                    Analysis shows HackerEarth&#39;s pricing gap for SMEs compared to competitors&#39; entry-level offerings.
+                  </p>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">HackerEarth</h4>
+                    <p class="text-slate-700 text-sm">
+                      <strong>Growth Plan:</strong> $99/month
+                      <br/>
+                      <strong>Scale Plan:</strong> $399/month
+                      <br/>
+                      <span class="text-red-600">No low-cost entry plan</span>
+                    </p>
+                  </div>
+
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Competitor Positioning</h4>
+                    <p class="text-slate-700 text-sm">
+                      <strong>TestGorilla:</strong> Free forever plan + $75/month
+                      <br/>
+                      <strong>HackerRank:</strong> From $100/month
+                      <br/>
+                      <strong>Codility:</strong> $1,200/year
+                    </p>
+                  </div>
+
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-2">Strategic Gap</h4>
+                    <p class="text-slate-700 text-sm">
+                      Lack of affordable entry-level plan limits SME market access, representing significant growth opportunity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Current Market Position -->
+      <section class="py-16 bg-slate-50" id="current-position">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">HackerEarth&#39;s Current Market and SEO Position</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Assessment of current market positioning, digital presence, and opportunities for optimization.
+              </p>
+            </header>
+
+            <!-- Market Position -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Market Position and Brand Perception</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-4">Positioning as All-in-One Platform</h4>
+                  <div class="bg-white rounded-lg p-6 border border-slate-200 mb-6">
+                    <p class="text-slate-700 leading-relaxed mb-4">
+                      HackerEarth&#39;s primary market position as an all-in-one platform for technical hiring and engagement differentiates it from specialized competitors. The comprehensive suite includes coding assessments, live interviews, hackathon management, and developer community features.
+                    </p>
+                    <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
+                      <span class="text-slate-600">Current Market Share</span>
+                      <span class="font-bold text-slate-900">0.65%</span>
+                    </div>
+                  </div>
+
+                  <h4 class="font-semibold text-slate-900 mb-4">Key Strengths</h4>
+                  <div class="space-y-4">
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fas fa-users text-green-600 text-sm"></i>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900">Developer Community</h5>
+                        <p class="text-slate-600 text-sm">10M+ engaged developers creating powerful network effects</p>
+                      </div>
+                    </div>
+                    <div class="flex items-start space-x-3">
+                      <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <i class="fas fa-trophy text-green-600 text-sm"></i>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900">Hackathon Platform</h5>
+                        <p class="text-slate-600 text-sm">Unique innovation challenges and talent sourcing capabilities</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-4">Enterprise Success Stories</h4>
+                  <div class="bg-white rounded-lg p-6 border border-slate-200 mb-6">
+                    <h5 class="font-semibold text-slate-900 mb-3">Microsoft APAC Case Study</h5>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                      <div class="text-center p-3 bg-slate-50 rounded-lg">
+                        <div class="text-2xl font-bold text-slate-900">750</div>
+                        <div class="text-xs text-slate-600">Developers</div>
+                      </div>
+                      <div class="text-center p-3 bg-slate-50 rounded-lg">
+                        <div class="text-2xl font-bold text-slate-900">15</div>
+                        <div class="text-xs text-slate-600">Countries</div>
+                      </div>
+                    </div>
+                    <p class="text-slate-600 text-sm">
+                      Virtual hackathon success demonstrates platform scalability and effectiveness for large-scale technical hiring.
+                    </p>
+                    <p class="text-xs text-slate-500 mt-2">
+                      Source: <a class="citation" href="https://www.hackerearth.com/community-hackathons/customers/microsoft-apac/" target="_blank">Microsoft APAC Case Study</a>
+                    </p>
+                  </div>
+
+                  <div class="space-y-3">
+                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">G2 Rating</span>
+                      <div class="flex items-center">
+                        <div class="flex text-yellow-400 mr-2">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="font-semibold">4.5/5</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center justify-between p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">Enterprise Clients</span>
+                      <span class="font-semibold">Microsoft, Google, PayPal</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- SEO Analysis -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">SEO and Digital Presence Analysis</h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div class="lg:col-span-2">
+                  <div class="chart-container">
+                    <h4 class="font-semibold text-slate-900 mb-4">Traffic Sources and Intent Analysis</h4>
+                    <div class="h-64">
+                      <canvas id="trafficChart"></canvas>
+                    </div>
+                    <p class="text-sm text-slate-600 mt-4">
+                      Analysis reveals opportunity to convert community traffic into commercial leads.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Current Challenges</h4>
+                    <ul class="text-slate-700 text-sm space-y-2">
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-red-400 text-xs mr-2"></i>
+                        High community vs. commercial traffic ratio
+                      </li>
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-red-400 text-xs mr-2"></i>
+                        Weak commercial keyword presence
+                      </li>
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-red-400 text-xs mr-2"></i>
+                        Limited conversion optimization
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Opportunities</h4>
+                    <ul class="text-slate-700 text-sm space-y-2">
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-green-400 text-xs mr-2"></i>
+                        Strong domain authority foundation
+                      </li>
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-green-400 text-xs mr-2"></i>
+                        Extensive technical content library
+                      </li>
+                      <li class="flex items-center">
+                        <i class="fas fa-circle text-green-400 text-xs mr-2"></i>
+                        High traffic volume potential
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Strategy -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Content and Growth Strategy Evaluation</h3>
+
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-blog text-blue-600 mr-2"></i>Blog and Resources
+                  </h4>
+                  <p class="text-slate-700 text-sm mb-4">
+                    High-quality technical content focused on developer community engagement, but limited commercial intent optimization.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-600 text-xs">Quality</span>
+                    <div class="flex">
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-file-alt text-green-600 mr-2"></i>Case Studies
+                  </h4>
+                  <p class="text-slate-700 text-sm mb-4">
+                    Impressive enterprise success stories, but under-leveraged in marketing and sales processes.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-600 text-xs">Impact</span>
+                    <div class="flex">
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="far fa-star text-slate-300 text-xs"></i>
+                      <i class="far fa-star text-slate-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 border border-slate-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-share-alt text-purple-600 mr-2"></i>Social Media
+                  </h4>
+                  <p class="text-slate-700 text-sm mb-4">
+                    Strong developer community presence, but needs better balance between community and commercial content.
+                  </p>
+                  <div class="flex items-center justify-between">
+                    <span class="text-slate-600 text-xs">Engagement</span>
+                    <div class="flex">
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="fas fa-star text-yellow-400 text-xs"></i>
+                      <i class="far fa-star text-slate-300 text-xs"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- SWOT Analysis -->
+      <section class="py-16 bg-white" id="swot-analysis">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">SWOT Analysis</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Comprehensive strategic analysis of HackerEarth&#39;s internal capabilities and external market environment.
+              </p>
+            </header>
+
+            <div class="grid lg:grid-cols-2 gap-8">
+              <!-- Strengths -->
+              <div class="bg-green-50 rounded-lg p-8 border border-green-200">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-thumbs-up text-green-600"></i>
+                  </div>
+                  <h3 class="font-canela text-xl font-bold text-slate-900">Strengths</h3>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Comprehensive All-in-One Platform</h4>
+                    <p class="text-slate-700 text-sm">
+                      Extensive feature set covering end-to-end technical hiring with 36,000+ questions across 1,000+ skills, coding assessments, live interviews, and hackathons.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Large Developer Community</h4>
+                    <p class="text-slate-700 text-sm">
+                      10M+ engaged developers creating powerful network effects and pre-vetted talent pool for recruiters.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Strong Enterprise Client Base</h4>
+                    <p class="text-slate-700 text-sm">
+                      Microsoft, Google, PayPal and other major corporations demonstrate platform reliability and scalability.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Advanced AI Capabilities</h4>
+                    <p class="text-slate-700 text-sm">
+                      AI-powered skill assessments and &#34;Smart Browser&#34; proctoring minimize bias and ensure assessment integrity.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Weaknesses -->
+              <div class="bg-red-50 rounded-lg p-8 border border-red-200">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-exclamation-triangle text-red-600"></i>
+                  </div>
+                  <h3 class="font-canela text-xl font-bold text-slate-900">Weaknesses</h3>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Limited Entry-Level Pricing</h4>
+                    <p class="text-slate-700 text-sm">
+                      No low-cost or free plan options create barriers for SMEs and startups, limiting market reach compared to competitors.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Customization Restrictions</h4>
+                    <p class="text-slate-700 text-sm">
+                      Limited customization options at lower pricing tiers may not meet unique assessment requirements for some companies.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Inconsistent Candidate Experience</h4>
+                    <p class="text-slate-700 text-sm">
+                      Platform interface can be less intuitive than competitors, potentially impacting candidate satisfaction.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Perceived High Pricing</h4>
+                    <p class="text-slate-700 text-sm">
+                      ROI perception challenges for smaller companies due to lack of transparent pricing and limited entry options.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Opportunities -->
+              <div class="bg-blue-50 rounded-lg p-8 border border-blue-200">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-lightbulb text-blue-600"></i>
+                  </div>
+                  <h3 class="font-canela text-xl font-bold text-slate-900">Opportunities</h3>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">APAC Market Expansion</h4>
+                    <p class="text-slate-700 text-sm">
+                      Rapidly growing SaaS market in APAC with 25% CAGR and expanding tech talent pool, especially in China and India.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">AI and ML Innovation</h4>
+                    <p class="text-slate-700 text-sm">
+                      Advanced AI algorithms for deeper skill insights, personalized assessments, and enhanced candidate experience.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Strategic Partnerships</h4>
+                    <p class="text-slate-700 text-sm">
+                      Expanded ecosystem through partnerships with learning platforms, professional networks, and HR tech companies.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Mid-Market and SME Segments</h4>
+                    <p class="text-slate-700 text-sm">
+                      Target untapped mid-market and SME segments with affordable entry-level plans and tailored solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Threats -->
+              <div class="bg-amber-50 rounded-lg p-8 border border-amber-200">
+                <div class="flex items-center mb-6">
+                  <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
+                    <i class="fas fa-shield-alt text-amber-600"></i>
+                  </div>
+                  <h3 class="font-canela text-xl font-bold text-slate-900">Threats</h3>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Intense Competition</h4>
+                    <p class="text-slate-700 text-sm">
+                      Pressure from specialized platforms like Codility and all-in-one solutions like TestGorilla creates competitive pricing and innovation challenges.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Competitor AI Proctoring Strength</h4>
+                    <p class="text-slate-700 text-sm">
+                      Codility&#39;s advanced proctoring reputation and AI capabilities create perception challenges for HackerEarth.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Market Saturation</h4>
+                    <p class="text-slate-700 text-sm">
+                      Risk of commoditization as market matures, potentially leading to price competition and reduced margins.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 class="font-semibold text-slate-900 mb-2">Evolving Developer Expectations</h4>
+                    <p class="text-slate-700 text-sm">
+                      Rapid technology changes require constant platform updates to maintain relevance and appeal to developers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Gap Analysis -->
+      <section class="py-16 bg-slate-50" id="gap-analysis">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Gap Analysis and Strategic Recommendations</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Identification of critical gaps and actionable recommendations to drive demo request growth.
+              </p>
+            </header>
+
+            <!-- Product and Pricing Gaps -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Product and Pricing Gaps</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-3">
+                      <i class="fas fa-tag mr-2"></i>Need for Flexible Pricing Tiers
+                    </h4>
+                    <p class="text-slate-700 leading-relaxed mb-3">
+                      Current pricing strategy lacks low-cost or entry-level plans, creating a significant barrier for SMEs and startups. Competitors like TestGorilla effectively use free plans to build user base and convert to paid customers.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                      <ul class="text-slate-700 text-sm space-y-1">
+                        <li>• Introduce freemium or low-cost entry plan</li>
+                        <li>• Create pay-per-use model for smaller companies</li>
+                        <li>• Offer limited-feature trial versions</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-3">
+                      <i class="fas fa-eye mr-2"></i>Enhancing AI Proctoring Capabilities
+                    </h4>
+                    <p class="text-slate-700 leading-relaxed mb-3">
+                      While HackerEarth has invested in AI proctoring, competitors like Codility maintain stronger market perception in this area, particularly among enterprise clients.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                      <ul class="text-slate-700 text-sm space-y-1">
+                        <li>• Invest in advanced behavioral analysis</li>
+                        <li>• Improve suspicious activity reporting</li>
+                        <li>• Enhance candidate experience during proctoring</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-3">
+                      <i class="fas fa-user-experience mr-2"></i>Improving Candidate Experience
+                    </h4>
+                    <p class="text-slate-700 leading-relaxed mb-3">
+                      Inconsistent candidate experience and platform UI compared to competitors can impact employer branding and top talent attraction.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                      <ul class="text-slate-700 text-sm space-y-1">
+                        <li>• Modernize user interface design</li>
+                        <li>• Simplify test-taking process</li>
+                        <li>• Improve candidate support systems</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-6 border border-slate-200">
+                    <h4 class="font-semibold text-slate-900 mb-4">Pricing Strategy Comparison</h4>
+                    <div class="space-y-3">
+                      <div class="flex justify-between items-center">
+                        <span class="text-slate-600">HackerEarth</span>
+                        <span class="font-semibold">$99-399/month</span>
+                      </div>
+                      <div class="flex justify-between items-center">
+                        <span class="text-slate-600">TestGorilla</span>
+                        <span class="font-semibold">$0-142/month</span>
+                      </div>
+                      <div class="flex justify-between items-center">
+                        <span class="text-slate-600">HackerRank</span>
+                        <span class="font-semibold">$100-165/month</span>
+                      </div>
+                      <div class="flex justify-between items-center">
+                        <span class="text-slate-600">Codility</span>
+                        <span class="font-semibold">$100/year</span>
+                      </div>
+                    </div>
+                    <div class="mt-4 pt-4 border-t border-slate-200">
+                      <p class="text-red-600 text-sm font-semibold">
+                        <i class="fas fa-exclamation-circle mr-1"></i>
+                        Pricing gap identified for SME segment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Marketing and Positioning Gaps -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Marketing and Positioning Gaps</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-3">
+                      <i class="fas fa-search mr-2"></i>Under-leveraged SEO and Content
+                    </h4>
+                    <p class="text-slate-700 leading-relaxed mb-3">
+                      Wealth of technical content not optimized for commercial keywords or lead generation. Focus on community content rather than bottom-of-funnel conversion content.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                      <ul class="text-slate-700 text-sm space-y-1">
+                        <li>• Create comparison pages (HackerEarth vs. competitors)</li>
+                        <li>• Develop industry-specific landing pages</li>
+                        <li>• Focus on high-intent commercial keywords</li>
+                        <li>• Implement structured content strategy</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="insight-highlight">
+                    <h4 class="font-semibold text-slate-900 mb-3">
+                      <i class="fas fa-bullseye mr-2"></i>Mid-Market Messaging Gap
+                    </h4>
+                    <p class="text-slate-700 leading-relaxed mb-3">
+                      Marketing messaging primarily targets large enterprises, missing opportunities in mid-market and SME segments with different pain points and budgets.
+                    </p>
+                    <div class="bg-white p-4 rounded-lg border border-slate-200">
+                      <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                      <ul class="text-slate-700 text-sm space-y-1">
+                        <li>• Create targeted messaging for mid-market</li>
+                        <li>• Develop SME-specific case studies</li>
+                        <li>• Highlight cost-effectiveness and ease of use</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="chart-container">
+                  <h4 class="font-semibold text-slate-900 mb-4">Content Focus Analysis</h4>
+                  <div class="h-64">
+                    <canvas id="contentChart"></canvas>
+                  </div>
+                  <p class="text-sm text-slate-600 mt-4">
+                    Current content heavily weighted towards community engagement vs. commercial conversion.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sales and Conversion Gaps -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Sales and Conversion Gaps</h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-funnel-dollar mr-2"></i>Demo Request Funnel Optimization
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed mb-3">
+                    Current conversion funnel contains friction points that prevent high-intent visitors from becoming qualified leads.
+                  </p>
+                  <div class="bg-white p-4 rounded-lg border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                    <ul class="text-slate-700 text-sm space-y-1">
+                      <li>• Simplify demo request forms</li>
+                      <li>• Implement live chat engagement</li>
+                      <li>• Add product-led growth elements</li>
+                      <li>• Optimize conversion paths</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-dollar-sign mr-2"></i>Pricing Transparency
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed mb-3">
+                    Lack of transparent, publicly available pricing creates friction and may deter potential customers, especially SMEs.
+                  </p>
+                  <div class="bg-white p-4 rounded-lg border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                    <ul class="text-slate-700 text-sm space-y-1">
+                      <li>• Publish transparent pricing online</li>
+                      <li>• Add pricing calculator tool</li>
+                      <li>• Create clear tier comparisons</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-tools mr-2"></i>Sales Enablement Content
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed mb-3">
+                    Limited sales enablement content such as battle cards, ROI calculators, and industry-specific case studies.
+                  </p>
+                  <div class="bg-white p-4 rounded-lg border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Recommendation</h5>
+                    <ul class="text-slate-700 text-sm space-y-1">
+                      <li>• Create competitive battle cards</li>
+                      <li>• Develop ROI calculator tools</li>
+                      <li>• Build industry-specific case study library</li>
+                      <li>• Implement sales training materials</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- 1-Year Growth Plan -->
+      <section class="py-16 bg-white" id="growth-plan">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">1-Year Growth Plan</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Comprehensive 12-month roadmap to drive traffic, improve rankings, and significantly increase qualified demo requests.
+              </p>
+            </header>
+
+            <!-- Strategic Framework -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Strategic Framework and Objectives</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-target mr-2"></i>Primary Goal
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed">
+                    <strong>Significantly increase qualified demo requests</strong> by 50-75% through optimized conversion funnel, targeted traffic acquisition, and improved lead quality.
+                  </p>
+                </div>
+
+                <div class="insight-highlight">
+                  <h4 class="font-semibold text-slate-900 mb-3">
+                    <i class="fas fa-chart-line mr-2"></i>Secondary Goals
+                  </h4>
+                  <p class="text-slate-700 leading-relaxed">
+                    Improve organic search rankings for high-intent keywords and increase brand awareness in developer hiring market through comprehensive content and PR strategies.
+                  </p>
+                </div>
+              </div>
+
+              <!-- KPIs -->
+              <div class="bg-slate-50 rounded-lg p-8">
+                <h4 class="font-semibold text-slate-900 mb-6">Key Performance Indicators (KPIs)</h4>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div class="text-center p-4 bg-white rounded-lg border border-slate-200">
+                    <div class="text-2xl font-bold text-slate-900 mb-2">50-75%</div>
+                    <div class="text-sm text-slate-600">Increase in Demo Requests</div>
+                  </div>
+                  <div class="text-center p-4 bg-white rounded-lg border border-slate-200">
+                    <div class="text-2xl font-bold text-slate-900 mb-2">25-50%</div>
+                    <div class="text-sm text-slate-600">Conversion Rate Improvement</div>
+                  </div>
+                  <div class="text-center p-4 bg-white rounded-lg border border-slate-200">
+                    <div class="text-2xl font-bold text-slate-900 mb-2">Top 3</div>
+                    <div class="text-sm text-slate-600">Target Keyword Rankings</div>
+                  </div>
+                  <div class="text-center p-4 bg-white rounded-lg border border-slate-200">
+                    <div class="text-2xl font-bold text-slate-900 mb-2">3x</div>
+                    <div class="text-sm text-slate-600">Brand Mention Growth</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Budget Allocation -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Budget Allocation and Resource Planning</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div>
+                  <div class="chart-container">
+                    <h4 class="font-semibold text-slate-900 mb-4">Monthly Budget Breakdown</h4>
+                    <div class="h-64">
+                      <canvas id="budgetChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Total Monthly Budget</h4>
+                    <p class="text-3xl font-bold text-slate-900 mb-2">$10,000</p>
+                    <p class="text-slate-600 text-sm">Strategic allocation across four key pillars for maximum ROI</p>
+                  </div>
+
+                  <div class="space-y-3">
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">Paid Search (30%)</span>
+                      <span class="font-semibold">$3,000</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">SEO &amp; Content (25%)</span>
+                      <span class="font-semibold">$2,500</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">Resources (20%)</span>
+                      <span class="font-semibold">$2,000</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">PR &amp; Outreach (15%)</span>
+                      <span class="font-semibold">$1,500</span>
+                    </div>
+                    <div class="flex justify-between items-center p-3 bg-white rounded-lg border border-slate-200">
+                      <span class="text-slate-700">Software &amp; Tools (10%)</span>
+                      <span class="font-semibold">$1,000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Channel Strategies -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Channel-Specific Strategies</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8">
+                <div class="space-y-8">
+                  <!-- Paid Search Strategy -->
+                  <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                      <i class="fas fa-search-dollar text-blue-600 mr-2"></i>Paid Search Strategy
+                    </h4>
+                    <div class="space-y-3">
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Budget: $3,000/month</h5>
+                        <p class="text-slate-700 text-sm">High-intent keyword campaigns targeting bottom-of-funnel searches</p>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Target Keywords</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• &#34;coding assessment platform&#34;</li>
+                          <li>• &#34;technical hiring software&#34;</li>
+                          <li>• &#34;HackerEarth vs Codility&#34;</li>
+                          <li>• &#34;best developer assessment tool&#34;</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Tactics</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Competitor targeting campaigns</li>
+                          <li>• Remarketing to website visitors</li>
+                          <li>• Continuous ad copy optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- SEO &amp; Content Strategy -->
+                  <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                      <i class="fas fa-search text-green-600 mr-2"></i>SEO &amp; Content Marketing
+                    </h4>
+                    <div class="space-y-3">
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Budget: $2,500/month</h5>
+                        <p class="text-slate-700 text-sm">Build long-term organic visibility and thought leadership</p>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Content Focus</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Comparison pages and guides</li>
+                          <li>• Industry-specific landing pages</li>
+                          <li>• Case studies and whitepapers</li>
+                          <li>• Technical SEO optimization</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Tactics</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Strategic keyword targeting</li>
+                          <li>• High-quality backlink building</li>
+                          <li>• On-page optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space-y-8">
+                  <!-- PR &amp; Outreach Strategy -->
+                  <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                      <i class="fas fa-bullhorn text-purple-600 mr-2"></i>PR &amp; Outreach
+                    </h4>
+                    <div class="space-y-3">
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Budget: $1,500/month</h5>
+                        <p class="text-slate-700 text-sm">Build brand awareness and credibility through strategic outreach</p>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Focus Areas</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Press releases for major announcements</li>
+                          <li>• Guest posting on industry blogs</li>
+                          <li>• Influencer and analyst relationships</li>
+                          <li>• Podcast appearances and interviews</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Tactics</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Media relationship building</li>
+                          <li>• Thought leadership content</li>
+                          <li>• Industry event participation</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Software &amp; Tools -->
+                  <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                    <h4 class="font-semibold text-slate-900 mb-4">
+                      <i class="fas fa-cogs text-orange-600 mr-2"></i>Software &amp; Tools
+                    </h4>
+                    <div class="space-y-3">
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Budget: $1,000/month</h5>
+                        <p class="text-slate-700 text-sm">Essential marketing technology stack</p>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Key Tools</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Marketing automation (HubSpot/Marketo)</li>
+                          <li>• SEO tools (Ahrefs/Semrush)</li>
+                          <li>• Analytics platform</li>
+                          <li>• PPC management tools</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h5 class="font-semibold text-slate-900 text-sm mb-1">Implementation</h5>
+                        <ul class="text-slate-700 text-xs space-y-1">
+                          <li>• Marketing automation setup</li>
+                          <li>• Analytics and tracking</li>
+                          <li>• Campaign optimization</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resource Allocation -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Resource Allocation and Team Structure</h3>
+
+              <div class="bg-slate-50 rounded-lg p-8">
+                <h4 class="font-semibold text-slate-900 mb-6">Required Team Roles and Responsibilities</h4>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Growth Marketing Manager</h5>
+                    <p class="text-slate-600 text-sm mb-2">Overall plan owner responsible for strategy and execution</p>
+                    <div class="text-xs text-slate-500">In-house / Full-time</div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">PPC Specialist</h5>
+                    <p class="text-slate-600 text-sm mb-2">Manage paid search campaigns and optimization</p>
+                    <div class="text-xs text-slate-500">In-house / Freelance</div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">SEO Specialist</h5>
+                    <p class="text-slate-600 text-sm mb-2">Keyword research and on-page optimization</p>
+                    <div class="text-xs text-slate-500">In-house / Freelance</div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Content Writer</h5>
+                    <p class="text-slate-600 text-sm mb-2">Create high-quality blog posts, case studies, and guides</p>
+                    <div class="text-xs text-slate-500">Freelance / Agency</div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">PR &amp; Outreach Specialist</h5>
+                    <p class="text-slate-600 text-sm mb-2">Build media relationships and manage outreach</p>
+                    <div class="text-xs text-slate-500">Freelance / Agency</div>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 border border-slate-200">
+                    <h5 class="font-semibold text-slate-900 mb-2">Design &amp; Dev Support</h5>
+                    <p class="text-slate-600 text-sm mb-2">Landing page design and development</p>
+                    <div class="text-xs text-slate-500">As needed</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Implementation Timeline -->
+      <section class="py-16 bg-slate-50" id="implementation">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Implementation Timeline and Milestones</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Phased 12-month execution plan with clear milestones and deliverables for each quarter.
+              </p>
+            </header>
+
+            <!-- Timeline Overview -->
+            <div class="mb-16">
+              <div class="relative">
+                <div class="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-300"></div>
+
+                <!-- Q1 -->
+                <div class="relative mb-12">
+                  <div class="absolute left-0 w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                    <span class="font-bold text-blue-600">Q1</span>
+                  </div>
+                  <div class="ml-16">
+                    <h3 class="font-canela text-xl font-bold text-slate-900 mb-4">Foundation and Quick Wins</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 1</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Complete website and SEO audit</li>
+                          <li>• Finalize keyword research</li>
+                          <li>• Set up content calendar</li>
+                          <li>• Establish baseline metrics</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 2</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Launch paid search campaigns</li>
+                          <li>• Create comparison pages</li>
+                          <li>• Begin content creation</li>
+                          <li>• Implement tracking systems</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 3</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Launch PR outreach campaign</li>
+                          <li>• Optimize on-page SEO</li>
+                          <li>• Begin link building</li>
+                          <li>• Monitor initial results</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="relative mb-12">
+                  <div class="absolute left-0 w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                    <span class="font-bold text-green-600">Q2</span>
+                  </div>
+                  <div class="ml-16">
+                    <h3 class="font-canela text-xl font-bold text-slate-900 mb-4">Scaling and Optimization</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 4</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Scale successful campaigns</li>
+                          <li>• Launch guest posting</li>
+                          <li>• Optimize ad performance</li>
+                          <li>• Expand content production</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 5</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Publish major content asset</li>
+                          <li>• Begin A/B testing</li>
+                          <li>• Scale link building</li>
+                          <li>• Optimize conversion funnel</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 6</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Mid-year performance review</li>
+                          <li>• Launch influencer outreach</li>
+                          <li>• Adjust strategies based on data</li>
+                          <li>• Plan Q3 initiatives</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="relative mb-12">
+                  <div class="absolute left-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                    <span class="font-bold text-purple-600">Q3</span>
+                  </div>
+                  <div class="ml-16">
+                    <h3 class="font-canela text-xl font-bold text-slate-900 mb-4">Expansion and New Initiatives</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 7</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Launch LinkedIn Ads</li>
+                          <li>• Create industry landing pages</li>
+                          <li>• Expand content topics</li>
+                          <li>• Scale successful campaigns</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 8</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Launch webinar series</li>
+                          <li>• Build brand community</li>
+                          <li>• Create video content</li>
+                          <li>• Expand PR efforts</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 9</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Launch referral program</li>
+                          <li>• Optimize for mobile</li>
+                          <li>• Prepare for Q4 analysis</li>
+                          <li>• Scale top performing channels</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="relative">
+                  <div class="absolute left-0 w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
+                    <span class="font-bold text-orange-600">Q4</span>
+                  </div>
+                  <div class="ml-16">
+                    <h3 class="font-canela text-xl font-bold text-slate-900 mb-4">Analysis and Planning</h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 10</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Comprehensive performance analysis</li>
+                          <li>• ROI calculation by channel</li>
+                          <li>• Identify top performers</li>
+                          <li>• Gather insights for optimization</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 11</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Create detailed ROI report</li>
+                          <li>• Plan Year 2 strategy</li>
+                          <li>• Budget recommendations</li>
+                          <li>• Set new targets</li>
+                        </ul>
+                      </div>
+                      <div class="bg-white rounded-lg p-4 border border-slate-200">
+                        <h4 class="font-semibold text-slate-900 mb-2">Month 12</h4>
+                        <ul class="text-slate-700 text-sm space-y-1">
+                          <li>• Present results to leadership</li>
+                          <li>• Get approval for Year 2</li>
+                          <li>• Document learnings</li>
+                          <li>• Plan next phase</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- Expected Outcomes -->
+      <section class="py-16 bg-white" id="expected-outcomes">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto">
+            <header class="mb-12">
+              <h2 class="font-canela text-4xl font-bold text-slate-900 mb-4">Expected Outcomes and ROI</h2>
+              <p class="text-xl text-slate-600 max-w-3xl leading-relaxed">
+                Projected performance improvements and business impact from the 1-year growth plan implementation.
+              </p>
+            </header>
+
+            <!-- Projected Performance -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Projected Performance Improvements</h3>
+
+              <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                <div class="chart-container">
+                  <h4 class="font-semibold text-slate-900 mb-4">Conversion Funnel Projections</h4>
+                  <div class="h-64">
+                    <canvas id="funnelChart"></canvas>
+                  </div>
+                  <p class="text-sm text-slate-600 mt-4">
+                    Expected 75% increase in demo requests and significant improvements across all funnel stages.
+                  </p>
+                </div>
+
+                <div class="space-y-6">
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Current State (Monthly)</h4>
+                    <div class="space-y-2 text-sm">
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Website Traffic</span>
+                        <span class="font-semibold">100,000</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Demo Requests</span>
+                        <span class="font-semibold">200</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Qualified Leads</span>
+                        <span class="font-semibold">150</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Closed-Won Deals</span>
+                        <span class="font-semibold">30</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="data-point">
+                    <h4 class="font-semibold text-slate-900 mb-2">Projected State (Monthly)</h4>
+                    <div class="space-y-2 text-sm">
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Website Traffic</span>
+                        <span class="font-semibold text-green-600">150,000 (+50%)</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Demo Requests</span>
+                        <span class="font-semibold text-green-600">350 (+75%)</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Qualified Leads</span>
+                        <span class="font-semibold text-green-600">280 (+87%)</span>
+                      </div>
+                      <div class="flex justify-between">
+                        <span class="text-slate-600">Closed-Won Deals</span>
+                        <span class="font-semibold text-green-600">56 (+87%)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ROI Analysis -->
+            <div class="mb-16">
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Return on Investment Analysis</h3>
+
+              <div class="grid lg:grid-cols-3 gap-8">
+                <div class="bg-green-50 rounded-lg p-6 border border-green-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-dollar-sign text-green-600 mr-2"></i>Revenue Impact
+                  </h4>
+                  <div class="space-y-3">
+                    <div>
+                      <div class="text-2xl font-bold text-green-600">$120,000</div>
+                      <div class="text-sm text-slate-600">Annual marketing investment</div>
+                    </div>
+                    <div>
+                      <div class="text-2xl font-bold text-green-600">$420,000</div>
+                      <div class="text-sm text-slate-600">Projected annual revenue increase</div>
+                    </div>
+                    <div>
+                      <div class="text-2xl font-bold text-green-600">3.5x</div>
+                      <div class="text-sm text-slate-600">Expected ROI multiple</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-6 border border-blue-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-chart-line text-blue-600 mr-2"></i>Efficiency Gains
+                  </h4>
+                  <div class="space-y-3">
+                    <div>
+                      <div class="text-lg font-bold text-blue-600">25-50%</div>
+                      <div class="text-sm text-slate-600">Conversion rate improvement</div>
+                    </div>
+                    <div>
+                      <div class="text-lg font-bold text-blue-600">40%</div>
+                      <div class="text-sm text-slate-600">Cost per lead reduction</div>
+                    </div>
+                    <div>
+                      <div class="text-lg font-bold text-blue-600">60%</div>
+                      <div class="text-sm text-slate-600">Lead quality improvement</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-purple-50 rounded-lg p-6 border border-purple-200">
+                  <h4 class="font-semibold text-slate-900 mb-4">
+                    <i class="fas fa-trophy text-purple-600 mr-2"></i>Strategic Benefits
+                  </h4>
+                  <ul class="text-slate-700 text-sm space-y-2">
+                    <li>• Stronger market positioning</li>
+                    <li>• Enhanced brand awareness</li>
+                    <li>• Improved competitive differentiation</li>
+                    <li>• Expanded market reach</li>
+                    <li>• Sustainable growth foundation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Success Metrics Dashboard -->
+            <div>
+              <h3 class="font-canela text-2xl font-bold text-slate-900 mb-8">Success Metrics Dashboard</h3>
+
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-semibold text-slate-900">Demo Requests</h4>
+                    <i class="fas fa-chart-line text-green-600"></i>
+                  </div>
+                  <div class="text-2xl font-bold text-slate-900 mb-1">350</div>
+                  <div class="text-sm text-green-600">+75% from baseline</div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-semibold text-slate-900">Conversion Rate</h4>
+                    <i class="fas fa-percentage text-blue-600"></i>
+                  </div>
+                  <div class="text-2xl font-bold text-slate-900 mb-1">0.23%</div>
+                  <div class="text-sm text-blue-600">+0.13% improvement</div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-semibold text-slate-900">Organic Traffic</h4>
+                    <i class="fas fa-users text-purple-600"></i>
+                  </div>
+                  <div class="text-2xl font-bold text-slate-900 mb-1">150K</div>
+                  <div class="text-sm text-purple-600">+50% growth</div>
+                </div>
+
+                <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+                  <div class="flex items-center justify-between mb-2">
+                    <h4 class="font-semibold text-slate-900">Cost Per Demo</h4>
+                    <i class="fas fa-dollar-sign text-orange-600"></i>
+                  </div>
+                  <div class="text-2xl font-bold text-slate-900 mb-1">$28</div>
+                  <div class="text-sm text-orange-600">-40% reduction</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-8">
+          <div class="max-w-6xl mx-auto text-center">
+            <h3 class="font-canela text-2xl font-bold mb-4">Ready to Transform Your Growth?</h3>
+            <p class="text-slate-300 mb-8 max-w-2xl mx-auto">
+              This comprehensive marketing framework provides the strategic foundation to significantly increase demo requests and accelerate HackerEarth&#39;s growth in the developer hiring SaaS market.
+            </p>
+            <div class="flex justify-center space-x-6 text-sm text-slate-400">
+              <span><i class="fas fa-chart-line mr-2"></i>Data-Driven Strategy</span>
+              <span><i class="fas fa-target mr-2"></i>Results-Focused</span>
+              <span><i class="fas fa-rocket mr-2"></i>Actionable Plan</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+        // Mobile TOC Toggle
+        function toggleTOC() {
+            const toc = document.querySelector('.toc');
+            toc.classList.toggle('open');
+        }
+
+        // Close TOC when clicking outside
+        document.addEventListener('click', function(event) {
+            const toc = document.querySelector('.toc');
+            const hamburgerButton = document.querySelector('button.lg\\:hidden');
+            
+            // Check if click is outside TOC and not on hamburger button
+            if (toc.classList.contains('open') && 
+                !toc.contains(event.target) && 
+                event.target !== hamburgerButton && 
+                !hamburgerButton.contains(event.target)) {
+                toc.classList.remove('open');
+            }
+        });
+
+        // Chart Initializations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Market Size Chart
+            const marketCtx = document.getElementById('marketSizeChart');
+            if (marketCtx) {
+                new Chart(marketCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['2024', '2033'],
+                        datasets: [{
+                            label: 'Market Value ($B)',
+                            data: [1.2, 3.5],
+                            backgroundColor: ['#0f172a', '#334155'],
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: true, text: 'Code Assessment Platform Market Value', color: '#1e293b', font: { weight: 'bold' } }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: '#e2e8f0' },
+                                ticks: { color: '#64748b' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#64748b' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Pricing Chart
+            const pricingCtx = document.getElementById('pricingChart');
+            if (pricingCtx) {
+                new Chart(pricingCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['HackerEarth', 'TestGorilla', 'HackerRank', 'Codility'],
+                        datasets: [{
+                            label: 'Starting Price ($/month)',
+                            data: [99, 75, 100, 100],
+                            backgroundColor: ['#0f172a', '#64748b', '#94a3b8', '#cbd5e1'],
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            title: { display: true, text: 'Competitor Pricing Comparison', color: '#1e293b', font: { weight: 'bold' } }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: '#e2e8f0' },
+                                ticks: { color: '#64748b' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#64748b' }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Traffic Chart
+            const trafficCtx = document.getElementById('trafficChart');
+            if (trafficCtx) {
+                new Chart(trafficCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Community Traffic', 'Commercial Intent', 'Direct', 'Referral'],
+                        datasets: [{
+                            data: [65, 15, 12, 8],
+                            backgroundColor: ['#0f172a', '#334155', '#64748b', '#94a3b8'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { color: '#1e293b' } },
+                            title: { display: true, text: 'Current Traffic Sources', color: '#1e293b', font: { weight: 'bold' } }
+                        }
+                    }
+                });
+            }
+
+            // Content Chart
+            const contentCtx = document.getElementById('contentChart');
+            if (contentCtx) {
+                new Chart(contentCtx, {
+                    type: 'pie',
+                    data: {
+                        labels: ['Community Content', 'Commercial Content', 'Product Content', 'Educational Content'],
+                        datasets: [{
+                            data: [60, 15, 15, 10],
+                            backgroundColor: ['#0f172a', '#334155', '#64748b', '#94a3b8'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { color: '#1e293b' } },
+                            title: { display: true, text: 'Content Focus Distribution', color: '#1e293b', font: { weight: 'bold' } }
+                        }
+                    }
+                });
+            }
+
+            // Budget Chart
+            const budgetCtx = document.getElementById('budgetChart');
+            if (budgetCtx) {
+                new Chart(budgetCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Paid Search', 'SEO & Content', 'Resources', 'PR & Outreach', 'Software & Tools'],
+                        datasets: [{
+                            data: [30, 25, 20, 15, 10],
+                            backgroundColor: ['#0f172a', '#334155', '#64748b', '#94a3b8', '#cbd5e1'],
+                            borderWidth: 0
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom', labels: { color: '#1e293b' } },
+                            title: { display: true, text: 'Monthly Budget Allocation', color: '#1e293b', font: { weight: 'bold' } }
+                        }
+                    }
+                });
+            }
+
+            // Funnel Chart
+            const funnelCtx = document.getElementById('funnelChart');
+            if (funnelCtx) {
+                new Chart(funnelCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Website Traffic', 'Demo Requests', 'Qualified Leads', 'Closed-Won Deals'],
+                        datasets: [
+                            {
+                                label: 'Current State',
+                                data: [100000, 200, 150, 30],
+                                backgroundColor: '#94a3b8'
+                            },
+                            {
+                                label: 'Projected State',
+                                data: [150000, 350, 280, 56],
+                                backgroundColor: '#0f172a'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { labels: { color: '#1e293b' } },
+                            title: { display: true, text: 'Conversion Funnel Performance', color: '#1e293b', font: { weight: 'bold' } }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                grid: { color: '#e2e8f0' },
+                                ticks: { color: '#64748b' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { color: '#64748b' }
+                            }
+                        }
+                    }
+                });
+            }
+        });
+
+        // Smooth scrolling for TOC links
+        document.querySelectorAll('.toc a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile TOC if open
+                const toc = document.querySelector('.toc');
+                if (toc.classList.contains('open')) {
+                    toc.classList.remove('open');
+                }
+            });
+        });
+    </script>
+
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>HackerEarth Domain Overview and Critical Growth Insights</title>
+  <meta name="description" content="Detailed overview of HackerEarth’s domain performance, competitive position, and critical growth insights to understand trends shaping its platform."/>
+  <meta name="keywords" content="hackerearth, domain analysis, growth insights, developer platform, tech assessment, competitive landscape"/>
+  <meta name="author" content="gaurav-agarwal"/>
+
+  <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png"/>
+</head>
+<body>
+     <style>
+        :root{--black:#000;--white:#FFF;--gray-900:#111;--gray-800:#222;--gray-700:#444;--gray-600:#666;--gray-500:#888;--gray-400:#AAA;--gray-300:#CCC;--gray-200:#EEE;--gray-100:#F5F5F5;--font-sans:'Inter',system-ui,-apple-system,sans-serif;--spacing-xs:0.5rem;--spacing-sm:1rem;--spacing-md:1.5rem;--spacing-lg:2rem;--spacing-xl:3rem;--spacing-xxl:4rem;--radius:8px;--radius-lg:12px}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:var(--font-sans);background:var(--white);color:var(--gray-900);line-height:1.6;overflow-x:hidden}
+        h1,h2,h3,h4{font-weight:700;line-height:1.2;margin-bottom:var(--spacing-sm)}
+        h1{font-size:clamp(2rem,5vw,3rem);letter-spacing:-0.02em}
+        h2{font-size:clamp(1.5rem,4vw,2rem);border-bottom:2px solid var(--gray-900);padding-bottom:var(--spacing-xs);margin-bottom:var(--spacing-lg)}
+        h3{font-size:clamp(1.2rem,3vw,1.5rem)}
+        p{margin-bottom:var(--spacing-sm);color:var(--gray-700)}
+        .header{background:var(--black);color:var(--white);padding:var(--spacing-lg) var(--spacing-md);position:sticky;top:0;z-index:100;border-bottom:1px solid var(--gray-800)}
+        .alert-banner{background:var(--gray-900);color:var(--white);padding:var(--spacing-md);margin-bottom:var(--spacing-lg);border-left:4px solid var(--white);animation:pulse 3s ease-in-out infinite}
+        @keyframes pulse{0%,100%{opacity:1}50%{opacity:.9}}
+        .alert-banner h2{color:var(--white);border-bottom:none;margin-bottom:var(--spacing-xs)}
+        .container{max-width:1400px;margin:0 auto;padding:var(--spacing-lg) var(--spacing-md)}
+        .section{margin-bottom:var(--spacing-xxl)}
+        .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--spacing-md);margin-bottom:var(--spacing-lg)}
+        .kpi-card{background:var(--white);border:2px solid var(--gray-900);padding:var(--spacing-lg);border-radius:var(--radius);transition:all .3s ease;position:relative;overflow:hidden}
+        .kpi-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:var(--gray-900);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+        .kpi-card:hover::before{transform:scaleX(1)}
+        .kpi-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1);transform:translateY(-2px)}
+        .kpi-value{font-size:clamp(2rem,4vw,2.5rem);font-weight:800;margin:var(--spacing-xs) 0}
+        .kpi-label{font-size:.9rem;text-transform:uppercase;letter-spacing:.05em;color:var(--gray-600);margin-bottom:var(--spacing-xs)}
+        .kpi-trend{font-weight:700;margin-bottom:var(--spacing-xs)}
+        .trend-down{color:var(--black)}
+        .trend-stable{color:var(--gray-600)}
+        .trend-up{color:var(--gray-600)}
+        .status-badge{display:inline-block;padding:4px 8px;border-radius:4px;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--spacing-sm)}
+        .status-critical{background:var(--black);color:var(--white)}
+        .status-warning{background:var(--gray-300);color:var(--gray-900)}
+        .status-strong{background:var(--gray-200);color:var(--gray-700)}
+        .issue-card{background:var(--white);border:1px solid var(--gray-300);border-radius:var(--radius-lg);margin-bottom:var(--spacing-md);overflow:hidden;transition:all .3s ease}
+        .issue-card:hover{border-color:var(--gray-900);box-shadow:0 2px 8px rgba(0,0,0,.05)}
+        .issue-header{background:var(--gray-100);padding:var(--spacing-md);cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:background .3s ease}
+        .issue-header:hover{background:var(--gray-200)}
+        .issue-header.active{background:var(--gray-900);color:var(--white)}
+        .issue-header.active h3{color:var(--white)}
+        .issue-toggle{font-size:1.5rem;transition:transform .3s ease}
+        .issue-header.active .issue-toggle{transform:rotate(45deg)}
+        .issue-content{max-height:0;overflow:hidden;padding:0 var(--spacing-md);transition:max-height .5s ease,padding .5s ease}
+        .issue-content.expanded{max-height:1000px;padding:var(--spacing-md)}
+        .text-chart{font-family:'Courier New',monospace;font-size:clamp(.8rem,2vw,.9rem);line-height:1.4;margin:var(--spacing-md) 0;padding:var(--spacing-md);background:var(--gray-100);border-radius:var(--radius);overflow-x:auto}
+        .text-chart .bar{display:block;white-space:nowrap;margin-bottom:4px}
+        .text-chart .label{font-weight:700;margin-right:8px;min-width:120px;display:inline-block}
+        .text-chart .value{margin-left:8px;font-weight:700}
+        .recommendation-list{counter-reset:rec-counter;list-style:none}
+        .recommendation-item{counter-increment:rec-counter;margin-bottom:var(--spacing-lg);padding-left:var(--spacing-lg);position:relative}
+        .recommendation-item::before{content:counter(rec-counter);position:absolute;left:0;top:0;background:var(--black);color:var(--white);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem}
+        .recommendation-item h3{margin-bottom:var(--spacing-xs)}
+        .decision-box{background:var(--gray-100);border:2px solid var(--gray-900);border-radius:var(--radius-lg);padding:var(--spacing-lg);margin:var(--spacing-lg) 0}
+        .decision-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:var(--spacing-md);margin:var(--spacing-lg) 0}
+        .option-card{border:1px solid var(--gray-300);border-radius:var(--radius);padding:var(--spacing-md);transition:all .3s ease}
+        .option-card.recommended{border-color:var(--black);background:var(--white)}
+        .option-card.recommended h3{color:var(--black)}
+        .cta-button{display:inline-block;background:var(--black);color:var(--white);padding:12px 24px;text-decoration:none;border-radius:var(--radius);font-weight:700;text-transform:uppercase;letter-spacing:.05em;transition:all .3s ease;border:2px solid var(--black);cursor:pointer}
+        .cta-button:hover{background:var(--white);color:var(--black)}
+        .cta-button:active{transform:scale(.98)}
+        .footer{background:var(--gray-900);color:var(--white);padding:var(--spacing-md);text-align:center;margin-top:var(--spacing-xxl)}
+        .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.8);z-index:1000;justify-content:center;align-items:center;padding:var(--spacing-md)}
+        .modal-content{background:var(--white);max-width:600px;width:100%;padding:var(--spacing-lg);border-radius:var(--radius-lg);position:relative;animation:slideIn .3s ease}
+        @keyframes slideIn{from{transform:translateY(-50px);opacity:0}to{transform:translateY(0);opacity:1}}
+        .modal-close{position:absolute;top:var(--spacing-md);right:var(--spacing-md);font-size:1.5rem;cursor:pointer;background:none;border:none;color:var(--gray-700)}
+        @media (max-width:768px){.container{padding:var(--spacing-md) var(--spacing-sm)}.kpi-grid{grid-template-columns:1fr}.issue-header{flex-direction:column;align-items:flex-start;gap:var(--spacing-xs)}.decision-options{grid-template-columns:1fr}.text-chart{font-size:.75rem}.text-chart .label{min-width:80px}}
+        @media print{body{background:white}.alert-banner{animation:none}.issue-content{max-height:none!important}.cta-button{display:none}}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HackerEarth Domain Overview: CEO Dashboard</h1>
+        <p style="color:#ccc;">Interactive Executive Intelligence Report | November 2025</p>
+    </header>
+
+    <div class="alert-banner">
+        <h2>🎯 CEO Alert: Critical Growth Deceleration</h2>
+        <p style="color: #ff6b3d;">"Your primary customer acquisition engine is in reverse. We've lost 37% of developer traffic in 6 months while competitors capture emerging AI search channels. Immediate strategic intervention required."</p>
+    </div>
+
+    <div class="container">
+        <section class="section">
+            <h2>📊 Executive KPIs at a Glance</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Organic Traffic</div>
+                    <div class="kpi-value" data-target="193.7">0</div>
+                    <div class="kpi-trend trend-down">K/mo ↓ -37%</div>
+                    <div class="status-badge status-critical">Critical</div>
+                    <p>113K lost developer visits monthly</p>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-label">Keyword Portfolio</div>
+                    <div class="kpi-value" data-target="66.8">0</div>
+                    <div class="kpi-trend trend-down">K ↓ -28.6%</div>
+                    <div class="status-badge status-critical">Critical</div>
+                    <p>26,731 search terms vanished</p>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-label">Domain Authority</div>
+                    <div class="kpi-value" data-target="49">0</div>
+                    <div class="kpi-trend trend-stable">/100 → Stable</div>
+                    <div class="status-badge status-strong">Strong</div>
+                    <p>Foundation intact but underutilized</p>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-label">AI Search Visibility</div>
+                    <div class="kpi-value" data-target="0.5">0</div>
+                    <div class="kpi-trend trend-down">% → Negligible</div>
+                    <div class="status-badge status-critical">Severe Risk</div>
+                    <p>Invisible on 40% of future searches</p>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-label">Non-Branded Traffic</div>
+                    <div class="kpi-value" data-target="64">0</div>
+                    <div class="kpi-trend trend-down">% ↓ -9pts</div>
+                    <div class="status-badge status-warning">Warning</div>
+                    <p>New customer acquisition declining</p>
+                </div>
+                
+                <div class="kpi-card">
+                    <div class="kpi-label">Paid Traffic</div>
+                    <div class="kpi-value">$0</div>
+                    <div class="kpi-trend trend-stable">→ No coverage</div>
+                    <div class="status-badge status-critical">Vulnerable</div>
+                    <p>Zero defense against competitors</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🚨 Critical Issues: Visual Intelligence</h2>
+            
+            <div class="issue-card">
+                <div class="issue-header" onclick="toggleIssue(this)">
+                    <h3>🔥 Issue #1: Keyword Portfolio Collapse</h3>
+                    <span class="issue-toggle">+</span>
+                </div>
+                <div class="issue-content">
+                    <h4>Traffic Volume (Monthly Visits)</h4>
+                    <div class="text-chart">
+                        <span class="bar"><span class="label">May 2025:</span> ████████████████████████████████████████ <span class="value">307.4K</span></span>
+                        <span class="bar"><span class="label">Nov 2025:</span> ██████████████████████████████░░░░░░░░░ <span class="value">193.7K</span></span>
+                        <p style="text-align:center;margin-top:8px;font-weight:700;">↓ 37% DECLINE</p>
+                    </div>
+                    
+                    <h4>Keyword Rankings Distribution (Count by Position)</h4>
+                    <div class="text-chart">
+                        Position &nbsp;&nbsp; May 2025 &nbsp;&nbsp; Nov 2025 &nbsp;&nbsp; Lost Keywords<br>
+                        Top 1-3 &nbsp;&nbsp;&nbsp;&nbsp; 1,183 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 830 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▼ 353 (-30%)<br>
+                        Top 4-10 &nbsp;&nbsp;&nbsp;5,073 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3,972 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▼ 1,101 (-22%)<br>
+                        Top 11-20 &nbsp;&nbsp; 7,860 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6,670 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▼ 1,190 (-15%)<br>
+                        Total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;93,539 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 66,808 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▼ 26,731 (-28.6%)
+                    </div>
+                    <p><strong>Business Impact:</strong> We're disappearing from developer search results. Each lost keyword = lost customers to HackerRank/LeetCode.</p>
+                </div>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-header" onclick="toggleIssue(this)">
+                    <h3>🤖 Issue #2: AI Search Blindness</h3>
+                    <span class="issue-toggle">+</span>
+                </div>
+                <div class="issue-content">
+                    <h4>Search Channel Distribution</h4>
+                    <div class="text-chart">
+                        <span class="bar"><span class="label">Traditional Organic:</span> ████████████████████████████████████ <span class="value">91.2%</span></span>
+                        <span class="bar"><span class="label">AI Overviews:</span> ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="value">0.5%</span></span>
+                        <span class="bar"><span class="label">Other SERP Features:</span> ████ <span class="value">8.3%</span></span>
+                    </div>
+                    
+                    <h4>Competitor AI Citations:</h4>
+                    <ul style="list-style:none;padding-left:0;">
+                        <li>Wikipedia: 134 mentions in AI answers</li>
+                        <li>Reddit: 123 mentions</li>
+                        <li>GeeksForGeeks: 72 mentions</li>
+                        <li><strong>HackerEarth: 0 mentions</strong></li>
+                    </ul>
+                    <p><strong>Business Impact:</strong> When developers ask ChatGPT/Gemini coding questions, our competitors get recommended, not us. This is your future market share disappearing.</p>
+                </div>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-header" onclick="toggleIssue(this)">
+                    <h3>🌍 Issue #3: Geographic Concentration Risk</h3>
+                    <span class="issue-toggle">+</span>
+                </div>
+                <div class="issue-content">
+                    <h4>Traffic by Market (Nov 2025)</h4>
+                    <div class="text-chart">
+                        <span class="bar"><span class="label">India:</span> ████████████████████████████████████ <span class="value">149K (77%)</span></span>
+                        <span class="bar"><span class="label">US:</span> ██████ <span class="value">19.6K (10%)</span></span>
+                        <span class="bar"><span class="label">UK:</span> █ <span class="value">2.8K (1.5%)</span></span>
+                        <span class="bar"><span class="label">Others:</span> ██ <span class="value">17K (11.5%)</span></span>
+                    </div>
+                    <p><strong>Vulnerability:</strong> 87% of traffic from two markets. Algorithm change in either region devastates revenue.</p>
+                </div>
+            </div>
+
+            <div class="issue-card">
+                <div class="issue-header" onclick="toggleIssue(this)">
+                    <h3>💰 Issue #4: Zero Paid Diversification</h3>
+                    <span class="issue-toggle">+</span>
+                </div>
+                <div class="issue-content">
+                    <h4>Traffic Acquisition Mix</h4>
+                    <div class="text-chart">
+                        <span class="bar"><span class="label">Organic:</span> ████████████████████████████ <span class="value">100%</span></span>
+                        <span class="bar"><span class="label">Paid:</span> ░░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="value">0%</span></span>
+                        <span class="bar"><span class="label">Social:</span> ░░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="value">Not Tracked</span></span>
+                        <span class="bar"><span class="label">Direct:</span> ░░░░░░░░░░░░░░░░░░░░░░░░░░░ <span class="value">Not Tracked</span></span>
+                    </div>
+                    <p><strong>Business Impact:</strong> No accelerator pedal. Can't amplify wins or defend brand terms. Competitors bidding on "HackerEarth" keywords unchecked.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎯 Macro-Level Strategic Recommendations</h2>
+            <ol class="recommendation-list">
+                <li class="recommendation-item">
+                    <h3>DECLARE "AI SEARCH SURVIVAL" AS Q1 2026 COMPANY PRIORITY</h3>
+                    <p><strong>Strategic Imperative:</strong> Rebuild entire content architecture for LLM visibility.</p>
+                    <p><strong>Why This Matters:</strong> Within 18 months, 60% of developer queries will be answered by AI. We're currently training our replacements (competitors) by providing zero LLM-optimized content.</p>
+                    <p><strong>CEO Action:</strong></p>
+                    <ul><li>Mandate Product & Content teams integrate FAQ schema, HowTo markup, and conversational content blocks across all 1,000+ key pages by March 2026.</li><li>Allocate 30% of content budget to "AI Answer Targeting" - content designed to be quoted by ChatGPT/Gemini.</li></ul>
+                </li>
+                
+                <li class="recommendation-item">
+                    <h3>LAUNCH "DEFENSIVE PAID SEARCH" WITH $50K/MONTH MINIMUM</h3>
+                    <p><strong>Strategic Imperative:</strong> Immediately protect brand and high-intent commercial keywords.</p>
+                    <p><strong>Why This Matters:</strong> Your competitors are stealing your own branded traffic. Every day you wait costs 500+ lost qualified leads. Paid search acts as insurance while organic recovers.</p>
+                    <p><strong>CEO Action:</strong></p>
+                    <ul><li>Authorize emergency paid search budget starting January 2026.</li><li>Target: "coding assessment platform," "developer screening tools," and your own brand terms.</li><li>Expected outcome: 25K incremental qualified visits/month at < $2 CPL.</li></ul>
+                </li>
+                
+                <li class="recommendation-item">
+                    <h3>EXECUTE "PROJECT KEYWORD RECOVERY" - CONTENT WAR EFFORT</h3>
+                    <p><strong>Strategic Imperative:</strong> Surgically restore 26,731 lost keywords by refreshing outdated technical content.</p>
+                    <p><strong>Why This Matters:</strong> Google penalized us for stale content. Our coding challenge solutions, interview guides, and API docs are 12-18 months old in a fast-moving field.</p>
+                    <p><strong>CEO Action:</strong></p>
+                    <ul><li>Pause net-new content for 60 days. Focus 100% of content team on updating top 200 traffic-driving pages with 2025 code examples, frameworks, and best practices.</li><li>Tie engineering team OKRs to SEO performance - every product update must include content refresh.</li></ul>
+                </li>
+                
+                <li class="recommendation-item">
+                    <h3>GEOGRAPHIC DIVERSIFICATION: "GLOBAL BEYOND INDIA"</h3>
+                    <p><strong>Strategic Imperative:</strong> De-risk from single-market dependency by activating UK, DE, CA markets.</p>
+                    <p><strong>Why This Matters:</strong> India market maturity plateauing. US market shows 5x higher LTV but only 10% of traffic. International expansion is low-hanging fruit.</p>
+                    <p><strong>CEO Action:</strong></p>
+                    <ul><li>Hire localization lead. Launch English-UK, German, Canadian French versions of top 50 pages by Q2 2026.</li><li>Target: 50K additional monthly visits from these three markets within 9 months.</li></ul>
+                </li>
+                
+                <li class="recommendation-item">
+                    <h3>ACQUIRE SERP FEATURE REAL ESTATE</h3>
+                    <p><strong>Strategic Imperative:</strong> Shift from "ranking #1" to "owning the entire SERP."</p>
+                    <p><strong>Why This Matters:</strong> Featured snippets drive 2-3x CTR. Our 8.3% SERP feature capture is industry-lagging (benchmark: 25%).</p>
+                    <p><strong>CEO Action:</strong></p>
+                    <ul><li>Restructure all content with snippet-winning formats: comparison tables, numbered lists, "What Is" definitions.</li><li>Target: 20% of high-value keywords in featured snippets by Q3 2026.</li></ul>
+                </li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2>📈 Success Snapshot: Where We Win</h2>
+            <div class="kpi-grid">
+                <div class="kpi-card" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:var(--spacing-sm);">✅</div>
+                    <div class="kpi-label">Domain Authority</div>
+                    <div class="kpi-value" style="font-size:1.5rem;" data-target="49">0</div>
+                    <p>Strong foundation, trusted by Google</p>
+                </div>
+                
+                <div class="kpi-card" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:var(--spacing-sm);">✅</div>
+                    <div class="kpi-label">Referring Domains</div>
+                    <div class="kpi-value" style="font-size:1.5rem;" data-target="26">26K</div>
+                    <p>Robust backlink profile</p>
+                </div>
+                
+                <div class="kpi-card" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:var(--spacing-sm);">✅</div>
+                    <div class="kpi-label">Quality Backlinks</div>
+                    <div class="kpi-value" style="font-size:1.5rem;" data-target="1.3">1.3K</div>
+                    <p>Authority signals intact</p>
+                </div>
+                
+                <div class="kpi-card" style="text-align:center;">
+                    <div style="font-size:3rem;margin-bottom:var(--spacing-sm);">✅</div>
+                    <div class="kpi-label">Geek Culture Credibility</div>
+                    <p>Wikipedia/Reddit citations show brand strength (we're just not optimizing for it)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>🎬 CEO Decision Required</h2>
+            <p>This is a strategic inflection point, not a tactical problem. The 37% traffic decline signals market share erosion to better-adapted competitors. Our choices:</p>
+            
+            <div class="decision-options">
+                <div class="option-card recommended">
+                    <h3>Option A: Reactivate Growth (Recommended)</h3>
+                    <ul><li>Approve 5 macro initiatives above</li><li><strong>Time to recovery:</strong> 6 months</li><li><strong>12-month outcome:</strong> +150% traffic, AI-search leadership</li></ul>
+                </div>
+                
+                <div class="option-card">
+                    <h3>Option B: Maintain Course</h3>
+                    <ul><li>Continue organic-only, traditional SEO</li><li><strong>Time to recovery:</strong> 18+ months (if at all)</li><li><strong>12-month outcome:</strong> Additional 20-30% decline</li></ul>
+                </div>
+            </div>
+            
+            <div class="decision-box">
+                <h3>What I Need From You</h3>
+                <p>30-minute strategy session to align on AI search priority and approve defensive paid search launch. The data is clear—waiting compounds the damage.</p>
+                <button class="cta-button" onclick="openModal()">Schedule Strategy Session</button>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Report Generation: November 14, 2025 | Next Update: December 15, 2025 (post-Black Friday analysis)</p>
+        <p>Access: This dashboard auto-updates monthly via Semrush API</p>
+    </footer>
+
+    <div class="modal" id="schedulingModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <h2>Schedule Strategy Session</h2>
+            <p>This would integrate with your calendar system in a production environment.</p>
+            <p><strong>Proposed Agenda:</strong></p>
+            <ul><li>15 min: AI Search landscape overview</li><li>10 min: Paid search launch plan</li><li>5 min: Budget approval & next steps</li></ul>
+            <button class="cta-button" onclick="alert('In production, this would open your calendar booking system.'); closeModal();">Book 30-Minute Session</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            const counters=document.querySelectorAll('.kpi-value[data-target]');
+            counters.forEach(counter=>{
+                const target=parseFloat(counter.getAttribute('data-target'));
+                const duration=1500,step=target/(duration/16);
+                let current=0;
+                const updateCounter=()=>{
+                    current+=step;
+                    if(current<target){counter.textContent=current.toFixed(1);requestAnimationFrame(updateCounter)}else{counter.textContent=target}
+                };
+                setTimeout(updateCounter,500);
+            });
+            toggleIssue(document.querySelector('.issue-header'));
+        });
+        function toggleIssue(header){
+            const content=header.nextElementSibling;
+            const isExpanded=content.classList.contains('expanded');
+            document.querySelectorAll('.issue-content').forEach(el=>el.classList.remove('expanded'));
+            document.querySelectorAll('.issue-header').forEach(el=>el.classList.remove('active'));
+            if(!isExpanded){content.classList.add('expanded');header.classList.add('active')}
+        }
+        function openModal(){document.getElementById('schedulingModal').style.display='flex'}
+        function closeModal(){document.getElementById('schedulingModal').style.display='none'}
+        document.getElementById('schedulingModal').addEventListener('click',function(e){if(e.target===this)closeModal()});
+    </script>
+</body>
+</html>

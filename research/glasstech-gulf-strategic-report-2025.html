@@ -1,0 +1,2318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasstech Gulf - Strategic Market Analysis & Growth Plan</title>
+    <meta name="description" content="Comprehensive CEO strategic report outlining Glasstech Gulf’s current market position, growth opportunities, competitive insights, and a forward-looking plan for 2025."/>
+    <meta name="keywords" content="Glasstech Gulf, strategic report, market analysis, business growth, 2025 strategy, competitive insights, leadership planning"/>
+    <meta name="author" content="Editorial Team"/>
+
+  <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --primary-color: #1e3a8a;
+            --secondary-color: #3b82f6;
+            --accent-color: #06b6d4;
+            --success-color: #10b981;
+            --warning-color: #f59e0b;
+            --danger-color: #ef4444;
+            --dark: #1f2937;
+            --light: #f9fafb;
+            --gradient-1: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            --gradient-2: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+            --gradient-3: linear-gradient(135deg, #10b981 0%, #059669 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: #f0f4f8;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--gradient-1);
+            color: white;
+            padding: 60px 50px;
+            border-radius: 24px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .header .date {
+            margin-top: 15px;
+            opacity: 0.8;
+            font-size: 1.1em;
+        }
+
+        /* Executive Summary */
+        .executive-summary {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            border-top: 6px solid var(--secondary-color);
+        }
+
+        .executive-summary h2 {
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        .executive-summary p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 30px;
+        }
+
+        /* Metric Cards */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid var(--secondary-color);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: var(--gradient-2);
+            opacity: 0.05;
+            border-radius: 50%;
+            transform: translate(30%, -30%);
+        }
+
+        .metric-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15);
+        }
+
+        .metric-card:nth-child(1) { border-left-color: #3b82f6; }
+        .metric-card:nth-child(2) { border-left-color: #06b6d4; }
+        .metric-card:nth-child(3) { border-left-color: #10b981; }
+        .metric-card:nth-child(4) { border-left-color: #f59e0b; }
+
+        .metric-value {
+            font-size: 3em;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .metric-label {
+            font-size: 1.1em;
+            color: #6b7280;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Section */
+        .section {
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #e5e7eb;
+        }
+
+        .section-number {
+            background: var(--gradient-1);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: 800;
+            margin-right: 25px;
+            box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
+        }
+
+        .section-header h2 {
+            color: var(--primary-color);
+            font-size: 2.3em;
+            font-weight: 700;
+        }
+
+        /* Chart Container */
+        .chart-container {
+            background: #f9fafb;
+            padding: 35px;
+            border-radius: 16px;
+            margin: 30px 0;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        .chart-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+            margin: 20px 0;
+        }
+
+        .chart-wrapper-small {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        /* Grid Layouts */
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .three-column-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        /* Info Cards */
+        .info-card {
+            background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .info-card:hover {
+            border-color: var(--secondary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+        }
+
+        .info-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 18px;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        .info-card li:before {
+            content: "→";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        /* Highlight Box */
+        .highlight-box {
+            background: var(--gradient-2);
+            color: white;
+            padding: 35px;
+            border-radius: 16px;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+        }
+
+        .highlight-box h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .highlight-box p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            opacity: 0.95;
+        }
+
+        /* Persona Card */
+        .persona-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: 2px solid #e5e7eb;
+        }
+
+        .persona-header {
+            background: var(--gradient-1);
+            color: white;
+            padding: 35px 40px;
+        }
+
+        .persona-header h3 {
+            font-size: 2em;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .persona-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .persona-content {
+            padding: 40px;
+        }
+
+        .persona-section {
+            margin: 25px 0;
+        }
+
+        .persona-section h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        .persona-section p,
+        .persona-section ul {
+            color: #4b5563;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .persona-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .persona-section li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .persona-section li:before {
+            content: "▸";
+            color: var(--secondary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .job-to-be-done {
+            background: var(--gradient-3);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .job-to-be-done h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .job-to-be-done p {
+            font-size: 1.3em;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        /* KPI Tracker */
+        .kpi-tracker {
+            background: #f9fafb;
+            padding: 30px;
+            border-radius: 16px;
+            margin: 30px 0;
+        }
+
+        .kpi-item {
+            background: white;
+            padding: 25px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .kpi-label {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 1.1em;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .kpi-values {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .kpi-baseline,
+        .kpi-target {
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .kpi-baseline {
+            background: #fee2e2;
+        }
+
+        .kpi-target {
+            background: #d1fae5;
+        }
+
+        .kpi-baseline span,
+        .kpi-target span {
+            display: block;
+            font-size: 0.85em;
+            color: #6b7280;
+            margin-bottom: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .kpi-baseline strong {
+            color: var(--danger-color);
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+
+        .kpi-target strong {
+            color: var(--success-color);
+            font-size: 1.5em;
+            font-weight: 800;
+        }
+
+        /* Strategy Card */
+        .strategy-card {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .strategy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: var(--gradient-2);
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border-color: var(--secondary-color);
+        }
+
+        .strategy-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        .strategy-card p {
+            color: #4b5563;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        /* Opportunity Card */
+        .opportunity-card {
+            background: var(--gradient-3);
+            color: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .opportunity-card:hover {
+            transform: scale(1.05);
+        }
+
+        .opportunity-card h4 {
+            font-size: 1.5em;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .opportunity-card p {
+            line-height: 1.7;
+            font-size: 1.1em;
+        }
+
+        /* Risk Card */
+        .risk-card {
+            background: #fef3c7;
+            border-left: 5px solid var(--warning-color);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 15px 0;
+        }
+
+        .risk-card h4 {
+            color: #92400e;
+            margin-bottom: 12px;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
+
+        .risk-card p {
+            color: #78350f;
+            line-height: 1.6;
+        }
+
+        /* Action Items */
+        .action-section {
+            background: var(--gradient-3);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+        }
+
+        .action-section h3 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .action-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .action-section li {
+            padding: 15px 0;
+            padding-left: 40px;
+            position: relative;
+            font-size: 1.15em;
+            line-height: 1.6;
+        }
+
+        .action-section li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 1.5em;
+            background: rgba(255,255,255,0.2);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+            margin-top: 60px;
+            border-top: 2px solid #e5e7eb;
+        }
+
+        .footer p {
+            margin: 8px 0;
+        }
+
+        /* Table */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .table-wrapper::after {
+            content: '← Scroll →';
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: rgba(30, 58, 138, 0.8);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-size: 0.75em;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .table-wrapper {
+                position: relative;
+            }
+            
+            .table-wrapper::after {
+                display: block;
+            }
+        }
+
+        .modern-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.95em;
+            border-radius: 12px;
+        }
+
+        .modern-table thead {
+            background: var(--gradient-1);
+            color: white;
+        }
+
+        .modern-table th {
+            padding: 20px 15px;
+            text-align: left;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
+        }
+
+        .modern-table td {
+            padding: 18px 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .modern-table tbody tr {
+            background: white;
+            transition: all 0.2s ease;
+        }
+
+        .modern-table tbody tr:hover {
+            background: #f0f9ff;
+            transform: scale(1.01);
+        }
+
+        .modern-table tbody tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        .modern-table tbody tr:nth-child(even):hover {
+            background: #f0f9ff;
+        }
+
+        .highlight-row {
+            background: #dbeafe !important;
+            font-weight: 600;
+        }
+
+        .highlight-row:hover {
+            background: #bfdbfe !important;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1400px) {
+            .container {
+                max-width: 100%;
+                padding: 30px 15px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .header h1 { font-size: 3em; }
+            .header .subtitle { font-size: 1.2em; }
+            .section { padding: 40px 30px; }
+            .section-header h2 { font-size: 2em; }
+            .chart-wrapper { height: 350px; }
+            .two-column-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 25px;
+                border-radius: 16px;
+            }
+            
+            .header h1 { 
+                font-size: 2.2em; 
+                margin-bottom: 10px;
+            }
+            
+            .header .subtitle { 
+                font-size: 1em; 
+            }
+            
+            .header .date {
+                font-size: 0.9em;
+            }
+            
+            .executive-summary {
+                padding: 30px 20px;
+                border-radius: 12px;
+            }
+            
+            .executive-summary h2 {
+                font-size: 1.8em;
+            }
+            
+            .executive-summary p {
+                font-size: 1em;
+            }
+            
+            .section { 
+                padding: 25px 20px; 
+                border-radius: 12px;
+                margin-bottom: 25px;
+            }
+            
+            .section-header {
+                flex-direction: column;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+            
+            .section-number {
+                margin-right: 0;
+                margin-bottom: 15px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.5em;
+            }
+            
+            .section-header h2 {
+                font-size: 1.6em;
+            }
+            
+            .metrics-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .metric-card {
+                padding: 25px 20px;
+            }
+            
+            .metric-value {
+                font-size: 2.2em;
+            }
+            
+            .metric-label {
+                font-size: 0.95em;
+            }
+            
+            .two-column-grid { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            
+            .three-column-grid { 
+                grid-template-columns: 1fr; 
+                gap: 20px;
+            }
+            
+            .chart-container {
+                padding: 25px 15px;
+                margin: 20px 0;
+            }
+            
+            .chart-title {
+                font-size: 1.2em;
+                margin-bottom: 15px;
+            }
+            
+            .chart-wrapper {
+                height: 300px;
+            }
+            
+            .chart-wrapper-small {
+                height: 280px;
+            }
+            
+            .info-card,
+            .strategy-card,
+            .opportunity-card {
+                padding: 20px;
+            }
+            
+            .info-card h3,
+            .strategy-card h4,
+            .opportunity-card h4 {
+                font-size: 1.2em;
+            }
+            
+            .highlight-box,
+            .market-size-highlight {
+                padding: 25px 20px;
+                margin: 20px 0;
+            }
+            
+            .market-size-highlight h3 {
+                font-size: 2.5em;
+            }
+            
+            .market-size-highlight p {
+                font-size: 1.1em;
+            }
+            
+            .market-size-highlight .cagr {
+                font-size: 1em;
+                padding: 12px;
+            }
+            
+            .table-wrapper {
+                margin: 20px 0;
+                font-size: 0.85em;
+            }
+            
+            .modern-table th,
+            .modern-table td {
+                padding: 12px 10px;
+                white-space: nowrap;
+            }
+            
+            .persona-card {
+                margin: 20px 0;
+            }
+            
+            .persona-header {
+                padding: 25px 20px;
+            }
+            
+            .persona-header h3 {
+                font-size: 1.5em;
+            }
+            
+            .persona-header p {
+                font-size: 1em;
+            }
+            
+            .persona-content {
+                padding: 25px 20px;
+            }
+            
+            .persona-section h4 {
+                font-size: 1.2em;
+            }
+            
+            .job-to-be-done {
+                padding: 20px;
+            }
+            
+            .job-to-be-done h3 {
+                font-size: 1.2em;
+            }
+            
+            .job-to-be-done p {
+                font-size: 1.1em;
+            }
+            
+            .kpi-tracker {
+                padding: 20px 15px;
+            }
+            
+            .kpi-item {
+                padding: 20px 15px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .kpi-label {
+                font-size: 1em;
+                margin-bottom: 15px;
+                min-width: 100%;
+            }
+            
+            .kpi-values {
+                width: 100%;
+                justify-content: space-around;
+                gap: 20px;
+            }
+            
+            .kpi-baseline,
+            .kpi-target {
+                flex: 1;
+                padding: 12px 15px;
+            }
+            
+            .kpi-baseline strong,
+            .kpi-target strong {
+                font-size: 1.3em;
+            }
+            
+            .action-section {
+                padding: 30px 20px;
+                border-radius: 16px;
+            }
+            
+            .action-section h3 {
+                font-size: 1.7em;
+                margin-bottom: 20px;
+            }
+            
+            .action-section li {
+                font-size: 1em;
+                padding-left: 35px;
+            }
+            
+            .risk-card {
+                padding: 20px;
+            }
+            
+            .risk-card h4 {
+                font-size: 1.1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px 10px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 { 
+                font-size: 1.8em; 
+            }
+            
+            .header .subtitle { 
+                font-size: 0.9em; 
+            }
+            
+            .executive-summary {
+                padding: 25px 15px;
+            }
+            
+            .executive-summary h2 {
+                font-size: 1.5em;
+            }
+            
+            .section {
+                padding: 20px 15px;
+            }
+            
+            .section-number {
+                width: 45px;
+                height: 45px;
+                font-size: 1.3em;
+            }
+            
+            .section-header h2 {
+                font-size: 1.4em;
+            }
+            
+            .metric-value {
+                font-size: 2em;
+            }
+            
+            .chart-container {
+                padding: 20px 10px;
+            }
+            
+            .chart-title {
+                font-size: 1.1em;
+            }
+            
+            .chart-wrapper {
+                height: 250px;
+            }
+            
+            .chart-wrapper-small {
+                height: 240px;
+            }
+            
+            .market-size-highlight h3 {
+                font-size: 2em;
+            }
+            
+            .market-size-highlight p {
+                font-size: 1em;
+            }
+            
+            .table-wrapper {
+                margin: 15px 0;
+                font-size: 0.75em;
+            }
+            
+            .modern-table th,
+            .modern-table td {
+                padding: 10px 8px;
+            }
+            
+            .info-card li,
+            .persona-section li {
+                font-size: 0.95em;
+            }
+            
+            .action-section h3 {
+                font-size: 1.5em;
+            }
+            
+            .action-section li {
+                font-size: 0.95em;
+                padding-left: 30px;
+            }
+        }
+
+        /* Landscape Mobile/Tablet */
+        @media (max-width: 1024px) and (orientation: landscape) {
+            .chart-wrapper {
+                height: 300px;
+            }
+            
+            .chart-wrapper-small {
+                height: 250px;
+            }
+        }
+
+        /* Touch Device Optimizations */
+        @media (hover: none) and (pointer: coarse) {
+            .metric-card:hover,
+            .section:hover,
+            .info-card:hover,
+            .strategy-card:hover,
+            .opportunity-card:hover {
+                transform: none;
+            }
+            
+            .metric-card:active,
+            .strategy-card:active,
+            .opportunity-card:active {
+                transform: scale(0.98);
+            }
+            
+            .modern-table tbody tr:hover {
+                transform: none;
+            }
+        }
+
+        .market-size-highlight {
+            background: var(--gradient-1);
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(30, 58, 138, 0.3);
+        }
+
+        .market-size-highlight h3 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+
+        .market-size-highlight p {
+            font-size: 1.4em;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        .market-size-highlight .cagr {
+            margin-top: 20px;
+            font-size: 1.2em;
+            opacity: 0.9;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-content">
+                <h1>GLASSTECH GULF</h1>
+                <div class="subtitle">Strategic Market Analysis & Growth Plan</div>
+                <div class="date">GCC Architectural Glass Market | November 2025</div>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>
+                Glasstech Gulf is a Bahrain-based architectural glass processor with <strong>1.0M m²/year capacity</strong>, 
+                serving complex façade, interior, decorative and security needs across the GCC. Our competitive advantage lies in 
+                <strong>curved toughening capability</strong> and comprehensive "all-under-one-roof" processing from a Bahrain hub, 
+                enabling cross-border fulfillment to KSA, UAE, and Kuwait markets.
+            </p>
+            
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$1.5-3.2B</div>
+                    <div class="metric-label">GCC Market Size</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">3-6%</div>
+                    <div class="metric-label">Current Market Share</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$20-35M</div>
+                    <div class="metric-label">Est. Annual Revenue</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">5.5%</div>
+                    <div class="metric-label">Market CAGR 2025-2030</div>
+                </div>
+            </div>
+
+            <!-- Market Overview Chart -->
+            <div class="chart-container">
+                <div class="chart-title">GCC Glass Market Opportunity</div>
+                <div class="chart-wrapper">
+                    <canvas id="marketSizeChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 1: Company Overview -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">1</div>
+                <h2>Company Overview</h2>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Core Offering</h3>
+                <p>Architectural and specialty glass processor supplying façades, interiors, decorative and security glass across the GCC</p>
+            </div>
+
+            <div class="three-column-grid">
+                <div class="info-card">
+                    <h3>Product Portfolio</h3>
+                    <ul>
+                        <li>Façade Glass: Tempered, curved, IGU, laminated</li>
+                        <li>Decorative Glass: Digital printed, acid-etched</li>
+                        <li>Security Glass: Bullet-resistant</li>
+                        <li>Interiors: Switchable privacy glass</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>In-House Capabilities</h3>
+                    <ul>
+                        <li>CNC cutting & edge work</li>
+                        <li>Tempering & heat-strengthening</li>
+                        <li>Glass bending (curved)</li>
+                        <li>Insulating glass (IGU)</li>
+                        <li>Digital & screen printing</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Quality & Certifications</h3>
+                    <ul>
+                        <li>IGCC (Insulated Glass)</li>
+                        <li>SGCC (Safety Glazing)</li>
+                        <li>SASO Certified</li>
+                        <li>CE Marking</li>
+                        <li>ISO-based QA/Testing Lab</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Customer Segments Chart -->
+            <div class="two-column-grid">
+                <div class="chart-container">
+                    <div class="chart-title">Target Customer Distribution</div>
+                    <div class="chart-wrapper-small">
+                        <canvas id="customerSegmentChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Geographic Revenue Mix</div>
+                    <div class="chart-wrapper-small">
+                        <canvas id="geoRevenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Competitive Landscape -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">2</div>
+                <h2>Competitive Landscape</h2>
+            </div>
+
+            <div class="market-size-highlight">
+                <h3>$700M - $1.2B</h3>
+                <p>Serviceable Obtainable Market (SOM) for GCC Processors</p>
+                <div class="cagr">CAGR: 4.5-6.5% through 2030-2032</div>
+            </div>
+
+            <!-- Competitive Analysis Charts -->
+            <div class="two-column-grid">
+                <div class="chart-container">
+                    <div class="chart-title">Market Share Comparison</div>
+                    <div class="chart-wrapper">
+                        <canvas id="marketShareChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <div class="chart-title">Revenue Comparison (USD M)</div>
+                    <div class="chart-wrapper">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Competitive Table -->
+            <h3 style="color: var(--primary-color); margin: 40px 0 25px 0; font-size: 1.8em;">Detailed Competitive Analysis</h3>
+            <div class="table-wrapper">
+                <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Est. Revenue</th>
+                        <th>Market Share</th>
+                        <th>Key Strengths</th>
+                        <th>Weaknesses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="highlight-row">
+                        <td><strong>Glasstech Gulf</strong></td>
+                        <td>Bahrain</td>
+                        <td>$20-35M</td>
+                        <td>3-6%</td>
+                        <td>Curved toughening, 1.0M m²/yr capacity</td>
+                        <td>Limited brand visibility</td>
+                    </tr>
+                    <tr>
+                        <td>Emirates Glass</td>
+                        <td>UAE</td>
+                        <td>$150-250M</td>
+                        <td>12-20%</td>
+                        <td>Scale leader, MSVD coating, 3.5M m²/yr</td>
+                        <td>Construction cycle exposure</td>
+                    </tr>
+                    <tr>
+                        <td>Gulf Glass Industries</td>
+                        <td>UAE</td>
+                        <td>$25-45M</td>
+                        <td>3-6%</td>
+                        <td>Long history (since 1991)</td>
+                        <td>Competition with larger players</td>
+                    </tr>
+                    <tr>
+                        <td>Uniglass (Al Fozan)</td>
+                        <td>KSA</td>
+                        <td>$30-55M</td>
+                        <td>4-7%</td>
+                        <td>"One-stop shop", KSA presence</td>
+                        <td>Domestic demand concentration</td>
+                    </tr>
+                    <tr>
+                        <td>Arabian Processing Glass</td>
+                        <td>KSA</td>
+                        <td>$12-25M</td>
+                        <td>1-3%</td>
+                        <td>Modern lines</td>
+                        <td>Price competition</td>
+                    </tr>
+                    <tr>
+                        <td>Bahrain Prism Glass</td>
+                        <td>Bahrain</td>
+                        <td>$10-20M</td>
+                        <td>1-3%</td>
+                        <td>Jumbo tempering capacity</td>
+                        <td>Export dependent</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <!-- Strategic Opportunities -->
+            <h3 style="color: var(--primary-color); margin: 50px 0 25px 0; font-size: 1.8em;">Strategic Opportunities</h3>
+            <div class="three-column-grid">
+                <div class="opportunity-card">
+                    <h4>🎯 Premium Niche SKUs</h4>
+                    <p>Curved + printed + IGU bundles for signature façades where Emirates Glass is oversubscribed</p>
+                </div>
+
+                <div class="opportunity-card">
+                    <h4>🏗️ KSA Tier-2/3 Cities</h4>
+                    <p>Contractors lacking priority at mega suppliers; win on lead time + shop-drawing support</p>
+                </div>
+
+                <div class="opportunity-card">
+                    <h4>🌱 Retrofit & Upgrades</h4>
+                    <p>Low-E IGUs, acoustic laminates as codes tighten in UAE/KSA</p>
+                </div>
+            </div>
+
+            <!-- Risk Factors -->
+            <h3 style="color: var(--danger-color); margin: 40px 0 25px 0; font-size: 1.8em;">Risk Factors & Mitigation</h3>
+            <div class="risk-card">
+                <h4>⚠️ Price Wars During Demand Dips</h4>
+                <p><strong>Mitigation:</strong> Lock framework agreements; dynamic price index clauses; diversify into retrofit/renovation segments</p>
+            </div>
+
+            <div class="risk-card">
+                <h4>⚠️ Spec Capture by Coating Giants</h4>
+                <p><strong>Mitigation:</strong> Early design-assist, unique bundles (curved+printed+IGU), fast samples, ABM on consultants</p>
+            </div>
+
+            <div class="risk-card">
+                <h4>⚠️ Certification & Testing Delays</h4>
+                <p><strong>Mitigation:</strong> Pre-book test slots; publish standard test protocols; maintain spare capacity for remakes</p>
+            </div>
+        </div>
+
+        <!-- Section 3: Target Personas -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">3</div>
+                <h2>Target Customer Personas</h2>
+            </div>
+
+            <!-- Persona 1 -->
+            <div class="persona-card">
+                <div class="persona-header">
+                    <h3>Persona 1: Façade Project Manager</h3>
+                    <p>Primary Buyer | Façade Contractors</p>
+                </div>
+
+                <div class="persona-content">
+                    <div class="persona-section">
+                        <h4>Their World</h4>
+                        <p>Fast-paced, cost & schedule-driven façade packages; juggling shop drawings, mockups, site coordination, and vendor lead times.</p>
+                    </div>
+
+                    <div class="persona-section">
+                        <h4>Main Struggles</h4>
+                        <ul>
+                            <li>Late spec changes causing delays</li>
+                            <li>Glass breakage and costly rework</li>
+                            <li>Long IGU/lamination lead times</li>
+                            <li>Test failures and certifications</li>
+                            <li>Complex logistics to KSA/UAE sites</li>
+                        </ul>
+                    </div>
+
+                    <div class="job-to-be-done">
+                        <h3>Job to Be Done</h3>
+                        <p>"Make my façade lot pass tests and land on site when the spider is ready—no remakes."</p>
+                    </div>
+
+                    <div class="persona-section">
+                        <h4>Content Opportunities</h4>
+                        <div class="two-column-grid">
+                            <div class="info-card">
+                                <p>• Lead-Time Playbook by SKU</p>
+                                <p>• First-Time Pass Checklist</p>
+                                <p>• Crate-by-Zone Logistics Template</p>
+                            </div>
+                            <div class="info-card">
+                                <p>• Spec Decoder for GCC Codes</p>
+                                <p>• Mockup to Production Guide</p>
+                                <p>• Glass Remake Risk Calculator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Persona 2 -->
+            <div class="persona-card">
+                <div class="persona-header">
+                    <h3>Persona 2: Head of Procurement</h3>
+                    <p>Economic Buyer | Main Contractors (KSA)</p>
+                </div>
+
+                <div class="persona-content">
+                    <div class="persona-section">
+                        <h4>Their World</h4>
+                        <p>Owns cost, payment terms, supplier risk, framework agreements; reports to project director/finance.</p>
+                    </div>
+
+                    <div class="job-to-be-done">
+                        <h3>Job to Be Done</h3>
+                        <p>"I need a defensible, low-risk award with locked-in dates and costs."</p>
+                    </div>
+
+                    <div class="persona-section">
+                        <h4>Content Opportunities</h4>
+                        <div class="two-column-grid">
+                            <div class="info-card">
+                                <p>• Glass TCO Calculator (EXW/CIF/DDP)</p>
+                                <p>• Risk-Adjusted Lead-Time Model</p>
+                                <p>• Framework Agreement Pack</p>
+                            </div>
+                            <div class="info-card">
+                                <p>• KSA Compliance One-Pager</p>
+                                <p>• Vendor Scorecard Template</p>
+                                <p>• Price Volatility Tracker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Persona 3 -->
+            <div class="persona-card">
+                <div class="persona-header">
+                    <h3>Persona 3: Façade Design Manager</h3>
+                    <p>Power User/Specifier | Tier-1 Contractors & Consultants</p>
+                </div>
+
+                <div class="persona-content">
+                    <div class="persona-section">
+                        <h4>Their World</h4>
+                        <p>Converts architectural intent to buildable systems; chooses glass make-ups, coatings, frits, curvature, and tolerances.</p>
+                    </div>
+
+                    <div class="job-to-be-done">
+                        <h3>Job to Be Done</h3>
+                        <p>"Help me lock a beautiful, compliant façade that passes tests the first time."</p>
+                    </div>
+
+                    <div class="persona-section">
+                        <h4>Content Opportunities</h4>
+                        <div class="two-column-grid">
+                            <div class="info-card">
+                                <p>• Curved Glass Feasibility Matrix</p>
+                                <p>• Anisotropy Acceptance Guide</p>
+                                <p>• Printed IGU Design Pack</p>
+                            </div>
+                            <div class="info-card">
+                                <p>• Performance Shortcut Cards</p>
+                                <p>• Mockup Evidence Library</p>
+                                <p>• Revit Detail Kit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Strategic Objectives & KPIs -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">4</div>
+                <h2>Strategic Objectives & KPIs</h2>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Business Goal</h3>
+                <p>Win more profitable façade glass orders across GCC while cutting lead-time risk</p>
+            </div>
+
+            <!-- KPI Progress Chart -->
+            <div class="chart-container">
+                <div class="chart-title">KPI Targets: Baseline vs. Goal</div>
+                <div class="chart-wrapper">
+                    <canvas id="kpiChart"></canvas>
+                </div>
+            </div>
+
+            <!-- SMART Objectives -->
+            <h3 style="color: var(--primary-color); margin: 40px 0 25px 0; font-size: 1.8em;">SMART Marketing Objectives</h3>
+            <div class="three-column-grid">
+                <div class="strategy-card">
+                    <h4>📈 RFQ Growth</h4>
+                    <p><strong>+40% qualified RFQs</strong> from target façade contractors in 90 days</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>💰 Conversion Rate</h4>
+                    <p>Lift RFQ→Award from <strong>18% to 26%</strong> for projects >$250k in 120 days</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>🇸🇦 KSA Pipeline</h4>
+                    <p>Grow KSA pipeline to <strong>$8M active</strong> with 6+ Tier-1 contractors in 120 days</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>⚡ Quote Speed</h4>
+                    <p>Reduce quote turnaround from <strong>5 to 3 business days</strong> in 60 days</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>📊 Proof Assets</h4>
+                    <p>Generate <strong>6 proof assets</strong> (case studies, test reports) in 60 days</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>📈 Margin Growth</h4>
+                    <p>Increase avg. awarded order margin from <strong>18% to 22%</strong></p>
+                </div>
+            </div>
+
+            <!-- Detailed KPIs -->
+            <h3 style="color: var(--primary-color); margin: 50px 0 25px 0; font-size: 1.8em;">Key Performance Indicators</h3>
+            <div class="kpi-tracker">
+                <div class="kpi-item">
+                    <div class="kpi-label">Qualified RFQs / Month</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>50</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>70</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-item">
+                    <div class="kpi-label">RFQ→Award Conversion (>$250k)</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>18%</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>26%</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-item">
+                    <div class="kpi-label">Average Quote TAT (Business Days)</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>5.0</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>3.0</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-item">
+                    <div class="kpi-label">On-Time Sample Dispatch Rate</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>78%</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>95%</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-item">
+                    <div class="kpi-label">KSA Pipeline Value (6 Months)</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>$4.5M</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>$8.0M</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kpi-item">
+                    <div class="kpi-label">Avg. Awarded Order Gross Margin</div>
+                    <div class="kpi-values">
+                        <div class="kpi-baseline">
+                            <span>Baseline</span>
+                            <strong>18%</strong>
+                        </div>
+                        <div class="kpi-target">
+                            <span>Target</span>
+                            <strong>22%</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Growth Projection Chart -->
+            <div class="chart-container">
+                <div class="chart-title">Revenue Growth Projection (2025-2030)</div>
+                <div class="chart-wrapper">
+                    <canvas id="growthProjectionChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 5: Marketing Strategy -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-number">5</div>
+                <h2>Marketing Strategy & Positioning</h2>
+            </div>
+
+            <div class="highlight-box" style="background: var(--gradient-1);">
+                <h3>Strategic Positioning</h3>
+                <p style="font-size: 1.3em;">"The GCC glass partner that gets your façade approved the first time—on spec, on time—especially for curved and printed IGUs."</p>
+            </div>
+
+            <!-- Marketing Mix -->
+            <h3 style="color: var(--primary-color); margin: 40px 0 25px 0; font-size: 1.8em;">Marketing Mix (4Ps)</h3>
+            <div class="two-column-grid">
+                <div class="strategy-card">
+                    <h4>📦 Product Strategy</h4>
+                    <p><strong>Bundled Solutions:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                        <li style="padding: 8px 0;">→ Signature Façade Pack (curved/printed IGU)</li>
+                        <li style="padding: 8px 0;">→ Performance Pack (low-E IGU + acoustic)</li>
+                        <li style="padding: 8px 0;">→ Fast-Track Interiors Pack</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Service Layers:</strong> 1-week Feasibility Sprint, Shop-Drawing Redline, Mockup Support, On-site QA</p>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>💰 Pricing Strategy</h4>
+                    <p><strong>Transparent TCO Quotes</strong></p>
+                    <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                        <li style="padding: 8px 0;">→ EXW/CIF/DDP options with logistics</li>
+                        <li style="padding: 8px 0;">→ Lead-time SLAs (+5-8% for rush orders)</li>
+                        <li style="padding: 8px 0;">→ Framework discounts for volume</li>
+                        <li style="padding: 8px 0;">→ Margin guardrails by SKU mix</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>📍 Distribution Strategy</h4>
+                    <p><strong>Multi-Channel Approach:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                        <li style="padding: 8px 0;">→ Direct to GCC façade contractors</li>
+                        <li style="padding: 8px 0;">→ Bahrain hub + KSA field coverage</li>
+                        <li style="padding: 8px 0;">→ Specification through consultants/CPD</li>
+                        <li style="padding: 8px 0;">→ Digital: Spec Hub + WhatsApp support</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>📢 Promotion Strategy</h4>
+                    <p><strong>Integrated Campaign:</strong></p>
+                    <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                        <li style="padding: 8px 0;">→ ABM: Top 30 contractors</li>
+                        <li style="padding: 8px 0;">→ Zak World of Façades (speaker + booth)</li>
+                        <li style="padding: 8px 0;">→ Proof content engine (monthly)</li>
+                        <li style="padding: 8px 0;">→ LinkedIn ads + paid search</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content Pillars -->
+            <h3 style="color: var(--primary-color); margin: 50px 0 25px 0; font-size: 1.8em;">Content Pillars</h3>
+            <div class="three-column-grid">
+                <div class="info-card">
+                    <h3>First-Time Pass Engineering</h3>
+                    <p>Mockup guides, test-pass briefs, optical quality standards</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Feasibility & Design</h3>
+                    <p>Curved glass matrices, printed IGU specs, Revit libraries</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Total Cost & Lead Time</h3>
+                    <p>TCO calculators, lead-time matrices, logistics SOPs</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Proof & Outcomes</h3>
+                    <p>Case studies, lab certificates, QA walkthroughs</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>Sustainability</h3>
+                    <p>Low-E/SHGC guides, acoustic solutions, retrofit outcomes</p>
+                </div>
+            </div>
+
+            <!-- Customer Journey -->
+            <div class="chart-container">
+                <div class="chart-title">Customer Journey & Conversion Funnel</div>
+                <div class="chart-wrapper-small">
+                    <canvas id="funnelChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Items -->
+        <div class="action-section">
+            <h3>Immediate Action Items (Next 60 Days)</h3>
+            <div class="two-column-grid" style="margin-top: 30px;">
+                <div>
+                    <ul>
+                        <li>Deploy ABM program to top 30 façade contractors with personalized outreach</li>
+                        <li>Launch 1-week Feasibility Sprint service for design phase support</li>
+                        <li>Create interactive TCO calculator and lead-time matrix tools</li>
+                        <li>Develop 6 proof assets: 2 case studies, 2 test reports, 2 feasibility matrices</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Secure speaking slot at Zak World of Façades conference</li>
+                        <li>Implement streamlined 3-day RFQ turnaround process</li>
+                        <li>Build comprehensive Revit detail library for specifiers</li>
+                        <li>Launch website Spec Hub with gated downloads and analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Confidential Strategic Report</strong></p>
+            <p>Prepared for Glasstech Gulf Leadership Team | November 2025</p>
+            <p>Data compiled from market research, competitive intelligence, and industry analysis</p>
+        </div>
+    </div>
+
+    <script>
+        // Chart.js Configuration
+        Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+        Chart.defaults.font.size = 13;
+        Chart.defaults.responsive = true;
+        Chart.defaults.maintainAspectRatio = false;
+
+        // Color Palette
+        const colors = {
+            primary: '#1e3a8a',
+            secondary: '#3b82f6',
+            accent: '#06b6d4',
+            success: '#10b981',
+            warning: '#f59e0b',
+            danger: '#ef4444',
+            purple: '#8b5cf6',
+            pink: '#ec4899'
+        };
+
+        // Responsive font size based on screen width
+        const getResponsiveFontSize = () => {
+            if (window.innerWidth < 480) return 10;
+            if (window.innerWidth < 768) return 11;
+            return 13;
+        };
+
+        // Update font size on resize
+        window.addEventListener('resize', () => {
+            Chart.defaults.font.size = getResponsiveFontSize();
+        });
+
+        Chart.defaults.font.size = getResponsiveFontSize();
+
+        // Common responsive options
+        const responsiveOptions = {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+                mode: 'index',
+                intersect: false,
+            },
+            plugins: {
+                tooltip: {
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    padding: 12,
+                    titleFont: { size: getResponsiveFontSize() + 1, weight: 'bold' },
+                    bodyFont: { size: getResponsiveFontSize() },
+                    cornerRadius: 8,
+                    displayColors: true,
+                    caretSize: 6,
+                }
+            }
+        };
+
+        // 1. Market Size Chart
+        const marketSizeCtx = document.getElementById('marketSizeChart').getContext('2d');
+        new Chart(marketSizeCtx, {
+            type: 'bar',
+            data: {
+                labels: window.innerWidth < 768 
+                    ? ['GCC Market', 'SOM', 'Current', 'Target 2027']
+                    : ['Total GCC Market', 'Serviceable Market (SOM)', 'Glasstech Current', 'Glasstech Target 2027'],
+                datasets: [{
+                    label: 'Market Size (USD M)',
+                    data: [2350, 950, 27, 85],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.warning,
+                        colors.success
+                    ],
+                    borderRadius: window.innerWidth < 768 ? 6 : 8,
+                    borderSkipped: false,
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return '$' + context.parsed.y + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return window.innerWidth < 768 ? '$' + value + 'M' : '$' + value + 'M';
+                            },
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 },
+                            maxRotation: window.innerWidth < 768 ? 45 : 0,
+                            minRotation: window.innerWidth < 768 ? 45 : 0
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // 2. Market Share Chart
+        const marketShareCtx = document.getElementById('marketShareChart').getContext('2d');
+        new Chart(marketShareCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Emirates Glass', 'Uniglass', 'Gulf Glass', 'Glasstech Gulf', 'APG', 'BPGF', 'Others'],
+                datasets: [{
+                    data: [16, 5.5, 4.5, 4.5, 2, 2, 65.5],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.accent,
+                        colors.success,
+                        colors.warning,
+                        colors.purple,
+                        '#e5e7eb'
+                    ],
+                    borderWidth: window.innerWidth < 768 ? 2 : 3,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        position: window.innerWidth < 768 ? 'bottom' : 'right',
+                        labels: {
+                            padding: window.innerWidth < 768 ? 10 : 15,
+                            font: { size: getResponsiveFontSize() - 1 },
+                            boxWidth: window.innerWidth < 768 ? 12 : 15
+                        }
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.parsed + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 3. Revenue Comparison Chart
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Emirates Glass', 'Uniglass', 'Gulf Glass', 'Glasstech Gulf', 'APG', 'BPGF'],
+                datasets: [{
+                    label: 'Est. Revenue (USD M)',
+                    data: [200, 42, 35, 27, 18, 15],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.accent,
+                        colors.success,
+                        colors.warning,
+                        colors.purple
+                    ],
+                    borderRadius: window.innerWidth < 768 ? 6 : 8,
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                indexAxis: 'y',
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return '$' + context.parsed.x + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value + 'M';
+                            },
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // 4. Customer Segment Chart
+        const customerSegmentCtx = document.getElementById('customerSegmentChart').getContext('2d');
+        new Chart(customerSegmentCtx, {
+            type: 'pie',
+            data: {
+                labels: window.innerWidth < 768 
+                    ? ['Façade', 'Developers', 'Govt', 'Architects']
+                    : ['Façade Contractors', 'Developers', 'Government/Institutional', 'Architects/Consultants'],
+                datasets: [{
+                    data: [45, 30, 18, 7],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.accent,
+                        colors.success
+                    ],
+                    borderWidth: window.innerWidth < 768 ? 2 : 3,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: window.innerWidth < 768 ? 8 : 15,
+                            font: { size: getResponsiveFontSize() - 2 },
+                            boxWidth: window.innerWidth < 768 ? 12 : 15
+                        }
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.parsed + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 5. Geographic Revenue Mix
+        const geoRevenueCtx = document.getElementById('geoRevenueChart').getContext('2d');
+        new Chart(geoRevenueCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Bahrain', 'KSA', 'UAE', 'Kuwait', 'Other GCC'],
+                datasets: [{
+                    data: [35, 30, 20, 10, 5],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.accent,
+                        colors.success,
+                        colors.warning
+                    ],
+                    borderWidth: window.innerWidth < 768 ? 2 : 3,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: window.innerWidth < 768 ? 8 : 15,
+                            font: { size: getResponsiveFontSize() - 2 },
+                            boxWidth: window.innerWidth < 768 ? 12 : 15
+                        }
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return context.label + ': ' + context.parsed + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // 6. KPI Progress Chart
+        const kpiCtx = document.getElementById('kpiChart').getContext('2d');
+        new Chart(kpiCtx, {
+            type: 'bar',
+            data: {
+                labels: window.innerWidth < 768 
+                    ? ['RFQs', 'Conv%', 'TAT', 'OTIF%', 'Margin%']
+                    : ['RFQs/Month', 'Conversion %', 'Quote TAT', 'Sample OTIF %', 'Margin %'],
+                datasets: [
+                    {
+                        label: 'Baseline',
+                        data: [50, 18, 5, 78, 18],
+                        backgroundColor: colors.danger,
+                        borderRadius: window.innerWidth < 768 ? 4 : 6,
+                    },
+                    {
+                        label: 'Target',
+                        data: [70, 26, 3, 95, 22],
+                        backgroundColor: colors.success,
+                        borderRadius: window.innerWidth < 768 ? 4 : 6,
+                    }
+                ]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            padding: window.innerWidth < 768 ? 10 : 20,
+                            font: { size: getResponsiveFontSize(), weight: 'bold' }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 },
+                            maxRotation: window.innerWidth < 768 ? 45 : 0,
+                            minRotation: window.innerWidth < 768 ? 45 : 0
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // 7. Growth Projection Chart
+        const growthProjectionCtx = document.getElementById('growthProjectionChart').getContext('2d');
+        new Chart(growthProjectionCtx, {
+            type: 'line',
+            data: {
+                labels: ['2025', '2026', '2027', '2028', '2029', '2030'],
+                datasets: [
+                    {
+                        label: window.innerWidth < 768 ? 'Conservative' : 'Conservative Scenario',
+                        data: [27, 35, 45, 55, 65, 75],
+                        borderColor: colors.warning,
+                        backgroundColor: 'rgba(245, 158, 11, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        borderWidth: window.innerWidth < 768 ? 2 : 3,
+                        pointRadius: window.innerWidth < 768 ? 3 : 4,
+                        pointHoverRadius: window.innerWidth < 768 ? 5 : 6
+                    },
+                    {
+                        label: window.innerWidth < 768 ? 'Target' : 'Target Scenario',
+                        data: [27, 42, 60, 78, 95, 110],
+                        borderColor: colors.success,
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        borderWidth: window.innerWidth < 768 ? 2 : 3,
+                        pointRadius: window.innerWidth < 768 ? 3 : 4,
+                        pointHoverRadius: window.innerWidth < 768 ? 5 : 6
+                    },
+                    {
+                        label: window.innerWidth < 768 ? 'Aggressive' : 'Aggressive Scenario',
+                        data: [27, 50, 75, 105, 135, 165],
+                        borderColor: colors.secondary,
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true,
+                        borderWidth: window.innerWidth < 768 ? 2 : 3,
+                        pointRadius: window.innerWidth < 768 ? 3 : 4,
+                        pointHoverRadius: window.innerWidth < 768 ? 5 : 6
+                    }
+                ]
+            },
+            options: {
+                ...responsiveOptions,
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        position: window.innerWidth < 768 ? 'bottom' : 'top',
+                        labels: {
+                            padding: window.innerWidth < 768 ? 8 : 20,
+                            font: { size: getResponsiveFontSize() - 1 },
+                            boxWidth: window.innerWidth < 768 ? 12 : 15
+                        }
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': $' + context.parsed.y + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value + 'M';
+                            },
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // 8. Funnel Chart
+        const funnelCtx = document.getElementById('funnelChart').getContext('2d');
+        new Chart(funnelCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Awareness', 'Consideration', 'Conversion', 'Retention'],
+                datasets: [{
+                    label: 'Customer Count',
+                    data: [1000, 400, 150, 120],
+                    backgroundColor: [
+                        colors.primary,
+                        colors.secondary,
+                        colors.accent,
+                        colors.success
+                    ],
+                    borderRadius: window.innerWidth < 768 ? 6 : 8,
+                }]
+            },
+            options: {
+                ...responsiveOptions,
+                indexAxis: 'y',
+                plugins: {
+                    ...responsiveOptions.plugins,
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        ...responsiveOptions.plugins.tooltip,
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.x + ' prospects';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            color: 'rgba(0, 0, 0, 0.05)'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            font: { size: getResponsiveFontSize() - 1 }
+                        },
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+
+        // Add window resize handler to redraw charts if needed
+        let resizeTimer;
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                // Update responsive settings
+                Chart.defaults.font.size = getResponsiveFontSize();
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>

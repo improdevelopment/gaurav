@@ -1,7 +1,12 @@
 ---
 import Navigation from "../../components/Navigation.astro";
+import GTM from "../../components/GTM.astro";
+import GTMBody from "../../components/GTMBody.astro";
+import RelatedResearch from "../../components/RelatedResearch.astro";
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
+
+export const prerender = true;
 
 // Generate static paths for all HTML files
 export async function getStaticPaths() {
@@ -75,6 +80,7 @@ const canonicalURL = `https://gaurav.imapro.in/research/${slug}`;
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <GTM />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
@@ -146,6 +152,7 @@ const canonicalURL = `https://gaurav.imapro.in/research/${slug}`;
     />
   </head>
   <body>
+    <GTMBody />
     <!-- Site Navigation -->
     <Navigation />
     
@@ -158,6 +165,9 @@ const canonicalURL = `https://gaurav.imapro.in/research/${slug}`;
       
       <Fragment set:html={htmlContent} />
     </article>
+    
+    <!-- Related Research Section -->
+    <RelatedResearch currentSlug={slug} maxItems={3} />
     
     <style is:global>
       /* Isolate injected HTML from site styles */

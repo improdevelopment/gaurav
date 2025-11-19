@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2B Lead Generation for Technical Recruitment Platforms</title>
+    <meta name="description"
+        content="Discover strategies and tools for B2B lead generation tailored to technical recruitment platforms, enhancing outreach, conversions and scalable hiring success." />
+    <meta name="keywords"
+        content="B2B lead generation, technical recruitment, hiring platforms, recruiter tools, talent acquisition, lead strategies" />
+    <meta name="author" content="gaurav-agarwal" />
+    <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #34495e;
+            font-weight: 600;
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.95em;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        thead {
+            background: #f8f9fa;
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        th {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        tr:hover {
+            background: #f8f9fa;
+        }
+        
+        .highlight-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 25px 0;
+        }
+        
+        .key-point {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin: 25px 0;
+        }
+        
+        .metric-table th {
+            background: #e3f2fd;
+        }
+        
+        .funnel-table th {
+            background: #f3e5f5;
+        }
+        
+        .tech-stack-table th {
+            background: #e0f2f1;
+        }
+        
+        .action-plan-table th {
+            background: #fff3e0;
+        }
+        
+        ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+        
+        .section-break {
+            height: 40px;
+        }
+        .nav-tabs {
+            display: flex;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            overflow-x: auto;
+        }
+        
+        .nav-tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1em;
+            font-weight: 600;
+            color: #6c757d;
+            transition: all 0.3s ease;
+            min-width: 150px;
+        }
+        
+        .nav-tab.active {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            background: white;
+        }
+        
+        .nav-tab:hover {
+            color: #667eea;
+            background: #e3f2fd;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin: 30px 0;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .chart-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        
+        .chart-title {
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .metric-card {
+            background: white;
+            color: black;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 15px 0;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;      }
+        
+        .metric-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .metric-value {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .interactive-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .interactive-table th {
+            background: #667eea;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.3s ease;
+        }
+        
+        .interactive-table th:hover {
+            background: #5568d3;
+        }
+        
+        .interactive-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e9ecef;
+            transition: background 0.3s ease;
+        }
+        
+        .interactive-table tr:hover td {
+            background: #f8f9fa;
+        }
+        
+        .sort-indicator {
+            float: right;
+            opacity: 0.5;
+        }
+        
+        .calculator {
+            background: #e3f2fd;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        
+        .calculator h3 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        
+        .calc-input {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .calc-input label {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .calc-input input {
+            width: 150px;
+            padding: 10px;
+            border: 2px solid #667eea;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        
+        .calc-result {
+            background: #667eea;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+        
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #e9ecef;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 1s ease;
+        }
+        
+        .tooltip {
+            position: fixed;
+            background: #333;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1000;
+        }
+        
+         @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            h2 {
+                font-size: 1.5em;
+            }
+            
+            table {
+                font-size: 0.85em;
+            }
+        }
+        
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Interactive Report</h1>
+            <p>The Complete Guide to B2B Lead Generation for Technical Recruitment Platforms</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Explore data, test scenarios, and build your strategy</p>
+        </div>
+        
+        <div class="nav-tabs">
+            <button class="nav-tab active" onclick="showTab('overview')">Overview</button>
+            <button class="nav-tab" onclick="showTab('icp')">ICP Analysis</button>
+            <button class="nav-tab" onclick="showTab('funnel')">Conversion Funnel</button>
+            <button class="nav-tab" onclick="showTab('metrics')">Key Metrics</button>
+            <button class="nav-tab" onclick="showTab('calculator')">Lead Calculator</button>
+            <button class="nav-tab" onclick="showTab('action-plan')">90-Day Plan</button>
+        </div>
+        
+        <div class="content">
+            <!-- Overview Tab -->
+            <div id="overview" class="tab-content active">
+                <h2>Executive Dashboard</h2>
+                <div class="chart-grid">
+                    <div class="chart-box">
+                        <div class="chart-title">Target Companies by Stage</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="icpChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <div class="chart-title">Lead Quality Distribution</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="leadQualityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="metric-card" onclick="animateProgressBar()">
+                    <div class="metric-label">Average LTV/CAC Ratio</div>
+                    <div class="metric-value">16.4x</div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressBar" style="width: 82%;"></div>
+                    </div>
+                    <div style="font-size: 0.8em; margin-top: 10px;">Click to animate progress</div>
+                </div>
+            </div>
+            
+            <!-- ICP Analysis Tab -->
+            <div id="icp" class="tab-content">
+                <h2>Interactive ICP Matrix</h2>
+                <p style="margin-bottom: 20px; color: #666;">Click column headers to sort • Hover for insights</p>
+                
+                <table class="interactive-table" id="icpTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('icpTable', 0)">Company Type <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('icpTable', 1)">Team Size <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('icpTable', 2)">Hiring Velocity <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('icpTable', 3)">Pain Level <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('icpTable', 4)">Lead Score <span class="sort-indicator">⇅</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Startup (&lt;50)</td>
+                            <td>1-2 recruiters</td>
+                            <td>5-10 roles/mo</td>
+                            <td>High</td>
+                            <td>6/10</td>
+                        </tr>
+                        <tr style="background: #fff3cd;">
+                            <td><strong>Scale-up (50-500)</strong></td>
+                            <td>3-10 recruiters</td>
+                            <td>15-40 roles/mo</td>
+                            <td>Very High</td>
+                            <td><strong>9/10</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Enterprise (500+)</td>
+                            <td>10+ recruiters</td>
+                            <td>50+ roles/mo</td>
+                            <td>Medium</td>
+                            <td>7/10</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="chart-container" style="height: 350px;">
+                    <canvas id="icpRadarChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Funnel Tab -->
+            <div id="funnel" class="tab-content">
+                <h2>Conversion Funnel Simulator</h2>
+                <p style="margin-bottom: 20px; color: #666;">Visualize your funnel performance • Adjust inputs to see impact</p>
+                
+                <div class="chart-container" style="height: 400px;">
+                    <canvas id="funnelChart"></canvas>
+                </div>
+                
+                <div class="calculator">
+                    <h3>Funnel Impact Calculator</h3>
+                    <div class="calc-input">
+                        <label>Monthly Visitors:</label>
+                        <input type="number" id="visitors" value="10000" oninput="updateFunnel()">
+                    </div>
+                    <div class="calc-input">
+                        <label>Lead Conversion %:</label>
+                        <input type="number" id="leadConv" value="3" step="0.1" oninput="updateFunnel()">
+                    </div>
+                    <div class="calc-input">
+                        <label>SQL Conversion %:</label>
+                        <input type="number" id="sqlConv" value="25" step="1" oninput="updateFunnel()">
+                    </div>
+                    <div class="calc-result" id="funnelResult">
+                        Projected Monthly Customers: <strong>11</strong>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Metrics Tab -->
+            <div id="metrics" class="tab-content">
+                <h2>Performance Metrics Dashboard</h2>
+                
+                <div class="chart-grid">
+                    <div class="chart-box">
+                        <div class="chart-title">CAC vs LTV Progression</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="metricsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <div class="chart-title">Channel Performance</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="channelChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="interactive-table" id="metricsTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable('metricsTable', 0)">Metric <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('metricsTable', 1)">Early Stage <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('metricsTable', 2)">Growth Stage <span class="sort-indicator">⇅</span></th>
+                            <th onclick="sortTable('metricsTable', 3)">Best in Class <span class="sort-indicator">⇅</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CAC</strong></td>
+                            <td>$3,500</td>
+                            <td>$2,200</td>
+                            <td>$1,800</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LTV</strong></td>
+                            <td>$24,000</td>
+                            <td>$36,000</td>
+                            <td>$48,000</td>
+                        </tr>
+                        <tr>
+                            <td><strong>LTV/CAC Ratio</strong></td>
+                            <td>6.8x</td>
+                            <td>16.4x</td>
+                            <td>26.7x</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Payback Period</strong></td>
+                            <td>11 months</td>
+                            <td>7 months</td>
+                            <td>5 months</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Calculator Tab -->
+            <div id="calculator" class="tab-content">
+                <h2>Lead Scoring Calculator</h2>
+                <p style="margin-bottom: 20px; color: #666;">Input prospect details to calculate lead score</p>
+                
+                <div class="calculator">
+                    <h3>Interactive Lead Score Calculator</h3>
+                    <div class="calc-input">
+                        <label>Company Size (employees):</label>
+                        <input type="number" id="companySize" value="150" oninput="calculateLeadScore()">
+                    </div>
+                    <div class="calc-input">
+                        <label>Open Engineering Roles:</label>
+                        <input type="number" id="openRoles" value="12" oninput="calculateLeadScore()">
+                    </div>
+                    <div class="calc-input">
+                        <label>Pricing Page Visits:</label>
+                        <input type="number" id="pricingVisits" value="2" oninput="calculateLeadScore()">
+                    </div>
+                    <div class="calc-input">
+                        <label>Downloaded Resource:</label>
+                        <select id="downloaded" onchange="calculateLeadScore()">
+                            <option value="0">No</option>
+                            <option value="10" selected>Yes</option>
+                        </select>
+                    </div>
+                    <div class="calc-result" id="leadScoreResult">
+                        Total Lead Score: <strong>95</strong> - <span style="color: #28a745;">SQL QUALIFIED!</span>
+                    </div>
+                </div>
+                
+                <div class="chart-container" style="height: 350px;">
+                    <canvas id="scoreBreakdownChart"></canvas>
+                </div>
+            </div>
+            
+            <!-- Action Plan Tab -->
+            <div id="action-plan" class="tab-content">
+                <h2>Interactive 90-Day Action Plan</h2>
+                <p style="margin-bottom: 20px; color: #666;">Click on each week to see detailed tasks</p>
+                
+                <div class="chart-grid">
+                    <div class="chart-box">
+                        <div class="chart-title">Progress Timeline</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="timelineChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-box">
+                        <div class="chart-title">Success Metrics Target</div>
+                        <div class="chart-container" style="height: 300px;">
+                            <canvas id="targetChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <table class="interactive-table">
+                    <thead>
+                        <tr>
+                            <th>Phase</th>
+                            <th>Weeks</th>
+                            <th>Focus</th>
+                            <th>Success Metric</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                            <td>🎯 Foundation</td>
+                            <td>1-4</td>
+                            <td>ICP, lead scoring, case studies</td>
+                            <td>50 MQLs</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                            <td>🚀 Launch</td>
+                            <td>5-8</td>
+                            <td>Outbound, ads, partnerships</td>
+                            <td>30 SQLs</td>
+                        </tr>
+                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                            <td>📊 Optimize</td>
+                            <td>9-12</td>
+                            <td>Measure, cut, double down</td>
+                            <td>10 Customers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+    <div class="tooltip" id="tooltip"></div>
+
+    <div class="container">
+        <div class="header">
+            <h1>The Complete Guide to B2B Lead Generation for Technical Recruitment Platforms</h1>
+            <p class="subtitle">A systematic, multi-channel approach to building a predictable pipeline</p>
+        </div>
+
+        <h2>Introduction: Why B2B Lead Gen is Broken for Most Recruitment Tech Companies</h2>
+        
+        <p>Most technical recruitment platforms fail at B2B lead generation because they copy generic SaaS playbooks. They blast cold emails to HR directors, sponsor job boards, and wonder why their demo requests flatline. The problem? <strong>You’re selling to the wrong person, with the wrong message, at the wrong time.</strong></p>
+        
+        <p>Technical recruitment isn’t like selling CRM software. Your buyers are desperate, time-pressed, and skeptical of "another tool." Engineers are expensive and hard to hire—your platform needs to prove it can solve that <em>right now</em>. This guide gives you a systematic, multi-channel approach built specifically for recruitment tech.</p>
+
+        <div class="section-break"></div>
+
+        <h2>Foundation: Know Your Buyer Better Than They Know Themselves</h2>
+        
+        <h3>2.1 Defining Your ICP (Beyond "HR Director at Tech Companies")</h3>
+        <p>Segment by hiring maturity and urgency, not just title:</p>
+        
+        <table class="metric-table">
+            <thead>
+                <tr>
+                    <th>Company Type</th>
+                    <th>Team Size</th>
+                    <th>Hiring Velocity</th>
+                    <th>Pain Level</th>
+                    <th>Lead Quality Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Startup</strong> (&lt;50 employees)</td>
+                    <td>1-2 recruiters</td>
+                    <td>5-10 roles/month</td>
+                    <td>High (no brand, limited budget)</td>
+                    <td>6/10</td>
+                </tr>
+                <tr style="background: #fff3cd;">
+                    <td><strong>Scale-up</strong> (50-500)</td>
+                    <td>3-10 recruiters</td>
+                    <td>15-40 roles/month</td>
+                    <td>Very High (hiring targets crushing them)</td>
+                    <td><strong>9/10</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Enterprise</strong> (500+)</td>
+                    <td>10+ recruiters</td>
+                    <td>50+ roles/month</td>
+                    <td>Medium (bureaucracy, long sales cycles)</td>
+                    <td>7/10</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="key-point">
+            <strong>Target scale-ups first.</strong> They have budget, urgency, and decision-making speed.
+        </div>
+
+        <h3>2.2 Mapping the Buying Committee</h3>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Stakeholder</th>
+                    <th>What They Care About</th>
+                    <th>Your Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>TA Leader</strong> (VP Talent)</td>
+                    <td>Time-to-fill, quality of hire, team efficiency</td>
+                    <td>"Cut screening time by 70%"</td>
+                </tr>
+                <tr>
+                    <td><strong>CTO</strong></td>
+                    <td>Technical assessment quality, engineer experience</td>
+                    <td>"White-label coding tests that don’t suck"</td>
+                </tr>
+                <tr>
+                    <td><strong>CFO</strong></td>
+                    <td>Cost-per-hire, ROI, budget efficiency</td>
+                    <td>"$50K saved per 100 engineers hired"</td>
+                </tr>
+                <tr>
+                    <td><strong>Hiring Manager</strong></td>
+                    <td>Getting <em>their</em> role filled <em>fast</em></td>
+                    <td>"Get 5 qualified candidates in 48 hours"</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>2.3 Crafting Your Category-of-One Positioning</h3>
+        <p>Stop saying "AI-powered recruitment platform." Instead:</p>
+        <ul>
+            <li><strong>Weak:</strong> "We help you hire engineers faster"</li>
+            <li><strong>Strong:</strong> "The only technical assessment platform that auto-generates role-specific challenges from your codebase"</li>
+        </ul>
+
+        <div class="section-break"></div>
+
+        <h2>The Lead Generation Engine: 6 High-ROI Channels</h2>
+        
+        <h3>3.1 Content Marketing That Actually Converts</h3>
+        <p><strong>High-Intent Content (captures active buyers):</strong></p>
+        <ul>
+            <li>"Technical Phone Screen Questions for Senior React Engineers" → gates to assessment tool</li>
+            <li>"How [Company X] Hired 50 Engineers in 3 Months" → case study with ROI calculator</li>
+        </ul>
+        
+        <p><strong>SEO Keyword Strategy:</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Keyword Type</th>
+                    <th>Example</th>
+                    <th>Monthly Volume</th>
+                    <th>Conversion Rate</th>
+                    <th>Priority</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="background: #d4edda;">
+                    <td><strong>High-intent</strong></td>
+                    <td>"hire python developer faster"</td>
+                    <td>320</td>
+                    <td>8%</td>
+                    <td><strong>A</strong></td>
+                </tr>
+                <tr style="background: #d4edda;">
+                    <td><strong>Problem-aware</strong></td>
+                    <td>"technical screening takes too long"</td>
+                    <td>110</td>
+                    <td>5%</td>
+                    <td><strong>A</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Solution-aware</strong></td>
+                    <td>"best technical assessment platform"</td>
+                    <td>480</td>
+                    <td>6%</td>
+                    <td><strong>B</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Category</strong></td>
+                    <td>"recruitment software"</td>
+                    <td>2,900</td>
+                    <td>1%</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Publish 2 high-intent articles/week.</strong> Scale-ups find you when they’re desperate.</p>
+
+        <h3>3.2 Strategic Outbound (Not Cold Email Spam)</h3>
+        <p><strong>Trigger-Based Prospecting (your goldmine):</strong></p>
+        <ol>
+            <li><strong>Funding alert:</strong> Series A/B announced → 2-week window to pitch before hiring explodes</li>
+            <li><strong>Headcount growth:</strong> LinkedIn shows +10 engineers in 90 days → they’re scaling</li>
+            <li><strong>Tech stack change:</strong> Added Greenhouse/Lever → buying new tools</li>
+            <li><strong>Job posting spike:</strong> 5+ engineering roles live → urgent need</li>
+        </ol>
+        
+        <p><strong>The "Value-First" Sequence:</strong></p>
+        <ul>
+            <li><strong>Day 1:</strong> LinkedIn connect: "Saw you're hiring 8 engineers—congrats on the Series A"</li>
+            <li><strong>Day 3:</strong> Email: "Here’s a custom coding challenge for your Senior Backend role"</li>
+            <li><strong>Day 5:</strong> Email: "Case study: How [Similar Co] cut time-to-fill from 45 to 18 days"</li>
+            <li><strong>Day 7:</strong> LinkedIn: "Quick video on avoiding false positives in tech screens"</li>
+        </ul>
+        
+        <div class="highlight-box">
+            <strong>Metrics:</strong> 45% open rate, 12% reply rate, 3% meeting booked rate.
+        </div>
+
+        <h3>3.3 Partnerships & Ecosystem Plays</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Partner Type</th>
+                    <th>Value Exchange</th>
+                    <th>Lead Potential</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>ATS</strong> (Greenhouse, Lever)</td>
+                    <td>Co-marketing webinar, integration badge</td>
+                    <td>20-50 leads/quarter</td>
+                </tr>
+                <tr>
+                    <td><strong>Dev Communities</strong> (Dev.to, Reddit r/cscareerquestions)</td>
+                    <td>Sponsor AMA, provide assessment tools</td>
+                    <td>100+ dev advocates</td>
+                </tr>
+                <tr>
+                    <td><strong>VC Portfolio</strong></td>
+                    <td>Preferred vendor status for portcos</td>
+                    <td>10-15 intros/month</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Execution:</strong> Offer ATS partners 20% revenue share on referrals.</p>
+
+        <h3>3.4 Product-Led Growth (PLG) for B2B</h3>
+        <p><strong>Freemium Model:</strong></p>
+        <ul>
+            <li><strong>Free:</strong> 5 technical challenges/month, unlimited candidate attempts</li>
+            <li><strong>Trigger to upgrade:</strong> 6th challenge created → prompt: "Upgrade for $299/mo"</li>
+        </ul>
+        
+        <p><strong>Usage-Based Lead Scoring:</strong></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Action</th>
+                    <th>Points</th>
+                    <th>Sales Trigger</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Created 10+ challenges in 7 days</td>
+                    <td>50</td>
+                    <td>Auto-email from AE</td>
+                </tr>
+                <tr>
+                    <td>Invited 3+ team members</td>
+                    <td>30</td>
+                    <td>Slack alert to sales</td>
+                </tr>
+                <tr>
+                    <td>Viewed pricing page</td>
+                    <td>20</td>
+                    <td>Add to retargeting</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>3.5 LinkedIn & Community-Led Lead Gen</h3>
+        <p><strong>Build a "TA Insights" Brand:</strong></p>
+        <ul>
+            <li>Post 3x/week: Not product demos, but "here’s what 1000+ engineering hires taught us"</li>
+            <li>Example: "The 3 Red Flags in a Senior Dev’s GitHub Profile (That Aren’t Code Quality)"</li>
+        </ul>
+        
+        <p><strong>Community Engagement:</strong></p>
+        <ul>
+            <li>Join "Talent Leaders in Tech" Slack → answer questions, drop case studies</li>
+            <li>Host monthly "Hiring Manager Roundtable" → record, gate the replay</li>
+        </ul>
+
+        <h3>3.6 Paid Acquisition: When and How</h3>
+        <p><strong>LinkedIn Ads (best ROI):</strong></p>
+        <ul>
+            <li><strong>Target:</strong> Job title "Engineering Manager" + Company size 50-500 + Member skills "React, Node.js"</li>
+            <li><strong>Creative:</strong> Video testimonial from CTO: "We cut false positives by 80%"</li>
+            <li><strong>Cost per SQL:</strong> $180 (vs. $420 for Google Ads)</li>
+        </ul>
+        
+        <p><strong>Retargeting Funnel:</strong></p>
+        <ul>
+            <li><strong>Audience:</strong> Visited pricing page → Show case study ad</li>
+            <li><strong>Audience:</strong> Watched 50% of demo video → Show ROI calculator ad</li>
+            <li><strong>Budget:</strong> $3K/month to start, reallocate to best-performing segment weekly.</li>
+        </ul>
+
+        <div class="section-break"></div>
+
+        <h2>From MQL to SQL: The Nurturing & Qualification System</h2>
+        
+        <h3>4.1 Lead Scoring Model</h3>
+        <table class="funnel-table">
+            <thead>
+                <tr>
+                    <th>Criteria</th>
+                    <th>Points</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3"><strong>Firmographic</strong></td>
+                </tr>
+                <tr>
+                    <td>Scale-up (50-500 employees)</td>
+                    <td>+30</td>
+                    <td>"Series B SaaS, 120 headcount"</td>
+                </tr>
+                <tr>
+                    <td>Hiring 10+ engineers</td>
+                    <td>+40</td>
+                    <td>12 open reqs on careers page</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Behavioral</strong></td>
+                </tr>
+                <tr>
+                    <td>Downloaded "Scale-up Hiring Playbook"</td>
+                    <td>+10</td>
+                    <td>Last week</td>
+                </tr>
+                <tr>
+                    <td>Visited pricing page 2+ times</td>
+                    <td>+15</td>
+                    <td>Past 14 days</td>
+                </tr>
+                <tr>
+                    <td>Requested demo</td>
+                    <td>+50</td>
+                    <td><strong>Instant SQL</strong></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Negatives</strong></td>
+                </tr>
+                <tr>
+                    <td>Gmail address</td>
+                    <td>-20</td>
+                    <td>Not B2B</td>
+                </tr>
+                <tr>
+                    <td>Company &lt;10 employees</td>
+                    <td>-15</td>
+                    <td>Too early</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="highlight-box">
+            <strong>Score threshold: 75+ points = SQL</strong>. Manually reviewed by SDR within 2 hours.
+        </div>
+
+        <h3>4.2 The Automated Nurturing Sequence</h3>
+        <ul>
+            <li><strong>Day 0 (Demo Request):</strong> Instant calendar link + "While you wait, here’s a 2-min product tour"</li>
+            <li><strong>Day 2:</strong> Email: "3 questions to ask when vetting tech assessment platforms"</li>
+            <li><strong>Day 5:</strong> LinkedIn: Connect from AE, share relevant case study</li>
+            <li><strong>Day 7:</strong> Email: "Free challenge review: Send us one of your tech screens, we’ll improve it"</li>
+        </ul>
+
+        <h3>4.3 Speed to Lead</h3>
+        <p><strong>The 5-Minute Rule:</strong> Call every SQL within 5 minutes. Use Slack alerts + automated dialing.</p>
+        <ul>
+            <li><strong>&lt;5 min:</strong> 80% contact rate, 35% conversion to meeting</li>
+            <li><strong>&gt;1 hour:</strong> 30% contact rate, 10% conversion</li>
+        </ul>
+
+        <div class="section-break"></div>
+
+        <h2>Metrics That Matter: Measuring What Actually Drives Revenue</h2>
+        
+        <h3>5.1 The B2B Recruitment SaaS Funnel</h3>
+        <table class="funnel-table">
+            <thead>
+                <tr>
+                    <th>Stage</th>
+                    <th>Volume</th>
+                    <th>Conversion Rate</th>
+                    <th>Benchmark</th>
+                    <th>Your Target</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Visitor</strong></td>
+                    <td>10,000</td>
+                    <td>3% → Lead</td>
+                    <td>Industry: 2%</td>
+                    <td>3%</td>
+                </tr>
+                <tr>
+                    <td><strong>Lead (MQL)</strong></td>
+                    <td>300</td>
+                    <td>25% → SQL</td>
+                    <td>Industry: 20%</td>
+                    <td><strong>30%</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>SQL</strong></td>
+                    <td>75</td>
+                    <td>60% → Opportunity</td>
+                    <td>Industry: 50%</td>
+                    <td><strong>65%</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Opportunity</strong></td>
+                    <td>45</td>
+                    <td>25% → Customer</td>
+                    <td>Industry: 20%</td>
+                    <td><strong>30%</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Customer</strong></td>
+                    <td>11</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Focus on SQL→Opp conversion.</strong> That’s where most recruitment platforms leak revenue.</p>
+
+        <h3>5.2 CAC, LTV, and Payback Period</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Metric</th>
+                    <th>Early Stage</th>
+                    <th>Growth Stage</th>
+                    <th>Best in Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>CAC</strong></td>
+                    <td>$3,500</td>
+                    <td>$2,200</td>
+                    <td>$1,800</td>
+                </tr>
+                <tr>
+                    <td><strong>LTV</strong></td>
+                    <td>$24,000</td>
+                    <td>$36,000</td>
+                    <td>$48,000</td>
+                </tr>
+                <tr>
+                    <td><strong>LTV/CAC Ratio</strong></td>
+                    <td>6.8x</td>
+                    <td>16.4x</td>
+                    <td>26.7x</td>
+                </tr>
+                <tr>
+                    <td><strong>Payback Period</strong></td>
+                    <td>11 months</td>
+                    <td>7 months</td>
+                    <td>5 months</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="key-point">
+            <strong>Rule of thumb:</strong> If payback &gt;12 months, cut paid ads and double down on organic.
+        </div>
+
+        <div class="section-break"></div>
+
+        <h2>Tech Stack: Tools That Make It Scalable</h2>
+        
+        <h3>Minimum Viable Stack ($500/month)</h3>
+        <ul>
+            <li><strong>CRM:</strong> HubSpot Free</li>
+            <li><strong>Outreach:</strong> Instantly ($97/mo)</li>
+            <li><strong>Intent Data:</strong> BuiltWith + LinkedIn Sales Navigator ($150/mo)</li>
+            <li><strong>Analytics:</strong> Google Analytics (free)</li>
+        </ul>
+
+        <h3>Growth Stack ($2,500/month)</h3>
+        <ul>
+            <li><strong>CRM:</strong> Salesforce ($150/user)</li>
+            <li><strong>Outreach:</strong> Outreach.io ($140/user)</li>
+            <li><strong>Intent Data:</strong> Bombora + Clearbit ($1,200/mo)</li>
+            <li><strong>Attribution:</strong> Dreamdata ($500/mo)</li>
+            <li><strong>Scheduling:</strong> Chili Piper ($150/mo)</li>
+        </ul>
+
+        <div class="section-break"></div>
+
+        <h2>Common Pitfalls & How to Avoid Them</h2>
+        
+        <ol>
+            <li>
+                <strong>1. Copying Generic SaaS Playbooks</strong>
+                <ul><li><em>Fix:</em> Every campaign must mention "technical hiring" in the first sentence.</li></ul>
+            </li>
+            <li>
+                <strong>2. Ignoring Seasonal Hiring</strong>
+                <ul><li><em>Fix:</em> Q1 and Q3 are dead zones. Ramp spend 30% in Q2 and Q4.</li></ul>
+            </li>
+            <li>
+                <strong>3. Underinvesting in Customer Advocacy</strong>
+                <ul><li><em>Fix:</em> Turn every successful hire into a LinkedIn case study. Offer $500 referral for peer intro.</li></ul>
+            </li>
+            <li>
+                <strong>4. Chasing Enterprise Too Early</strong>
+                <ul><li><em>Fix:</em> 12-month sales cycles kill momentum. Win 10 scale-ups first.</li></ul>
+            </li>
+        </ol>
+
+        <div class="section-break"></div>
+
+        <h2>90-Day Action Plan</h2>
+        <table class="action-plan-table">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Focus</th>
+                    <th>Deliverable</th>
+                    <th>Success Metric</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>1-4</strong></td>
+                    <td>Foundation</td>
+                    <td>ICP refined, lead scoring built, 3 case studies published</td>
+                    <td>50 MQLs from content</td>
+                </tr>
+                <tr>
+                    <td><strong>5-8</strong></td>
+                    <td>Launch Channels</td>
+                    <td>Outbound sequences live, 2 LinkedIn ads running, 1 partnership secured</td>
+                    <td>30 SQLs generated</td>
+                </tr>
+                <tr>
+                    <td><strong>9-12</strong></td>
+                    <td>Measure & Cut</td>
+                    <td>Kill lowest-performing channel, double budget on top 2</td>
+                    <td>10 new customers</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="section-break"></div>
+
+        <h2>Conclusion: Your 90-Day Action Plan</h2>
+        <p>Start with <strong>one</strong> channel from Section 3. Master it. Then stack. The scale-ups are waiting.</p>
+    </div>
+    
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.nav-tab');
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+            
+            // Re-render charts when tab becomes visible
+            setTimeout(() => {
+                if (tabName === 'overview') initOverviewCharts();
+                if (tabName === 'icp') initICPCharts();
+                if (tabName === 'funnel') initFunnelChart();
+                if (tabName === 'metrics') initMetricsCharts();
+                if (tabName === 'calculator') initCalculatorCharts();
+                if (tabName === 'action-plan') initActionPlanCharts();
+            }, 100);
+        }
+        
+        // Table sorting functionality
+        function sortTable(tableId, columnIndex) {
+            const table = document.getElementById(tableId);
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            
+            rows.sort((a, b) => {
+                const aVal = a.cells[columnIndex].textContent.trim();
+                const bVal = b.cells[columnIndex].textContent.trim();
+                
+                // Check if numeric
+                const aNum = parseFloat(aVal.replace(/[^0-9.]/g, ''));
+                const bNum = parseFloat(bVal.replace(/[^0-9.]/g, ''));
+                
+                if (!isNaN(aNum) && !isNaN(bNum)) {
+                    return bNum - aNum;
+                }
+                
+                return aVal.localeCompare(bVal);
+            });
+            
+            tbody.innerHTML = '';
+            rows.forEach(row => tbody.appendChild(row));
+        }
+        
+        // Progress bar animation
+        function animateProgressBar() {
+            const bar = document.getElementById('progressBar');
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.width = '82%';
+            }, 100);
+        }
+        
+        // Lead score calculator
+        function calculateLeadScore() {
+            const size = parseInt(document.getElementById('companySize').value) || 0;
+            const roles = parseInt(document.getElementById('openRoles').value) || 0;
+            const visits = parseInt(document.getElementById('pricingVisits').value) || 0;
+            const downloaded = parseInt(document.getElementById('downloaded').value) || 0;
+            
+            let score = 0;
+            let breakdown = [];
+            
+            // Firmographic scoring
+            if (size >= 50 && size <= 500) {
+                score += 30;
+                breakdown.push({ label: 'Scale-up', value: 30 });
+            } else if (size > 500) {
+                score += 20;
+                breakdown.push({ label: 'Enterprise', value: 20 });
+            } else {
+                breakdown.push({ label: 'Startup', value: 10 });
+                score += 10;
+            }
+            
+            // Hiring velocity
+            if (roles >= 10) {
+                score += 40;
+                breakdown.push({ label: 'Hiring Urgency', value: 40 });
+            } else if (roles >= 5) {
+                score += 20;
+                breakdown.push({ label: 'Hiring Urgency', value: 20 });
+            }
+            
+            // Behavioral
+            if (visits >= 2) {
+                score += 15;
+                breakdown.push({ label: 'Interest (Pricing)', value: 15 });
+            } else if (visits >= 1) {
+                score += 10;
+                breakdown.push({ label: 'Interest (Pricing)', value: 10 });
+            }
+            
+            if (downloaded > 0) {
+                score += downloaded;
+                breakdown.push({ label: 'Content Download', value: downloaded });
+            }
+            
+            const result = document.getElementById('leadScoreResult');
+            const status = score >= 75 ? 'SQL QUALIFIED!' : 'Nurture Required';
+            const color = score >= 75 ? '#28a745' : '#ffc107';
+            
+            result.innerHTML = `Total Lead Score: <strong>${score}</strong> - <span style="color: ${color};">${status}</span>`;
+            
+            updateScoreBreakdownChart(breakdown);
+        }
+        
+        // Funnel calculator
+        function updateFunnel() {
+            const visitors = parseInt(document.getElementById('visitors').value) || 0;
+            const leadConv = parseFloat(document.getElementById('leadConv').value) || 0;
+            const sqlConv = parseFloat(document.getElementById('sqlConv').value) || 0;
+            
+            const leads = Math.round(visitors * (leadConv / 100));
+            const sqls = Math.round(leads * (sqlConv / 100));
+            const opps = Math.round(sqls * 0.6);
+            const customers = Math.round(opps * 0.25);
+            
+            document.getElementById('funnelResult').innerHTML = 
+                `Projected Monthly Customers: <strong>${customers}</strong>`;
+            
+            updateFunnelChart([visitors, leads, sqls, opps, customers]);
+        }
+        
+        // Row highlighting
+        function highlightRow(row) {
+            row.style.background = '#fff3cd';
+            setTimeout(() => {
+                row.style.background = '';
+            }, 2000);
+        }
+        
+        // Chart initialization functions
+        function initOverviewCharts() {
+            // ICP Chart
+            const icpCtx = document.getElementById('icpChart');
+            if (icpCtx && !icpCtx.chart) {
+                icpCtx.chart = new Chart(icpCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Startup', 'Scale-up', 'Enterprise'],
+                        datasets: [{
+                            data: [20, 60, 20],
+                            backgroundColor: ['#ff6384', '#36a2eb', '#ffce56']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { position: 'bottom' }
+                        }
+                    }
+                });
+            }
+            
+            // Lead Quality Chart
+            const qualityCtx = document.getElementById('leadQualityChart');
+            if (qualityCtx && !qualityCtx.chart) {
+                qualityCtx.chart = new Chart(qualityCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Startup', 'Scale-up', 'Enterprise'],
+                        datasets: [{
+                            label: 'Lead Score',
+                            data: [6, 9, 7],
+                            backgroundColor: ['#ff6384', '#36a2eb', '#ffce56']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: { beginAtZero: true, max: 10 }
+                        }
+                    }
+                });
+            }
+        }
+        
+        function initICPCharts() {
+            const ctx = document.getElementById('icpRadarChart');
+            if (ctx && !ctx.chart) {
+                ctx.chart = new Chart(ctx, {
+                    type: 'radar',
+                    data: {
+                        labels: ['Budget', 'Urgency', 'Decision Speed', 'Tech Adoption', 'Pain Level'],
+                        datasets: [{
+                            label: 'Scale-up (Target)',
+                            data: [8, 10, 9, 8, 10],
+                            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                            borderColor: 'rgb(54, 162, 235)'
+                        }, {
+                            label: 'Startup',
+                            data: [4, 8, 9, 9, 8],
+                            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                            borderColor: 'rgb(255, 99, 132)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: { beginAtZero: true, max: 10 }
+                        }
+                    }
+                });
+            }
+        }
+        
+        function initFunnelChart() {
+            const ctx = document.getElementById('funnelChart');
+            if (ctx && !ctx.chart) {
+                updateFunnelChart([10000, 300, 75, 45, 11]);
+            }
+        }
+        
+        function updateFunnelChart(data) {
+            const ctx = document.getElementById('funnelChart');
+            if (ctx.chart) {
+                ctx.chart.destroy();
+            }
+            ctx.chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Visitors', 'Leads', 'SQLs', 'Opportunities', 'Customers'],
+                    datasets: [{
+                        label: 'Count',
+                        data: data,
+                        backgroundColor: [
+                            'rgba(102, 126, 234, 0.8)',
+                            'rgba(118, 75, 162, 0.8)',
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(75, 192, 192, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+        }
+        
+        function initMetricsCharts() {
+            // CAC vs LTV Chart
+            const ctx = document.getElementById('metricsChart');
+            if (ctx && !ctx.chart) {
+                ctx.chart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Early Stage', 'Growth Stage', 'Best in Class'],
+                        datasets: [{
+                            label: 'CAC',
+                            data: [3500, 2200, 1800],
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                            tension: 0.1
+                        }, {
+                            label: 'LTV',
+                            data: [24000, 36000, 48000],
+                            borderColor: 'rgb(54, 162, 235)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+            
+            // Channel Performance
+            const channelCtx = document.getElementById('channelChart');
+            if (channelCtx && !channelCtx.chart) {
+                channelCtx.chart = new Chart(channelCtx, {
+                    type: 'polarArea',
+                    data: {
+                        labels: ['Content', 'Outbound', 'Partnerships', 'PLG', 'Paid Ads'],
+                        datasets: [{
+                            data: [85, 70, 65, 90, 60],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.5)',
+                                'rgba(54, 162, 235, 0.5)',
+                                'rgba(255, 205, 86, 0.5)',
+                                'rgba(75, 192, 192, 0.5)',
+                                'rgba(153, 102, 255, 0.5)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            r: { beginAtZero: true, max: 100 }
+                        }
+                    }
+                });
+            }
+        }
+        
+        function initCalculatorCharts() {
+            calculateLeadScore();
+        }
+        
+        function updateScoreBreakdownChart(breakdown) {
+            const ctx = document.getElementById('scoreBreakdownChart');
+            if (ctx.chart) {
+                ctx.chart.destroy();
+            }
+            ctx.chart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: breakdown.map(b => b.label),
+                    datasets: [{
+                        data: breakdown.map(b => b.value),
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.8)',
+                            'rgba(54, 162, 235, 0.8)',
+                            'rgba(255, 205, 86, 0.8)',
+                            'rgba(75, 192, 192, 0.8)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+        
+        function initActionPlanCharts() {
+            // Timeline Chart
+            const timelineCtx = document.getElementById('timelineChart');
+            if (timelineCtx && !timelineCtx.chart) {
+                timelineCtx.chart = new Chart(timelineCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6', 'Week 7', 'Week 8', 'Week 9', 'Week 10', 'Week 11', 'Week 12'],
+                        datasets: [{
+                            label: 'MQLs',
+                            data: [5, 12, 20, 35, 50, 65, 75, 80, 85, 90, 95, 100],
+                            borderColor: 'rgb(54, 162, 235)',
+                            backgroundColor: 'rgba(54, 162, 235, 0.1)'
+                        }, {
+                            label: 'SQLs',
+                            data: [0, 2, 5, 10, 15, 20, 25, 28, 30, 32, 34, 35],
+                            borderColor: 'rgb(255, 99, 132)',
+                            backgroundColor: 'rgba(255, 99, 132, 0.1)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+            
+            // Target Chart
+            const targetCtx = document.getElementById('targetChart');
+            if (targetCtx && !targetCtx.chart) {
+                targetCtx.chart = new Chart(targetCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['MQLs', 'SQLs', 'Customers'],
+                        datasets: [{
+                            label: 'Target',
+                            data: [100, 35, 10],
+                            backgroundColor: 'rgba(54, 162, 235, 0.5)'
+                        }, {
+                            label: 'Achieved',
+                            data: [50, 30, 11],
+                            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false
+                    }
+                });
+            }
+        }
+        
+        // Initialize on load
+        window.onload = function() {
+            initOverviewCharts();
+            
+            // Add hover tooltips to table rows
+            document.querySelectorAll('tr').forEach(row => {
+                row.addEventListener('mouseenter', function(e) {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.textContent = 'Click to highlight';
+                    tooltip.style.opacity = '1';
+                });
+                row.addEventListener('mousemove', function(e) {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.style.left = e.clientX + 10 + 'px';
+                    tooltip.style.top = e.clientY - 30 + 'px';
+                });
+                row.addEventListener('mouseleave', function() {
+                    const tooltip = document.getElementById('tooltip');
+                    tooltip.style.opacity = '0';
+                });
+            });
+        };
+    </script>
+</body>
+
+</html>

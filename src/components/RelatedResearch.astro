@@ -1,0 +1,177 @@
+---
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
+interface Props {
+  currentSlug: string;
+  maxItems?: number;
+}
+
+const { currentSlug, maxItems = 3 } = Astro.props;
+
+// Get all research articles
+let allArticles: Array<{slug: string, title: string}> = [];
+
+try {
+  const researchDir = join(process.cwd(), 'research');
+  const files = await readdir(researchDir);
+  const htmlFiles = files.filter(file => file.endsWith('.html') && !file.startsWith('TEMPLATE'));
+  
+  for (const file of htmlFiles) {
+    const slug = file.replace('.html', '');
+    
+    // Skip current article
+    if (slug === currentSlug) continue;
+    
+    let title = slug.split('-').map(word => 
+      word.charAt(0).toUpperCase() + word.slice(1)
+    ).join(' ');
+    
+    try {
+      const filePath = join(researchDir, file);
+      const content = await readFile(filePath, 'utf-8');
+      const titleMatch = content.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+      if (titleMatch && titleMatch[1]) {
+        title = titleMatch[1].trim().replace(/\s+/g, ' ');
+      }
+    } catch (err) {
+      console.error(`Error reading ${file}:`, err);
+    }
+    
+    allArticles.push({ slug, title });
+  }
+  
+  // Shuffle and take maxItems
+  allArticles = allArticles
+    .sort(() => Math.random() - 0.5)
+    .slice(0, maxItems);
+    
+} catch (error) {
+  console.error('Error reading research directory:', error);
+}
+---
+
+{allArticles.length > 0 && (
+  <section class="related-research">
+    <div class="container">
+      <h2 class="section-title">Related Research</h2>
+      <div class="research-grid">
+        {allArticles.map((article) => (
+          <a href={`/research/${article.slug}`} class="research-card">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <h3 class="card-title">{article.title}</h3>
+            <div class="card-arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+<style>
+  .related-research {
+    background: #fff;
+    padding: 4rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 2rem;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  
+  .research-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .research-card {
+    position: relative;
+    padding: 2rem;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .research-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    border-color: #000;
+  }
+  
+  .card-icon {
+    width: 48px;
+    height: 48px;
+    background: #000;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .research-card:hover .card-icon {
+    transform: scale(1.1);
+    background: #333;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #000;
+    line-height: 1.4;
+    flex: 1;
+    margin: 0;
+  }
+  
+  .card-arrow {
+    color: #666;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .research-card:hover .card-arrow {
+    color: #000;
+    transform: translateX(4px);
+  }
+  
+  @media (max-width: 768px) {
+    .related-research {
+      padding: 3rem 0;
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+    }
+    
+    .research-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+</style>

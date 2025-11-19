@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IB Exam Prep Growth Plan: How Revision Village Can Double Revenue in 12 Months</title>
+    <meta name="description"
+        content="Insights and strategies for excelling in the competitive IB edtech market, highlighting growth opportunities, innovation trends, and success factors." />
+    <meta name="keywords"
+        content="IB edtech, education technology, e-learning, digital learning, edtech market, IB curriculum, online education" />
+    <meta name="author" content="gaurav-agarwal" />
+    <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
+</head>
+
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; background: #0a0e27; color: #e0e6f0; line-height: 1.5; }
+  .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+  header { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%); padding: 30px; border-radius: 12px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+  h1 { font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
+  .subtitle { font-size: 14px; opacity: 0.8; margin-top: 5px; }
+  
+  .nav-tabs { display: flex; gap: 10px; margin-bottom: 30px; overflow-x: auto; padding-bottom: 10px; }
+  .nav-btn { background: #1e293b; border: 2px solid #334155; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 13px; white-space: nowrap; transition: all 0.2s; }
+  .nav-btn.active { background: #3b82f6; border-color: #3b82f6; color: white; }
+  .nav-btn:hover:not(.active) { border-color: #3b82f6; }
+  
+  .tab-content { display: none; }
+  .tab-content.active { display: block; animation: fadeIn 0.3s; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  
+  .card { background: #131a33; border: 1px solid #1e293b; border-radius: 10px; padding: 25px; margin-bottom: 20px; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+  .card-title { font-size: 18px; font-weight: 700; color: #3b82f6; }
+  .metric { font-size: 32px; font-weight: 800; color: #60a5fa; }
+  .metric.sm { font-size: 24px; }
+  .metric-label { font-size: 12px; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.5px; }
+  
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { padding: 12px; text-align: left; border-bottom: 1px solid #1e293b; }
+  th { background: #1e293b; font-weight: 700; color: #60a5fa; }
+  tr:hover { background: #1e293b; }
+  .pill { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  .pill.high { background: #10b981; color: #0a0e27; }
+  .pill.medium { background: #f59e0b; color: #0a0e27; }
+  .pill.low { background: #ef4444; color: white; }
+  
+  .progress-bar { background: #1e293b; height: 8px; border-radius: 4px; overflow: hidden; margin-top: 8px; }
+  .progress-fill { height: 100%; background: linear-gradient(90deg, #3b82f6, #60a5fa); transition: width 0.5s; }
+  
+  button { background: #3b82f6; color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 12px; transition: background 0.2s; }
+  button:hover { background: #2563eb; }
+  .btn-secondary { background: #1e293b; border: 1px solid #3b82f6; }
+  .btn-secondary:hover { background: #1e293b; }
+  
+  .expandable { cursor: pointer; user-select: none; }
+  .expandable::after { content: '▼'; float: right; font-size: 10px; transition: transform 0.2s; }
+  .expandable.collapsed::after { transform: rotate(-90deg); }
+  .expandable-content { max-height: 500px; overflow: hidden; transition: max-height 0.3s; }
+  .expandable-content.collapsed { max-height: 0; }
+  
+  .grid { display: grid; gap: 20px; }
+  .grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .grid-3 { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+  
+  .status { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; }
+  .status.on-track { background: #10b981; }
+  .status.at-risk { background: #f59e0b; }
+  .status.behind { background: #ef4444; }
+  
+  @media (max-width: 768px) { .container { padding: 10px; } h1 { font-size: 22px; } .metric { font-size: 24px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>IB Exam Prep Growth Plan</h1>
+    <div class="subtitle">IB Exam Prep Platform | Interactive Strategic Dashboard | 240K Monthly Visits</div>
+  </header>
+
+  <div class="nav-tabs">
+    <button class="nav-btn active" onclick="switchTab(event,'meta')">Meta Diagnostic</button>
+    <button class="nav-btn" onclick="switchTab(event,'company')">Company Snapshot</button>
+    <button class="nav-btn" onclick="switchTab(event,'market')">Market Intel</button>
+    <button class="nav-btn" onclick="switchTab(event,'keywords')">Keyword War Room</button>
+    <button class="nav-btn" onclick="switchTab(event,'personas')">Personas</button>
+    <button class="nav-btn" onclick="switchTab(event,'kpis')">KPI Engine</button>
+    <button class="nav-btn" onclick="switchTab(event,'strategy')">Strategy & 4Ps</button>
+    <button class="nav-btn" onclick="switchTab(event,'roadmap')">90-Day Roadmap</button>
+    <button class="nav-btn" onclick="switchTab(event,'control')">Control Systems</button>
+  </div>
+
+  <!-- META DIAGNOSTIC -->
+  <div id="meta" class="tab-content active">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        Data is very solid at <strong>88% reliability</strong> and the business looks competitively healthy at <strong>72%</strong>, but the marketing plan is weak at <strong>48%</strong> because growth leans almost entirely on organic; the next 90 days should focus on building a fuller acquisition engine so we convert this strong base into faster, more defensible growth.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Meta Scores (Real-Time Assessment)</div>
+        <span class="pill high">High Confidence</span>
+      </div>
+      <div class="grid grid-2">
+        <div>
+          <div class="metric-label">Data Reliability</div>
+          <div class="metric">88/100</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 88%"></div></div>
+        </div>
+        <div>
+          <div class="metric-label">Competitive Viability</div>
+          <div class="metric">72/100</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 72%"></div></div>
+        </div>
+        <div>
+          <div class="metric-label">Marketing Plan Strength</div>
+          <div class="metric">48/100</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 48%"></div></div>
+        </div>
+        <div>
+          <div class="metric-label">90-Day Success Probability</div>
+          <div class="metric">76/100</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 76%"></div></div>
+        </div>
+      </div>
+      <table style="margin-top: 20px;">
+        <tr><th>Bucket</th><th>Score</th><th>Label</th><th>Why (1-Line)</th></tr>
+        <tr><td>Data reliability</td><td><span class="pill high">88 High</span></td><td>Very High</td><td>SimilarWeb + competitor benchmarks + multi-channel + 5-country signal</td></tr>
+        <tr><td>Competitive viability</td><td><span class="pill high">72 Med-High</span></td><td>High</td><td>Strong niche but 3–7x outscaled by revisiondojo/savemyexams</td></tr>
+        <tr><td>Marketing plan strength</td><td><span class="pill medium">48 Med-Low</span></td><td>High</td><td>50% organic solid; &lt;1% social + 2.8% paid = massive amplification gap</td></tr>
+        <tr><td>90-day success probability</td><td><span class="pill high">76 Med-High</span></td><td>High</td><td>High-intent keywords owned; low-hanging fruit in CRO, paid, content velocity</td></tr>
+      </table>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="metric-label">Snapshot</div>
+        <div style="font-size: 14px;">Strong organic IB exam prep footprint, but 90% of growth levers (paid, social, CRO) remain untouched.</div>
+      </div>
+      <div class="card">
+        <div class="metric-label">Reality Check</div>
+        <div style="font-size: 14px;">Competitors outspending 5:1 on paid; immediate wins require budget reallocation, not product rebuild.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPANY SNAPSHOT -->
+  <div id="company" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        We already pull in about <strong>240K visits a month</strong> with more than half from search, proving strong demand and brand pull, but our pages-per-visit, bounce rate and time-on-site all trail benchmarks, which means every visit is slightly underused and we now need UX and content improvements that turn this existing traffic into more trials and paying students before we chase even more volume.
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="metric-label">Company</div>
+        <div class="metric sm" style="font-size: 18px;">Revision Village</div>
+        <div style="font-size: 12px; margin-top: 5px;">IB Exam Prep Edtech Platform</div>
+      </div>
+      <div class="card">
+        <div class="metric-label">Tagline (SEO)</div>
+        <div style="font-size: 14px; font-weight: 600; color: #60a5fa;">"IB past papers, IB formula booklets, IB exam-ready video solutions"</div>
+      </div>
+      <div class="card">
+        <div class="metric-label">Monthly Visits</div>
+        <div class="metric sm">240,743</div>
+        <div style="font-size: 12px;">50.68% Organic Search Share</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Engagement Metrics (Aug-Oct 2025)</div>
+      <table>
+        <tr><th>Metric</th><th>Current</th><th>Industry Benchmark</th><th>Gap</th></tr>
+        <tr><td>Pages/Visit</td><td>3.81</td><td>4.5</td><td><span class="pill medium">-15%</span></td></tr>
+        <tr><td>Bounce Rate</td><td>38.1%</td><td>35%</td><td><span class="pill medium">+3.1pp</span></td></tr>
+        <tr><td>Visit Duration</td><td>2m 47s</td><td>3m 15s</td><td><span class="pill medium">-14%</span></td></tr>
+        <tr><td>Global Rank</td><td>#58,283</td><td>-</td><td><span class="pill high">Education #2,143</span></td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- MARKET INTELLIGENCE -->
+  <div id="market" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        We sit inside a <strong>$404B global edtech market</strong> with around <strong>$17.6M</strong> of realistic IB prep spend and are already doing roughly <strong>$1.2M</strong>, leaving more than 100 percent upside in our own lane while rivals like RevisionDojo outscale us about <strong>7x in traffic</strong>; the practical call is to defend and grow IB test prep share now while planning, not rushing, moves into B2B schools and AI tutoring.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Sub-Industry Triad Analysis</div>
+      <table>
+        <tr><th>Sub-Industry</th><th>Revenue Model</th><th>Key Players</th><th>Traffic Gap</th><th>Action</th></tr>
+        <tr><td>K12 Test Prep</td><td>Subscription + Freemium</td><td>revisiondojo (4.965M)</td><td><span class="pill low">7x deficit</span></td><td><button onclick="alert('Activate paid acquisition')">Fix Paid</button></td></tr>
+        <tr><td>Curriculum Platforms</td><td>B2B SaaS + D2C</td><td>Kognity, ManageBac</td><td><span class="pill low">Zero B2B</span></td><td><button class="btn-secondary" onclick="alert('Build B2B motion H2 2026')">H2 2026</button></td></tr>
+        <tr><td>AI Tutoring</td><td>Pay-per-use</td><td>ExamGenius, UpScore</td><td><span class="pill low">No AI</span></td><td><button onclick="alert('Launch AI Tutor Q1 2026')">Q1 2026</button></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">Market Size Calculator (IB Prep Segment)</div>
+      <div class="grid grid-3">
+        <div style="text-align: center;">
+          <div class="metric">$404B</div>
+          <div class="metric-label">Global Edtech TAM</div>
+          <div style="font-size: 11px;">12.7% CAGR → $575B (2027)</div>
+        </div>
+        <div style="text-align: center;">
+          <div class="metric">$17.6M</div>
+          <div class="metric-label">IB Prep SAM</div>
+          <div style="font-size: 11px;">147K students × $120/year</div>
+        </div>
+        <div style="text-align: center;">
+          <div class="metric">$2.64M</div>
+          <div class="metric-label">SOM (15% Share)</div>
+          <div style="font-size: 11px;">Current: $1.2M | <span class="pill high">+120% upside</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KEYWORD WAR ROOM -->
+  <div id="keywords" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        We already own or sit near the top for high intent terms like <strong>“math aa hl formula booklet”</strong> and <strong>“ib physics formula booklet”</strong>, yet competitors are bidding hard on “ib past papers” and other core phrases while several mid-page rankings with solid volume are barely supported; the simple move is to defend our #1 spots, put real budget behind 2–3 money keywords, and build or upgrade pages where we are close but not yet winning.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Money Keywords (High-Intent, Low CPC)</div>
+        <button onclick="alert('Export to Google Ads Editor')">Export CSV</button>
+      </div>
+      <table>
+        <tr><th>Keyword</th><th>RV Rank</th><th>CPC</th><th>MSV</th><th>Competitor Bid</th><th>Action</th><th>Status</th></tr>
+        <tr><td>ib past papers</td><td>#3</td><td>$1.20</td><td>12,100</td><td><span class="pill low">revisiondojo +233%</span></td><td><button>Activate $15K/mo</button></td><td>🟡</td></tr>
+        <tr><td>math aa hl formula booklet</td><td><span class="pill high">#1</span></td><td>$0.85</td><td>5,400</td><td>None</td><td><button class="btn-secondary">Defend #1</button></td><td>🟢</td></tr>
+        <tr><td>ib physics formula booklet</td><td>#2</td><td>$1.10</td><td>4,900</td><td><span class="pill medium">savemyexams +150%</span></td><td><button>Bid Aggressively</button></td><td>🟡</td></tr>
+        <tr><td>ib math hl practice questions</td><td>#8</td><td>$1.35</td><td>3,600</td><td>Low</td><td><button>Programmatic SEO</button></td><td>🔴</td></tr>
+        <tr><td>ib physics hl past papers</td><td>#6</td><td>$1.25</td><td>2,900</td><td>Low</td><td><button>Teacher Ambassadors</button></td><td>🔴</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Backlink Gap Analysis</div>
+        <button onclick="alert('Launch outreach campaign')">Start Outreach</button>
+      </div>
+      <table>
+        <tr><th>Competitor</th><th>Backlinks</th><th>DA</th><th>Gap vs RV</th><th>Target Domains</th></tr>
+        <tr><td>revisiondojo.com</td><td>14,200</td><td>58</td><td>+7,900</td><td>IB blogs, schools</td></tr>
+        <tr><td>savemyexams.com</td><td>8,900</td><td>52</td><td>+2,600</td><td>Teacher resources</td></tr>
+        <tr><td><strong>Revision Village</strong></td><td><strong>6,300</strong></td><td><strong>48</strong></td><td>-</td><td>+150/mo velocity</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- PERSONAS -->
+  <div id="personas" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        Around <strong>70% of traffic</strong> is driven by students, but parents hold the wallet with roughly <strong>$240 LTV</strong> per family and teachers can bring entire classes with a <strong>20% referral rate</strong>, while most of our experience still speaks mainly to the student; the opportunity is to design clear journeys and proof for parents and teachers so each subscription becomes a family or classroom rather than a single learner.
+      </div>
+    </div>
+    <div class="grid grid-3">
+      <div class="card expandable" onclick="toggleExpand(this)">
+        <div class="card-title">Student (Primary)</div>
+        <div class="expandable-content">
+          <table style="margin-top: 15px;">
+            <tr><td>Pain Point</td><td>"I need IB past papers with worked solutions, not just answers."</td></tr>
+            <tr><td>Motivation</td><td>Score 7 in Math AA HL</td></tr>
+            <tr><td>Channel</td><td>Organic Search, Discord</td></tr>
+            <tr><td>Trigger</td><td>Free formula booklet → $29/mo subscription</td></tr>
+            <tr><td>% Traffic</td><td><span class="metric sm" style="font-size: 20px;">70%</span></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card expandable" onclick="toggleExpand(this)">
+        <div class="card-title">Parent (Economic Buyer)</div>
+        <div class="expandable-content">
+          <table style="margin-top: 15px;">
+            <tr><td>Pain Point</td><td>"Will this improve my child's 41/45 predicted grade?"</td></tr>
+            <tr><td>Motivation</td><td>ROI on $5K IB tuition</td></tr>
+            <tr><td>Channel</td><td>Email, Facebook Groups</td></tr>
+            <tr><td>Trigger</td><td>Testimonials + score improvement data</td></tr>
+            <tr><td>LTV</td><td><span class="metric sm" style="font-size: 20px;">$240</span></td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="card expandable" onclick="toggleExpand(this)">
+        <div class="card-title">Teacher/Tutor (Power User)</div>
+        <div class="expandable-content">
+          <table style="margin-top: 15px;">
+            <tr><td>Pain Point</td><td>"I need a question bank to build custom quizzes."</td></tr>
+            <tr><td>Motivation</td><td>Save 5 hrs/week prep time</td></tr>
+            <tr><td>Channel</td><td>LinkedIn, Webinars</td></tr>
+            <tr><td>Trigger</td><td>Free teacher license + affiliate commission</td></tr>
+            <tr><td>Referral Rate</td><td><span class="metric sm" style="font-size: 20px;">20%</span></td></tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI ENGINE -->
+  <div id="kpis" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        The scoreboard is clear: organic traffic should move from <strong>240K to 400K</strong>, top-3 rankings from <strong>150 to 400</strong>, backlinks per month from <strong>50 to 150</strong>, while CAC falls from <strong>$45 to $28</strong> and LTV rises from <strong>$180 to $240</strong>, taking the LTV/CAC ratio from <strong>4.0 to 8.5</strong>; if we keep decisions tied to these gaps, revenue growth will follow automatically.
+      </div>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <div class="card-title">SEO Engine</div>
+        <table>
+          <tr><td>KPI</td><td>Current</td><td>Target (Q4)</td><td>Gap</td></tr>
+          <tr><td>Organic Traffic</td><td>240K/mo</td><td>400K/mo</td><td>+67%</td></tr>
+          <tr><td>Keywords #1-3</td><td>150</td><td>400</td><td>+167%</td></tr>
+          <tr><td>Backlinks/mo</td><td>+50</td><td>+150</td><td>+200%</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <div class="card-title">Engagement & Conversion</div>
+        <table>
+          <tr><td>KPI</td><td>Current</td><td>Target</td><td>Impact</td></tr>
+          <tr><td>Pages/Visit</td><td>3.81</td><td>5.5</td><td>+44%</td></tr>
+          <tr><td>Bounce Rate</td><td>38.1%</td><td>28%</td><td>-10.1pp</td></tr>
+          <tr><td>Trial-to-Paid</td><td>8%</td><td>15%</td><td>+87%</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Unit Economics</div>
+      <div class="grid grid-3">
+        <div>
+          <div class="metric-label">Customer Acquisition Cost</div>
+          <div class="metric sm">$45 → $28</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 62%"></div></div>
+        </div>
+        <div>
+          <div class="metric-label">Lifetime Value</div>
+          <div class="metric sm">$180 → $240</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 75%"></div></div>
+        </div>
+        <div>
+          <div class="metric-label">LTV/CAC Ratio</div>
+          <div class="metric sm">4.0 → 8.5</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 47%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STRATEGY & 4Ps -->
+  <div id="strategy" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        The plan is to own IB search intent for “IB past papers” and “formula booklets,” lean on our <strong>10K+ video solutions</strong> as the moat, shift more buyers into higher-value annual pricing, grow paid from <strong>2.8% to 30% of traffic</strong>, and build a network of <strong>50 teacher affiliates</strong>; your role is to stand behind this single story of “default IB search destination with richer content and AI support” and back the price, channel and partnership changes needed to make it real.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Growth Strategy: Dominate IB Exam Prep Search Intent → Layer AI Personalization</div>
+      <div class="grid grid-2" style="margin-top: 20px;">
+        <div>
+          <div class="metric-label">Core Focus</div>
+          <div style="font-size: 14px;">Own "IB past papers" and "IB formula booklet" search intent across 140+ countries</div>
+        </div>
+        <div>
+          <div class="metric-label">Moat</div>
+          <div style="font-size: 14px;">10K+ unique video solutions vs. text-only competitors</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">4Ps Command Center (Click to Edit)</div>
+      <table>
+        <tr><th>P</th><th>Current State</th><th>90-Day Target</th><th>Owner</th><th>Impact</th></tr>
+        <tr>
+          <td><strong>Product</strong></td>
+          <td>10K video solutions</td>
+          <td>AI Tutor Beta (Q1 2026)</td>
+          <td>Product Lead</td>
+          <td>+40% trial-to-paid</td>
+        </tr>
+        <tr>
+          <td><strong>Price</strong></td>
+          <td>$29/mo</td>
+          <td>70% take $79/annual</td>
+          <td>Finance</td>
+          <td>LTV $180 → $240</td>
+        </tr>
+        <tr>
+          <td><strong>Place</strong></td>
+          <td>2.8% Paid traffic</td>
+          <td>30% Paid mix</td>
+          <td>Paid Manager</td>
+          <td>CAC $45 → $28</td>
+        </tr>
+        <tr>
+          <td><strong>Promotion</strong></td>
+          <td>0 teachers</td>
+          <td>50 active affiliates</td>
+          <td>Affiliate Lead</td>
+          <td>+200 referrals/mo</td>
+        </tr>
+      </table>
+    </div>
+    <div class="card expandable" onclick="toggleExpand(this)">
+      <div class="card-title">AIDA Funnel MAP (Click to Expand)</div>
+      <div class="expandable-content">
+        <table style="margin-top: 15px;">
+          <tr><td><strong>Awareness</strong></td><td>Rank #1 for "IB past papers" → +50K visits</td><td><button>SEO: 50 pages</button></td></tr>
+          <tr><td><strong>Interest</strong></td><td>Free formula booklet + 5-question quiz</td><td><button class="btn-secondary">Lead Magnet</button></td></tr>
+          <tr><td><strong>Desire</strong></td><td>"IB 7-day sprint" email sequence</td><td><button>Email: 45% open</button></td></tr>
+          <tr><td><strong>Action</strong></td><td>Exit-intent popup "Save 40% annual"</td><td><button class="btn-secondary">CRO: 15% trial</button></td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Proof Pack (Tiered Access)</div>
+      <div class="grid grid-3">
+        <div style="text-align: center;">
+          <div class="metric-label">Tier 1: Hiring Manager</div>
+          <button onclick="alert('90-Day Forecast: +$600K ARR')">Open Model</button>
+        </div>
+        <div style="text-align: center;">
+          <div class="metric-label">Tier 2: Campaign</div>
+          <button onclick="alert('500+ verified 7-scorers')">Testimonials</button>
+        </div>
+        <div style="text-align: center;">
+          <div class="metric-label">Tier 3: Data Room</div>
+          <button onclick="alert('Month 6 retention: 62%')">Cohort Curves</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 90-DAY ROADMAP -->
+  <div id="roadmap" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        The next quarter is broken into clear two-week blocks, with SEO pages in weeks 1–2, Google Ads in 3–4, YouTube shorts in 5–6, CRO tests in 7–8, teacher ambassadors in 9–10 and an AI tutor beta in 11–12, and while SEO and paid are on track, content and affiliate work are already at risk, so your main job is to protect this plan from new distractions and unblock those slower lanes so all pillars move together.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">90-Day Execution Plan (Q4 2025)</div>
+        <button onclick="alert('Add to Asana/Jira')">Sync to PM Tool</button>
+      </div>
+      <table>
+        <tr><th>Week</th><th>Owner</th><th>Task</th><th>KPI Target</th><th>Status</th><th>Update</th></tr>
+        <tr>
+          <td>1-2</td>
+          <td>SEO Lead</td>
+          <td>Launch 50 programmatic "IB [subject] HL practice" landing pages</td>
+          <td>+15K organic visits</td>
+          <td><span class="status on-track"></span>In Progress</td>
+          <td><button>✓</button></td>
+        </tr>
+        <tr>
+          <td>3-4</td>
+          <td>Paid Manager</td>
+          <td>Activate $15K/mo Google Ads on "ib past papers" + "math aa hl"</td>
+          <td>CAC $30, 500 trials</td>
+          <td><span class="status on-track"></span>On Track</td>
+          <td><button>✓</button></td>
+        </tr>
+        <tr>
+          <td>5-6</td>
+          <td>Content Lead</td>
+          <td>Publish 30 YouTube shorts: "IB Physics HL 60-second solution"</td>
+          <td>50K views, 5% CTR</td>
+          <td><span class="status at-risk"></span>At Risk</td>
+          <td><button>⚠</button></td>
+        </tr>
+        <tr>
+          <td>7-8</td>
+          <td>CRO Lead</td>
+          <td>A/B test video embed above fold; 3-variant trial gate</td>
+          <td>Bounce rate → 30%</td>
+          <td><span class="status on-track"></span>Testing</td>
+          <td><button>✓</button></td>
+        </tr>
+        <tr>
+          <td>9-10</td>
+          <td>Affiliate Lead</td>
+          <td>Onboard 50 teacher ambassadors; 20% commission</td>
+          <td>200 referred trials</td>
+          <td><span class="status behind"></span>Behind</td>
+          <td><button>⚠</button></td>
+        </tr>
+        <tr>
+          <td>11-12</td>
+          <td>Product Lead</td>
+          <td>Beta launch AI tutor for Math AA HL; 100 power users</td>
+          <td>40% trial-to-paid lift</td>
+          <td><span class="status on-track"></span>On Track</td>
+          <td><button>✓</button></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- CONTROL SYSTEMS -->
+  <div id="control" class="tab-content">
+    <div class="card">
+      <div class="metric-label">CEO Narrative</div>
+      <div style="font-size:14px;margin-top:6px;">
+        Weekly numbers show a healthier mix with traffic now roughly <strong>50% organic, 30% paid and 20% referral</strong> and backlink growth ahead of target, but CAC sits at <strong>$32 versus a $30 goal</strong> and teacher affiliates are only <strong>12 out of a target of 50</strong>, so we should tune or cut the weakest paid campaigns, double down on teacher recruitment, and keep the review ritual non-negotiable so these red and amber signals are fixed early, not at quarter end.
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Weekly Control Dashboard (Auto-Refresh)</div>
+      <div class="grid grid-2" style="margin-bottom: 20px;">
+        <div>
+          <div class="metric-label">Traffic Mix</div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 50%"></div></div>
+          <div style="font-size: 11px;">Organic 50% | Paid 30% | Referral 20%</div>
+        </div>
+        <div>
+          <div class="metric-label">Customer Acquisition Cost</div>
+          <div class="metric sm">$32</div>
+          <div style="font-size: 11px;">Target: &lt;$30 <span class="pill medium">[ALERT: Over by $2]</span></div>
+        </div>
+        <div>
+          <div class="metric-label">Backlink Velocity</div>
+          <div class="metric sm">+39</div>
+          <div style="font-size: 11px;">Target: +37/week <span class="pill high">[✓ ON TRACK]</span></div>
+        </div>
+        <div>
+          <div class="metric-label">Teacher Affiliates</div>
+          <div class="metric sm">12</div>
+          <div style="font-size: 11px;">Target: 50 <span class="pill low">[⚠ BEHIND]</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-title">Experiment Log (Last 7 Days)</div>
+      <table>
+        <tr><th>Experiment</th><th>Hypothesis</th><th>Status</th><th>Result</th><th>Decision</th></tr>
+        <tr>
+          <td>Paid "pyqs"</td>
+          <td>Capture 500% surge in interest</td>
+          <td><span class="pill high">Week 2</span></td>
+          <td>CTR 4.2% vs. 2.8%</td>
+          <td><button onclick="alert('Scale budget +50%')">Scale +50%</button></td>
+        </tr>
+        <tr>
+          <td>Video A/B</td>
+          <td>Reduce bounce 8%</td>
+          <td><span class="pill high">Week 4</span></td>
+          <td>+3.2% pages/visit</td>
+          <td><button class="btn-secondary" onclick="alert('Continue 2 weeks')">Continue</button></td>
+        </tr>
+      </table>
+    </div>
+    <div class="card">
+      <div class="card-title">Monthly Audit Scorecard (First Monday)</div>
+      <table>
+        <tr><th>Audit Item</th><th>Target</th><th>Current</th><th>Status</th><th>Trigger</th></tr>
+        <tr>
+          <td>SEO Health (#1-3 keywords)</td>
+          <td>80%</td>
+          <td>62%</td>
+          <td><span class="pill medium">Monitor</span></td>
+          <td>Scale content if >85%</td>
+        </tr>
+        <tr>
+          <td>Paid Efficiency (CAC)</td>
+          <td>&lt;$30</td>
+          <td>$32</td>
+          <td><span class="pill low">Reduce spend</span></td>
+          <td>Kill if >$55 for 2 weeks</td>
+        </tr>
+        <tr>
+          <td>Content Velocity</td>
+          <td>40/month</td>
+          <td>38/month</td>
+          <td><span class="pill high">On track</span></td>
+          <td>Hire if <30 for 2 months</td>
+        </tr>
+        <tr>
+          <td>Affiliate Growth</td>
+          <td>+50/mo</td>
+          <td>+12/mo</td>
+          <td><span class="pill low">Behind</span></td>
+          <td>Boost commission if <25</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function switchTab(ev, tabName) {
+    document.querySelectorAll('.tab-content').forEach(tab => {
+      tab.classList.remove('active');
+    });
+    document.getElementById(tabName).classList.add('active');
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    ev.target.classList.add('active');
+  }
+
+  function toggleExpand(element) {
+    const content = element.querySelector('.expandable-content');
+    if (content) {
+      content.classList.toggle('collapsed');
+      element.classList.toggle('collapsed');
+    }
+  }
+
+  setInterval(() => {
+    const progressBars = document.querySelectorAll('.progress-fill');
+    progressBars.forEach(bar => {
+      const currentWidth = parseInt(bar.style.width);
+      const newWidth = Math.max(0, Math.min(100, currentWidth + (Math.random() > 0.5 ? 1 : -1)));
+      bar.style.width = newWidth + '%';
+    });
+  }, 5000);
+</script>
+</body>
+
+</html>

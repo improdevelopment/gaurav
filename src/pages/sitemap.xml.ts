@@ -1,18 +1,23 @@
 import { readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 
+export const prerender = true;
+
 export async function GET() {
   const baseUrl = 'https://gaurav.imapro.in';
   
-  // Get all HTML files
+  // Get all HTML files from research directory
   let researchPages: string[] = [];
   try {
-    const files = await readdir(join(process.cwd(), 'research'));
+    const researchDir = join(process.cwd(), 'research');
+    const files = await readdir(researchDir);
     researchPages = files
       .filter(file => file.endsWith('.html') && !file.startsWith('TEMPLATE'))
       .map(file => file.replace('.html', ''));
+    
+    console.log('Research pages found:', researchPages);
   } catch (error) {
-    console.error('Error reading research:', error);
+    console.error('Error reading research directory:', error);
   }
   
   // Generate sitemap XML
@@ -41,8 +46,8 @@ export async function GET() {
 
   return new Response(sitemap, {
     headers: {
-      'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600'
+      'Content-Type': 'application/xml; charset=utf-8',
+      'X-Robots-Tag': 'noindex'
     }
   });
 }

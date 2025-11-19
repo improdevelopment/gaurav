@@ -1,4 +1,7 @@
 ---
+import GTM from "../components/GTM.astro";
+import GTMBody from "../components/GTMBody.astro";
+
 export interface Props {
   title: string;
   description?: string;
@@ -15,24 +18,17 @@ const {
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <GTM />
+    
     <meta charset="utf-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/favicon.svg"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/icon-192x192.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="/icon-192x192.png"
-    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/icon-192x192.png" />
     <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0891b2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
 
@@ -49,29 +45,21 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://gaurav.imapro.in" />
-    <meta
-      property="og:image"
-      content="https://gaurav.imapro.in/icon-192x192.png"
-    />
-    <meta property="og:image:width" content="192" />
-    <meta property="og:image:height" content="192" />
+    <meta property="og:image" content="https://gaurav.imapro.in/gaurav.png" />
+    <meta property="og:image:secure_url" content="https://gaurav.imapro.in/gaurav.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:type" content="image/png" />
-    <meta
-      property="og:site_name"
-      content="Gaurav Agarwal - AI Marketing Director"
-    />
+    <meta property="og:image:alt" content="Gaurav Agarwal - AI Marketing Director" />
+    <meta property="og:site_name" content="Gaurav Agarwal - AI Marketing Director" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
-    <meta
-      name="twitter:image"
-      content="https://gaurav.imapro.in/icon-192x192.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Gaurav Agarwal - AI Marketing Director"
+    <meta name="twitter:image" content="https://gaurav.imapro.in/gaurav.png" />
+    <meta name="twitter:image:alt" content="Gaurav Agarwal - AI Marketing Director"
     />
 
     <!-- Structured Data -->
@@ -110,6 +98,9 @@ const {
     />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <GTMBody />
+    
     <slot />
 
     <!-- Intersection Observer Animation Script -->

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Keyword Analysis - HackerEarth Revenue Gap Analysis</title>
+    <meta name="description"
+        content="Explore detailed keyword analysis for HackerEarth revenue gap analysis, uncovering traffic opportunities, conversion intent, and strategic SEO insights." />
+    <meta name="keywords"
+        content="HackerEarth revenue analysis, keyword research, revenue gap, SEO audit, traffic opportunities, conversion optimization, SaaS analytics" />
+    <meta name="author" content="Editorial Team" />
+    <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
+</head>
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .revenue-high { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+        .revenue-medium { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+        .revenue-low { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+        .metric-card { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold mb-2">Detailed Keyword Analysis</h1>
+                <p class="text-lg opacity-90">Revenue-Driven SEO Gap Analysis for HackerEarth</p>
+                <div class="mt-4 flex flex-wrap justify-center gap-3 text-sm">
+                    <span class="bg-white/20 px-3 py-1 rounded-full">797 Revenue Keywords</span>
+                    <span class="bg-white/20 px-3 py-1 rounded-full">$526K Total Potential</span>
+                    <span class="bg-white/20 px-3 py-1 rounded-full">153 High Opportunity Gaps</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Revenue Clarification Banner -->
+    <section class="bg-blue-50 border-l-4 border-blue-500 py-4">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center">
+                <i class="fas fa-info-circle text-blue-500 text-xl mr-3"></i>
+                <div>
+                    <h3 class="font-semibold text-blue-800">Revenue Calculation Methodology</h3>
+                    <p class="text-blue-700 text-sm mt-1">
+                        <strong>Annual Revenue:</strong> Monthly Search Volume × 4% CTR × 12 months × 0.5% Visitor→Lead × 5% Lead→Customer × $8,000 per customer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Revenue Analysis Dashboard -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Revenue Impact Analysis</h2>
+            
+            <!-- Revenue Metrics Grid -->
+            <div class="grid md:grid-cols-4 gap-6 mb-8">
+                <div class="metric-card rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-gray-800 mb-2">$526,464</div>
+                    <div class="text-sm text-gray-600">Total Annual Revenue Potential</div>
+                    <div class="text-xs text-gray-500 mt-1">Across 797 keywords</div>
+                </div>
+                <div class="metric-card rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-gray-800 mb-2">$13,344</div>
+                    <div class="text-sm text-gray-600">Top 10 Keywords Revenue</div>
+                    <div class="text-xs text-gray-500 mt-1">2.5% of total potential</div>
+                </div>
+                <div class="metric-card rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-gray-800 mb-2">$660</div>
+                    <div class="text-sm text-gray-600">Average Revenue per Keyword</div>
+                    <div class="text-xs text-gray-500 mt-1">Median: $960</div>
+                </div>
+                <div class="metric-card rounded-xl p-6 text-center">
+                    <div class="text-3xl font-bold text-gray-800 mb-2">153</div>
+                    <div class="text-sm text-gray-600">High Opportunity Keywords</div>
+                    <div class="text-xs text-gray-500 mt-1">19.2% of total</div>
+                </div>
+            </div>
+
+            <!-- Revenue Distribution Chart -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Revenue Distribution by Keyword Tier</h3>
+                <div id="revenueChart" style="height: 400px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Keyword Analysis Table -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Detailed Keyword Breakdown</h2>
+            
+            <!-- Top 10 Keywords with Full Metrics -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+                <div class="px-6 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+                    <h3 class="text-lg font-semibold">Top 10 Priority Keywords - Complete Analysis</h3>
+                    <p class="text-sm opacity-90">Revenue calculations based on pessimistic assumptions</p>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead class="bg-gray-50">
+                            <tr>
+                                <th class="px-6 py-4 text-left font-semibold text-gray-700">Keyword</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">Volume</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">KD</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">CPC</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">Monthly Clicks</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">Annual Revenue</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">Effort</th>
+                                <th class="px-6 py-4 text-center font-semibold text-gray-700">Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody id="detailedTable">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Revenue Calculation Breakdown -->
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Revenue Calculation Breakdown</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-blue-800 mb-3">Calculation Formula</h4>
+                        <div class="space-y-2 text-sm text-blue-700">
+                            <div><strong>1. Monthly Clicks:</strong> Volume × 4% CTR</div>
+                            <div><strong>2. Annual Clicks:</strong> Monthly × 12 months</div>
+                            <div><strong>3. Conversion:</strong> 0.5% × 5% = 0.025%</div>
+                            <div><strong>4. Customers:</strong> Annual clicks × 0.025%</div>
+                            <div><strong>5. Revenue:</strong> Customers × $8,000</div>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 rounded-lg p-4">
+                        <h4 class="font-semibold text-green-800 mb-3">Example Calculation</h4>
+                        <div class="space-y-2 text-sm text-green-700">
+                            <div><strong>Keyword:</strong> "best interview questions" (1,900 volume)</div>
+                            <div><strong>Monthly Clicks:</strong> 1,900 × 4% = 76</div>
+                            <div><strong>Annual Clicks:</strong> 76 × 12 = 912</div>
+                            <div><strong>Customers:</strong> 912 × 0.025% = 0.228</div>
+                            <div><strong>Annual Revenue:</strong> 0.228 × $8,000 = ~$1,824</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunity Analysis -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Opportunity Type Analysis</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-red-50 border border-red-200 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-exclamation-triangle text-red-600 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-red-800">High Opportunity (153 keywords)</h3>
+                    </div>
+                    <div class="space-y-2 text-sm text-red-700">
+                        <div><strong>Definition:</strong> Competitors rank top 20, you don't rank in top 20</div>
+                        <div><strong>Revenue Potential:</strong> $153,600 - $279,360</div>
+                        <div><strong>Strategy:</strong> Create new content/landing pages</div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-balance-scale text-yellow-600 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-yellow-800">Medium Opportunity (0 keywords)</h3>
+                    </div>
+                    <div class="space-y-2 text-sm text-yellow-700">
+                        <div><strong>Definition:</strong> Both rank but competitor ≥10 positions ahead</div>
+                        <div><strong>Revenue Potential:</strong> N/A</div>
+                        <div><strong>Strategy:</strong> Improve existing content</div>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 border border-green-200 rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-arrow-up text-green-600 text-2xl mr-3"></i>
+                        <h3 class="text-lg font-semibold text-green-800">Improve Existing (0 keywords)</h3>
+                    </div>
+                    <div class="space-y-2 text-sm text-green-700">
+                        <div><strong>Definition:</strong> You rank in top 20 and KD ≤ 60</div>
+                        <div><strong>Revenue Potential:</strong> N/A</div>
+                        <div><strong>Strategy:</strong> Optimize current pages</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Persona & Intent Analysis -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Persona & Intent Distribution</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Target Persona Breakdown</h3>
+                    <div id="personaChart" style="height: 300px;"></div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">Search Intent Distribution</h3>
+                    <div id="intentChart" style="height: 300px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competitive Landscape -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">Competitive Landscape</h2>
+            
+            <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Competitor Position Analysis</h3>
+                <div class="grid md:grid-cols-5 gap-4">
+                    <div class="text-center p-4 bg-blue-50 rounded-lg">
+                        <div class="text-2xl font-bold text-blue-600">hackerrank.com</div>
+                        <div class="text-sm text-gray-600">Primary Competitor</div>
+                        <div class="text-xs text-gray-500 mt-1">Strong in coding assessments</div>
+                    </div>
+                    <div class="text-center p-4 bg-green-50 rounded-lg">
+                        <div class="text-2xl font-bold text-green-600">testgorilla.com</div>
+                        <div class="text-sm text-gray-600">Rising Competitor</div>
+                        <div class="text-xs text-gray-500 mt-1">Pre-employment testing</div>
+                    </div>
+                    <div class="text-center p-4 bg-purple-50 rounded-lg">
+                        <div class="text-2xl font-bold text-purple-600">codility.com</div>
+                        <div class="text-sm text-gray-600">Technical Assessment</div>
+                        <div class="text-xs text-gray-500 mt-1">Enterprise focus</div>
+                    </div>
+                    <div class="text-center p-4 bg-orange-50 rounded-lg">
+                        <div class="text-2xl font-bold text-orange-600">mettl.com</div>
+                        <div class="text-sm text-gray-600">Assessment Platform</div>
+                        <div class="text-xs text-gray-500 mt-1">Enterprise solutions</div>
+                    </div>
+                    <div class="text-center p-4 bg-red-50 rounded-lg">
+                        <div class="text-2xl font-bold text-red-600">unstop.com</div>
+                        <div class="text-sm text-gray-600">Campus Recruitment</div>
+                        <div class="text-xs text-gray-500 mt-1">Student-focused</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg mb-1">HackerEarth Detailed Keyword Analysis</p>
+            <p class="opacity-75 text-sm">Revenue calculations based on pessimistic assumptions • Generated Nov 14, 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Detailed keyword data with full metrics
+        const detailedKeywords = [
+            {
+                keyword: "best interview questions to ask candidates",
+                volume: 1900,
+                kd: 29,
+                cpc: 0.36,
+                monthlyClicks: 76,
+                annualRevenue: 1824,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "coding interview book",
+                volume: 1900,
+                kd: 30,
+                cpc: 0.94,
+                monthlyClicks: 76,
+                annualRevenue: 1824,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "wells fargo hiring",
+                volume: 1900,
+                kd: 18,
+                cpc: 0.55,
+                monthlyClicks: 76,
+                annualRevenue: 1824,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "hello interview system design",
+                volume: 1600,
+                kd: 22,
+                cpc: 5.12,
+                monthlyClicks: 64,
+                annualRevenue: 1536,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "interview warmup",
+                volume: 1300,
+                kd: 29,
+                cpc: 1.56,
+                monthlyClicks: 52,
+                annualRevenue: 1248,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "quantitaive risk modellong analyst interview questions",
+                volume: 1300,
+                kd: 6,
+                cpc: 0.0,
+                monthlyClicks: 52,
+                annualRevenue: 1248,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "best interview questions to ask applicants",
+                volume: 1000,
+                kd: 28,
+                cpc: 0.78,
+                monthlyClicks: 40,
+                annualRevenue: 960,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "cognizant hiring",
+                volume: 1000,
+                kd: 30,
+                cpc: 1.35,
+                monthlyClicks: 40,
+                annualRevenue: 960,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "evaluate the online recruitment",
+                volume: 1000,
+                kd: 16,
+                cpc: 0.0,
+                monthlyClicks: 40,
+                annualRevenue: 960,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            },
+            {
+                keyword: "questions to ask job interviewees",
+                volume: 1000,
+                kd: 27,
+                cpc: 0.0,
+                monthlyClicks: 40,
+                annualRevenue: 960,
+                effortScore: 1,
+                priorityScore: 5.0,
+                opportunityType: "High"
+            }
+        ];
+
+        // Populate detailed table
+        function populateDetailedTable() {
+            const tableBody = document.getElementById('detailedTable');
+            detailedKeywords.forEach((keyword, index) => {
+                const row = document.createElement('tr');
+                row.className = index % 2 === 0 ? 'bg-white' : 'bg-gray-50';
+                
+                row.innerHTML = `
+                    <td class="px-6 py-4 font-medium text-gray-900">${keyword.keyword}</td>
+                    <td class="px-6 py-4 text-center text-gray-700">${keyword.volume.toLocaleString()}</td>
+                    <td class="px-6 py-4 text-center text-gray-700">${keyword.kd}</td>
+                    <td class="px-6 py-4 text-center text-gray-700">$${keyword.cpc.toFixed(2)}</td>
+                    <td class="px-6 py-4 text-center text-gray-700">${keyword.monthlyClicks}</td>
+                    <td class="px-6 py-4 text-center font-semibold text-green-600">~$${keyword.annualRevenue.toLocaleString()}</td>
+                    <td class="px-6 py-4 text-center">
+                        <div class="flex items-center justify-center">
+                            <div class="w-16 h-2 bg-gray-200 rounded-full mr-2">
+                                <div class="h-full bg-gradient-to-r from-red-400 to-red-600 rounded-full" style="width: ${keyword.effortScore * 20}%"></div>
+                            </div>
+                            <span class="text-sm">${keyword.effortScore}</span>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-center">
+                        <div class="flex items-center justify-center">
+                            <div class="w-16 h-2 bg-gray-200 rounded-full mr-2">
+                                <div class="h-full bg-gradient-to-r from-green-400 to-blue-600 rounded-full" style="width: ${keyword.priorityScore * 20}%"></div>
+                            </div>
+                            <span class="text-sm font-medium">${keyword.priorityScore.toFixed(1)}</span>
+                        </div>
+                    </td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Create revenue distribution chart
+        function createRevenueChart() {
+            const data = [{
+                x: ['Top 10 Keywords', 'High Opportunity', 'Medium Opportunity', 'Low Opportunity'],
+                y: [13344, 153600, 0, 359520],
+                type: 'bar',
+                marker: {
+                    color: ['#f093fb', '#4facfe', '#43e97b', '#ff9a9e']
+                },
+                text: ['$13,344', '$153,600', '$0', '$359,520'],
+                textposition: 'auto',
+            }];
+
+            const layout = {
+                title: {
+                    text: 'Revenue Potential by Opportunity Type',
+                    font: { size: 16 }
+                },
+                xaxis: { title: 'Opportunity Category' },
+                yaxis: { 
+                    title: 'Annual Revenue Potential (USD)',
+                    tickformat: '$,.0f'
+                },
+                showlegend: false,
+                margin: { t: 50, b: 50, l: 80, r: 50 }
+            };
+
+            Plotly.newPlot('revenueChart', data, layout, {responsive: true});
+        }
+
+        // Create persona distribution chart
+        function createPersonaChart() {
+            const data = [{
+                values: [797, 0, 0],
+                labels: ['HR/TA/Hiring Manager', 'Developer/Student', 'Consumer/General'],
+                type: 'pie',
+                marker: {
+                    colors: ['#667eea', '#764ba2', '#f093fb']
+                }
+            }];
+
+            const layout = {
+                title: {
+                    text: 'Target Persona Distribution',
+                    font: { size: 14 }
+                },
+                showlegend: true,
+                margin: { t: 50, b: 50, l: 50, r: 50 }
+            };
+
+            Plotly.newPlot('personaChart', data, layout, {responsive: true});
+        }
+
+        // Create intent distribution chart
+        function createIntentChart() {
+            const data = [{
+                values: [450, 280, 67],
+                labels: ['Commercial', 'Transactional', 'Informational'],
+                type: 'pie',
+                marker: {
+                    colors: ['#4facfe', '#43e97b', '#ff9a9e']
+                }
+            }];
+
+            const layout = {
+                title: {
+                    text: 'Search Intent Distribution',
+                    font: { size: 14 }
+                },
+                showlegend: true,
+                margin: { t: 50, b: 50, l: 50, r: 50 }
+            };
+
+            Plotly.newPlot('intentChart', data, layout, {responsive: true});
+        }
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            populateDetailedTable();
+            createRevenueChart();
+            createPersonaChart();
+            createIntentChart();
+        });
+    </script>
+
+</html>

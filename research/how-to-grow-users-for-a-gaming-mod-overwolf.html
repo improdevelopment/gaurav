@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to Grow Users for a Gaming Mod Platform: An Overwolf Marketing Framework</title>
+    <meta name="description"
+        content="A strategic marketing framework for growing users on a gaming mod platform using Overwolf-focused acquisition, engagement, and community-building tactics." />
+    <meta name="keywords"
+        content="gaming mods, user acquisition, Overwolf marketing, platform growth, community engagement, creator economy" />
+    <meta name="author" content="Editorial Team" />
+    <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0891b2',
+                        secondary: '#0e7490',
+                        accent: '#67e8f9',
+                        neutral: '#374151',
+                        'neutral-light': '#f8fafc',
+                        'neutral-dark': '#1f2937'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(135deg, rgba(8, 145, 178, 0.1) 0%, rgba(14, 116, 144, 0.2) 50%, rgba(31, 41, 55, 0.3) 100%);
+        }
+        .toc-fixed {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 280px;
+            height: 100vh;
+            background: rgba(248, 250, 252, 0.95);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid #e2e8f0;
+            z-index: 1000;
+            overflow-y: auto;
+            padding: 2rem 1.5rem;
+        }
+        .main-content {
+            margin-left: 280px;
+            min-height: 100vh;
+        }
+        .citation-link {
+            color: #0891b2;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #0891b2;
+        }
+        .citation-link:hover {
+            background-color: #f0f9ff;
+            border-bottom-style: solid;
+        }
+        @media (max-width: 1024px) {
+            .toc-fixed {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+            .toc-fixed.mobile-open {
+                transform: translateX(0);
+            }
+            .main-content {
+                margin-left: 0;
+            }
+        }
+    </style>
+  <base target="_blank">
+</head>
+
+  <body class="bg-neutral-light font-sans text-neutral">
+
+    <!-- Mobile TOC Toggle -->
+    <button id="toc-toggle" class="lg:hidden fixed top-4 left-4 z-[1001] bg-primary text-white p-3 rounded-lg shadow-lg">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Fixed Table of Contents -->
+    <nav id="toc-nav" class="toc-fixed">
+      <div class="mb-8">
+        <h3 class="font-serif text-xl font-bold text-neutral-dark mb-4">Table of Contents</h3>
+        <div class="space-y-2">
+          <a href="#hero" class="block text-sm hover:text-primary transition-colors py-1">Executive Overview</a>
+          <a href="#phase-1" class="block text-sm hover:text-primary transition-colors py-1">Phase 1: Company Understanding</a>
+          <a href="#phase-2" class="block text-sm hover:text-primary transition-colors py-1">Phase 2: Competitive Landscape</a>
+          <a href="#phase-3" class="block text-sm hover:text-primary transition-colors py-1">Phase 3: Market Analysis</a>
+          <a href="#phase-4" class="block text-sm hover:text-primary transition-colors py-1">Phase 4: User Personas</a>
+          <a href="#phase-5" class="block text-sm hover:text-primary transition-colors py-1">Phase 5: Objectives &amp; KPIs</a>
+          <a href="#phase-6" class="block text-sm hover:text-primary transition-colors py-1">Phase 6: Marketing Strategy</a>
+          <a href="#phase-7" class="block text-sm hover:text-primary transition-colors py-1">Phase 7: 90-Day Action Plan</a>
+          <a href="#phase-8" class="block text-sm hover:text-primary transition-colors py-1">Phase 8: Control &amp; Reviews</a>
+        </div>
+      </div>
+
+      <div class="border-t pt-4">
+        <h4 class="font-semibold text-xs text-neutral mb-3 uppercase tracking-wide">Key Metrics</h4>
+        <div class="space-y-3 text-xs">
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="text-neutral-dark font-semibold">MAU Target</div>
+            <div class="text-primary font-bold">125M</div>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="text-neutral-dark font-semibold">Revenue Target</div>
+            <div class="text-primary font-bold">$100M</div>
+          </div>
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="text-neutral-dark font-semibold">Q1 Budget</div>
+            <div class="text-primary font-bold">$165K</div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="relative min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 container mx-auto px-6 py-20">
+
+          <!-- Bento Grid Layout -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 min-h-screen">
+
+            <!-- Main Title &amp; Subtitle -->
+            <div class="lg:col-span-8 space-y-8">
+              <div class="space-y-6">
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+                  <span class="italic text-accent block">How to Grow Users</span>
+                  <span class="text-white block mt-2">for a Gaming Mod Platform</span>
+                </h1>
+                <p class="text-lg sm:text-xl lg:text-2xl text-slate-300 max-w-3xl leading-relaxed break-words">
+                  An Overwolf marketing framework for sustainable ecosystem growth through creator empowerment, gamer engagement, and strategic brand partnerships.
+                </p>
+              </div>
+            </div>
+
+            <!-- Key Highlights Sidebar -->
+            <div class="lg:col-span-4 space-y-6">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <h3 class="font-serif text-2xl font-bold mb-4 text-accent">Strategic Imperatives</h3>
+                <div class="space-y-4">
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-users text-accent mt-1"></i>
+                    <div>
+                      <div class="font-semibold">Creator Empowerment</div>
+                      <div class="text-sm text-slate-300">$1B payout goal by 2030</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-gamepad text-accent mt-1"></i>
+                    <div>
+                      <div class="font-semibold">Gamer Engagement</div>
+                      <div class="text-sm text-slate-300">100M+ MAU target</div>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-3">
+                    <i class="fas fa-chart-line text-accent mt-1"></i>
+                    <div>
+                      <div class="font-semibold">Brand Partnerships</div>
+                      <div class="text-sm text-slate-300">Global ad network expansion</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+                <h3 class="font-serif text-2xl font-bold mb-4 text-accent">Market Opportunity</h3>
+                <div class="space-y-4">
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-white">$1-3B</div>
+                    <div class="text-sm text-slate-300">Addressable market</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-white">1,500+</div>
+                    <div class="text-sm text-slate-300">Supported games</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-3xl font-bold text-white">25%</div>
+                    <div class="text-sm text-slate-300">Target market share</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual Elements -->
+            <div class="lg:col-span-12 grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+              <div class="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-6 border border-accent/30">
+                <img src="https://kimi-web-img.moonshot.cn/img/i.pinimg.com/322a04b5891e6ecd324d2852b8cb80b1f07afaeb.jpg" alt="Gaming creator workstation with multiple monitors" class="w-full h-32 object-cover rounded-lg mb-4" size="small" aspect="wide" style="photo" query="gaming creator workstation setup" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+                <h4 class="font-semibold text-accent mb-2">Creator Ecosystem</h4>
+                <p class="text-sm text-slate-300">Empowering developers with tools, distribution, and monetization</p>
+              </div>
+              <div class="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-6 border border-accent/30">
+                <img src="https://fixedplaceholder" alt="Gaming community interface showing social features" class="w-full h-32 object-cover rounded-lg mb-4" size="medium" aspect="wide" style="photo" query="gaming community interface" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+                <h4 class="font-semibold text-accent mb-2">Gamer Community</h4>
+                <p class="text-sm text-slate-300">100M+ MAU across 1,500+ games with rich social features</p>
+              </div>
+              <div class="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-6 border border-accent/30">
+                <img src="https://kimi-web-img.moonshot.cn/img/static-www.adweek.com/f4e8789c5e6893f54b700b130e4352d711d071a3.png" alt="In-game advertising interface showing brand integration" class="w-full h-32 object-cover rounded-lg mb-4" size="medium" aspect="wide" style="photo" query="in-game advertising platform interface" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+                <h4 class="font-semibold text-accent mb-2">Brand Network</h4>
+                <p class="text-sm text-slate-300">Global advertising platform with premium brand partnerships</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 1: Company Understanding -->
+      <section id="phase-1" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 1: Understanding Overwolf&#39;s Core Business</h2>
+
+            <div class="prose prose-lg max-w-none">
+              <p class="text-xl text-neutral leading-relaxed mb-8">
+                Overwolf has established itself as a central figure in the gaming industry, operating a multifaceted platform that serves a diverse range of stakeholders, from individual creators to major global brands. The company&#39;s operations encompass a holistic ecosystem designed to foster in-game content creation, distribution, and monetization.
+              </p>
+
+              <div class="bg-slate-50 rounded-2xl p-8 my-12">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Core Mission &amp; Value Proposition</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 class="font-semibold text-primary mb-3">The Guild for In-Game Creators</h4>
+                    <p class="text-neutral mb-4">
+                      Overwolf&#39;s core mission is articulated as being <strong>&#34;the guild for in-game creators,&#34;</strong> encapsulating its commitment to empowering a community of developers, modders, and content creators <a href="https://www.overwolf.com/ads/audience/" class="citation-link" target="_blank">[1]</a>.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-primary mb-3">$1 Billion Creator Pledge</h4>
+                    <p class="text-neutral mb-4">
+                      The company&#39;s ambitious goal to <strong>pay out $1 billion to its creator community by 2030</strong> serves as a powerful testament to its creator-centric KPI <a href="https://www.overwolf.com/ads/audience/" class="citation-link" target="_blank">[1]</a>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-12">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Key Business Segments</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                  <div class="bg-primary/5 rounded-xl p-6 border border-primary/20">
+                    <i class="fas fa-code text-primary text-2xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-3">Creator Ecosystem</h4>
+                    <p class="text-sm text-neutral">SDK, CurseForge platform, and Tebex monetization suite for developers and game studios <a href="https://www.overwolf.com/" class="citation-link" target="_blank">[2]</a>.</p>
+                  </div>
+                  <div class="bg-secondary/5 rounded-xl p-6 border border-secondary/20">
+                    <i class="fas fa-store text-secondary text-2xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-3">Gamer Platform</h4>
+                    <p class="text-sm text-neutral">Overwolf Appstore and CurseForge website serving 100M+ MAUs across 1,500+ games <a href="https://www.overwolf.com/ads/audience/" class="citation-link" target="_blank">[1]</a>.</p>
+                  </div>
+                  <div class="bg-accent/20 rounded-xl p-6 border border-accent/30">
+                    <i class="fas fa-ad text-primary text-2xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-3">In-Game Advertising</h4>
+                    <p class="text-sm text-neutral">Brand network reaching 100M+ gamers with contextual, immersive ad experiences <a href="https://www.overwolf.com/ads/case-studies/amd/" class="citation-link" target="_blank">[3]</a>.</p>
+                  </div>
+                  <div class="bg-neutral/5 rounded-xl p-6 border border-neutral/20">
+                    <i class="fas fa-chart-line text-neutral text-2xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-3">Website Monetization</h4>
+                    <p class="text-sm text-neutral">NitroPay-powered ad-tech solutions for gaming websites to optimize revenue streams <a href="https://www.overwolf.com/" class="citation-link" target="_blank">[2]</a>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 2: Competitive Landscape -->
+      <section id="phase-2" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 2: Identifying the Competitive Landscape</h2>
+
+            <div class="mb-12">
+              <p class="text-xl text-neutral leading-relaxed mb-8">
+                The competitive landscape for in-game content platforms is intense and multi-faceted, with threats emerging from specialized modding services, established community platforms, and massive digital storefronts.
+              </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+              <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Direct Competitors</h3>
+                <div class="space-y-6">
+                  <div class="border-l-4 border-primary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Mod.io</h4>
+                    <p class="text-sm text-neutral mb-2">Cross-platform modding API and SDK for game developers</p>
+                    <a href="https://mod.io" class="citation-link text-xs" target="_blank">mod.io</a>
+                  </div>
+                  <div class="border-l-4 border-secondary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Nexus Mods</h4>
+                    <p class="text-sm text-neutral mb-2">Largest PC modding community with 30M+ registered users</p>
+                    <a href="https://www.nexusmods.com" class="citation-link text-xs" target="_blank">nexusmods.com</a>
+                  </div>
+                  <div class="border-l-4 border-accent pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Steam Workshop</h4>
+                    <p class="text-sm text-neutral mb-2">Integrated modding with 120M+ MAUs</p>
+                    <a href="https://steamcommunity.com/workshop/" class="citation-link text-xs" target="_blank">steamcommunity.com/workshop</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Emerging Threats</h3>
+                <div class="space-y-6">
+                  <div class="border-l-4 border-primary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Epic Games Store</h4>
+                    <p class="text-sm text-neutral mb-2">Developing mod support with 75M+ MAUs</p>
+                    <a href="https://store.epicgames.com" class="citation-link text-xs" target="_blank">store.epicgames.com</a>
+                  </div>
+                  <div class="border-l-4 border-secondary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">WeMod</h4>
+                    <p class="text-sm text-neutral mb-2">Game trainers and mods with 5M+ registered users</p>
+                    <a href="https://www.wemod.com" class="citation-link text-xs" target="_blank">wemod.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Competitive Landscape Insights</h3>
+              <div class="grid md:grid-cols-3 gap-6">
+                <div class="text-center">
+                  <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <i class="fas fa-crown text-primary text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-2">Steam Dominance</h4>
+                    <p class="text-sm text-neutral">40-50% market share through integrated platform advantage</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <i class="fas fa-puzzle-piece text-secondary text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-2">Fragmented Market</h4>
+                    <p class="text-sm text-neutral">Multiple specialized players competing across different segments</p>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="bg-white rounded-xl p-6 shadow-sm">
+                    <i class="fas fa-rocket text-accent text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-neutral-dark mb-2">Growth Potential</h4>
+                    <p class="text-sm text-neutral">$1-3B addressable market with room for expansion</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 3: Market Analysis -->
+      <section id="phase-3" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 3: Market Size and Competitive Analysis</h2>
+
+            <div class="mb-12">
+              <div class="bg-slate-50 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Market Size Snapshot</h3>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                  <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">$455B</div>
+                    <div class="text-sm text-neutral">Global Gaming Market 2024</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-4xl font-bold text-secondary mb-2">$13.3B</div>
+                    <div class="text-sm text-neutral">In-Game Advertising 2024</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="text-4xl font-bold text-accent mb-2">$5.6B</div>
+                    <div class="text-sm text-neutral">UGC Platform Market 2024</div>
+                  </div>
+                </div>
+                <p class="text-neutral leading-relaxed">
+                  The in-game content and modding niche represents a significant growth opportunity within the broader gaming ecosystem. With the global gaming market projected to reach <strong>$455 billion by 2024</strong>
+                  <a href="https://variety.com/2025/gaming/news/overwolf-in-game-ad-sales-100-million-1236472483/" class="citation-link" target="_blank">[4]</a>, and the UGC platform market expected to grow from <strong>$5.6 billion in 2024 to $31.3 billion by 2032</strong>, the addressable market for platforms like Overwolf is estimated at <strong>$1-3 billion globally</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">CEO-Level Strategic Insights</h3>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">White Space Opportunities</h4>
+                  <ul class="space-y-3 text-neutral">
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-star text-accent mt-1"></i>
+                      <span>Creator acquisition and retention through enhanced revenue sharing</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-mobile-alt text-accent mt-1"></i>
+                      <span>Mobile and console expansion with cross-platform capabilities</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-handshake text-accent mt-1"></i>
+                      <span>Partnerships with mid-tier studios for Modding-as-a-Service</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-search text-accent mt-1"></i>
+                      <span>Enhanced gamer discovery through better curation and recommendations</span>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-secondary mb-4">Key Risk Mitigation</h4>
+                  <ul class="space-y-3 text-neutral">
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-shield-alt text-red-500 mt-1"></i>
+                      <span>Diversify portfolio to reduce platform dependency on third-party games</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-users text-red-500 mt-1"></i>
+                      <span>Strengthen creator retention with competitive monetization options</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-eye text-red-500 mt-1"></i>
+                      <span>Invest in brand safety and content moderation for advertiser trust</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                      <i class="fas fa-chart-line text-red-500 mt-1"></i>
+                      <span>Monitor competitive threats from Steam and Epic Games Store</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 4: User Personas -->
+      <section id="phase-4" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 4: Defining Core User Personas</h2>
+
+            <div class="mb-12">
+              <p class="text-xl text-neutral leading-relaxed">
+                Three key personas drive Overwolf&#39;s ecosystem: the In-Game Creator who builds content, the Brand Marketing Manager who funds advertising, and the Dedicated Gamer who consumes the content. Each requires a distinct value proposition and engagement strategy.
+              </p>
+            </div>
+
+            <!-- Persona 1: The In-Game Creator -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+              <div class="flex items-center mb-6">
+                <div class="bg-primary/10 rounded-full p-4 mr-4">
+                  <i class="fas fa-code text-primary text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-2xl font-bold text-neutral-dark">Persona 1: The In-Game Creator</h3>
+                  <p class="text-neutral">Independent developers and modders who create content</p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">Key Characteristics</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Passionate gamers with coding skills</li>
+                    <li>• Often working solo or in small teams</li>
+                    <li>• Driven by passion, seeking sustainability</li>
+                    <li>• Technically skilled but business-challenged</li>
+                  </ul>
+
+                  <h4 class="font-semibold text-primary mb-4 mt-6">Pain Points</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Monetization and revenue generation</li>
+                    <li>• Technical compliance with game updates</li>
+                    <li>• User acquisition and marketing</li>
+                    <li>• Competition for attention</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">Content Opportunities</h4>
+                  <div class="space-y-4">
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">&#34;Creator&#39;s Playbook&#34;</h5>
+                      <p class="text-sm text-neutral">Definitive guide to building, launching, and scaling successful apps</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">Monthly Spotlight Webinars</h5>
+                      <p class="text-sm text-neutral">Deep dives with top-earning creators sharing strategies</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">Transparent Earnings Reports</h5>
+                      <p class="text-sm text-neutral">Anonymized data on revenue trends and opportunities</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Persona 2: The Brand Marketing Manager -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm mb-8">
+              <div class="flex items-center mb-6">
+                <div class="bg-secondary/10 rounded-full p-4 mr-4">
+                  <i class="fas fa-briefcase text-secondary text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-2xl font-bold text-neutral-dark">Persona 2: The Brand Marketing Manager</h3>
+                  <p class="text-neutral">Decision-makers controlling advertising budgets for brand campaigns</p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-secondary mb-4">Key Characteristics</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Data-driven and ROI-focused</li>
+                    <li>• Managing multi-million dollar budgets</li>
+                    <li>• Under pressure to justify spend</li>
+                    <li>• Seeking innovative channels</li>
+                  </ul>
+
+                  <h4 class="font-semibold text-secondary mb-4 mt-6">Pain Points</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Ad fatigue and audience fragmentation</li>
+                    <li>• Difficulty reaching gaming demographics</li>
+                    <li>• Brand safety concerns</li>
+                    <li>• Need for clear performance metrics</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-secondary mb-4">Content Opportunities</h4>
+                  <div class="space-y-4">
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">&#34;State of In-Game Advertising&#34; Report</h5>
+                      <p class="text-sm text-neutral">Comprehensive data on gaming audience and ad performance</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">ROI Calculator Tool</h5>
+                      <p class="text-sm text-neutral">Interactive tool for campaign impact estimation</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">Brand Safety Commitment</h5>
+                      <p class="text-sm text-neutral">Detailed documentation on content moderation and brand protection</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Persona 3: The Dedicated Gamer -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+              <div class="flex items-center mb-6">
+                <div class="bg-accent/20 rounded-full p-4 mr-4">
+                  <i class="fas fa-gamepad text-primary text-2xl"></i>
+                </div>
+                <div>
+                  <h3 class="font-serif text-2xl font-bold text-neutral-dark">Persona 3: The Dedicated Gamer</h3>
+                  <p class="text-neutral">Competitive players seeking performance advantages</p>
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">Key Characteristics</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Deeply invested in 1-2 competitive games</li>
+                    <li>• Always seeking competitive edge</li>
+                    <li>• Tech-savvy and comfortable with mods</li>
+                    <li>• Active in gaming communities</li>
+                  </ul>
+
+                  <h4 class="font-semibold text-primary mb-4 mt-6">Pain Points</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Information overload during gameplay</li>
+                    <li>• Need for real-time insights</li>
+                    <li>• Concerns about app safety and security</li>
+                    <li>• Frustration with game update compatibility</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">Content Opportunities</h4>
+                  <div class="space-y-4">
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">&#34;Top Apps for Season X&#34; Guides</h5>
+                      <p class="text-sm text-neutral">Curated recommendations for specific game metas</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">&#34;How to Climb Ranked&#34; Tutorials</h5>
+                      <p class="text-sm text-neutral">Video guides using specific apps for competitive advantage</p>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4">
+                      <h5 class="font-semibold text-neutral-dark">Pro Player Collaborations</h5>
+                      <p class="text-sm text-neutral">Partnerships with influencers to showcase app benefits</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 5: Objectives &amp; KPIs -->
+      <section id="phase-5" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 5: Setting Objectives and KPIs</h2>
+
+            <div class="mb-12">
+              <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Primary Business Goal</h3>
+                <p class="text-xl text-neutral leading-relaxed">
+                  <strong>To grow the monthly active user (MAU) base of Overwolf&#39;s gaming mod platform by 25% within the next 12 months, while simultaneously increasing creator payouts by 30% to foster a thriving and sustainable creator ecosystem.</strong>
+                </p>
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+              <div class="bg-slate-50 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">SMART Marketing Objectives</h3>
+                <div class="space-y-6">
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</div>
+                    <div>
+                      <h4 class="font-semibold text-neutral-dark">Creator Acquisition</h4>
+                      <p class="text-neutral text-sm">Increase new creator registrations by 40% in 6 months through targeted outreach and improved onboarding</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-secondary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</div>
+                    <div>
+                      <h4 class="font-semibold text-neutral-dark">Conversion Optimization</h4>
+                      <p class="text-neutral text-sm">Improve app page visit-to-install rate by 15% in 90 days through A/B testing and optimization</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-accent text-neutral-dark rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</div>
+                    <div>
+                      <h4 class="font-semibold text-neutral-dark">Brand Partnerships</h4>
+                      <p class="text-neutral text-sm">Generate 50 qualified leads per month for advertising sales within 90 days</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start space-x-4">
+                    <div class="bg-neutral text-white rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</div>
+                    <div>
+                      <h4 class="font-semibold text-neutral-dark">User Retention</h4>
+                      <p class="text-neutral text-sm">Increase 30-day retention rate for new gamers by 20% in 6 months</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-slate-50 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Key Performance Indicators</h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center p-4 bg-white rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Monthly Active Users</div>
+                      <div class="text-sm text-neutral">Current: 100M</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-primary font-bold text-lg">125M</div>
+                      <div class="text-sm text-neutral">Target</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-white rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Creator Payouts</div>
+                      <div class="text-sm text-neutral">Annual</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-secondary font-bold text-lg">$65M</div>
+                      <div class="text-sm text-neutral">Target</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-white rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">New Creator Registrations</div>
+                      <div class="text-sm text-neutral">Monthly increase</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-accent font-bold text-lg">+40%</div>
+                      <div class="text-sm text-neutral">Target</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-white rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Ad Sales Leads</div>
+                      <div class="text-sm text-neutral">Monthly qualified</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-primary font-bold text-lg">50</div>
+                      <div class="text-sm text-neutral">Target</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-2xl p-8">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Key Assumptions &amp; Dependencies</h3>
+              <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h4 class="font-semibold text-primary mb-4">Success Factors</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Stable gaming ecosystem with continued mod support</li>
+                    <li>• Timely delivery of key product features</li>
+                    <li>• Sufficient marketing budget allocation</li>
+                    <li>• Adequate team capacity and expertise</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-secondary mb-4">Risk Factors</h4>
+                  <ul class="space-y-2 text-neutral">
+                    <li>• Adverse changes in major game policies</li>
+                    <li>• Major competitor disruptive initiatives</li>
+                    <li>• Platform dependency on third-party games</li>
+                    <li>• Creator churn to competing platforms</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 6: Marketing Strategy -->
+      <section id="phase-6" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 6: Developing the Marketing Strategy (4Ps)</h2>
+
+            <div class="mb-12">
+              <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Core Positioning Statement</h3>
+                <p class="text-xl text-neutral leading-relaxed italic">
+                  &#34;For in-game creators and gamers, Overwolf is the only all-in-one platform that provides the tools to build, the marketplace to share, and the network to monetize in-game content, empowering a new generation of creators to turn their passion into a profession.&#34;
+                </p>
+              </div>
+            </div>
+
+            <!-- 4Ps Marketing Mix -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+              <!-- Product &amp; Price -->
+              <div class="space-y-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                  <h3 class="font-serif text-xl font-bold text-neutral-dark mb-6 flex items-center">
+                    <i class="fas fa-box text-primary mr-3"></i>
+                    Product Strategy
+                  </h3>
+                  <div class="space-y-4">
+                    <div class="border-l-4 border-primary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Key Features</h4>
+                      <p class="text-sm text-neutral">Emphasize ease of use with Overwolf SDK, vast app library, and unique monetization through ad network and Tebex</p>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Creator Bundles</h4>
+                      <p class="text-sm text-neutral">&#34;Creator Starter Packs&#34; with premium SDK features, ad credits, and priority support</p>
+                    </div>
+                    <div class="border-l-4 border-accent pl-4">
+                      <h4 class="font-semibold text-neutral-dark">New Features</h4>
+                      <p class="text-sm text-neutral">Content recommendation engine and improved creator onboarding flow</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                  <h3 class="font-serif text-xl font-bold text-neutral-dark mb-6 flex items-center">
+                    <i class="fas fa-tag text-secondary mr-3"></i>
+                    Pricing Strategy
+                  </h3>
+                  <div class="space-y-4">
+                    <div class="border-l-4 border-primary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Freemium Model</h4>
+                      <p class="text-sm text-neutral">Continue free tier for creators and gamers to lower barriers</p>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Revenue Share</h4>
+                      <p class="text-sm text-neutral">Maintain competitive revenue share with tiered percentages based on engagement</p>
+                    </div>
+                    <div class="border-l-4 border-accent pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Ad Pricing</h4>
+                      <p class="text-sm text-neutral">Flexible CPM, CPC, CPA models with premium pricing for advanced targeting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Place &amp; Promotion -->
+              <div class="space-y-8">
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                  <h3 class="font-serif text-xl font-bold text-neutral-dark mb-6 flex items-center">
+                    <i class="fas fa-store text-primary mr-3"></i>
+                    Place (Distribution) Strategy
+                  </h3>
+                  <div class="space-y-4">
+                    <div class="border-l-4 border-primary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Primary Channels</h4>
+                      <p class="text-sm text-neutral">Overwolf Appstore and CurseForge website as main distribution hubs</p>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Secondary Channels</h4>
+                      <p class="text-sm text-neutral">Partnerships with hardware manufacturers and game developers for pre-installation</p>
+                    </div>
+                    <div class="border-l-4 border-accent pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Global Reach</h4>
+                      <p class="text-sm text-neutral">Localization for key international markets and multiple language support</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-sm">
+                  <h3 class="font-serif text-xl font-bold text-neutral-dark mb-6 flex items-center">
+                    <i class="fas fa-bullhorn text-secondary mr-3"></i>
+                    Promotion Strategy
+                  </h3>
+                  <div class="space-y-4">
+                    <div class="border-l-4 border-primary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Content Marketing &amp; SEO</h4>
+                      <p class="text-sm text-neutral">Drive organic awareness through creator guides and gaming insights</p>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Influencer Partnerships</h4>
+                      <p class="text-sm text-neutral">Build credibility through collaborations with gaming content creators</p>
+                    </div>
+                    <div class="border-l-4 border-accent pl-4">
+                      <h4 class="font-semibold text-neutral-dark">Account-Based Marketing</h4>
+                      <p class="text-sm text-neutral">Targeted campaigns for brand marketing managers and decision-makers</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Content Pillars -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-8">Core Content Pillars</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="text-center">
+                  <div class="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-star text-primary text-2xl"></i>
+                  </div>
+                  <h4 class="font-semibold text-neutral-dark mb-3">Creator Success</h4>
+                  <p class="text-sm text-neutral">Attract, educate, and retain in-game creators with technical guides and success stories</p>
+                </div>
+                <div class="text-center">
+                  <div class="bg-secondary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-gamepad text-secondary text-2xl"></i>
+                  </div>
+                  <h4 class="font-semibold text-neutral-dark mb-3">Gamer&#39;s Edge</h4>
+                  <p class="text-sm text-neutral">Drive app discovery with &#34;Top Apps&#34; lists and competitive gaming guides</p>
+                </div>
+                <div class="text-center">
+                  <div class="bg-accent/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-chart-line text-primary text-2xl"></i>
+                  </div>
+                  <h4 class="font-semibold text-neutral-dark mb-3">Brand Innovation</h4>
+                  <p class="text-sm text-neutral">Position Overwolf as must-have advertising channel with case studies and benchmarks</p>
+                </div>
+                <div class="text-center">
+                  <div class="bg-neutral/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-users text-neutral text-2xl"></i>
+                  </div>
+                  <h4 class="font-semibold text-neutral-dark mb-3">Community &amp; Culture</h4>
+                  <p class="text-sm text-neutral">Build loyalty through community highlights, user-generated content, and events</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 7: 90-Day Action Plan -->
+      <section id="phase-7" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 7: 90-Day Action Plan and Budget</h2>
+
+            <div class="mb-12">
+              <div class="bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Q1 2025 Strategic Focus</h3>
+                <p class="text-xl text-neutral leading-relaxed">
+                  The first quarter focuses on three critical workstreams: Creator Growth through technical documentation and community engagement, Gamer Acquisition via optimized app discovery and paid campaigns, and Brand Sales Enablement through thought leadership content and targeted ABM campaigns.
+                </p>
+              </div>
+            </div>
+
+            <!-- 90-Day Action Plan Table -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-8 mb-12 overflow-x-auto">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-8">90-Day Action Plan</h3>
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="border-b border-slate-200">
+                    <th class="text-left py-4 px-4 font-semibold text-neutral-dark">Workstream</th>
+                    <th class="text-left py-4 px-4 font-semibold text-neutral-dark">Task</th>
+                    <th class="text-left py-4 px-4 font-semibold text-neutral-dark">Owner</th>
+                    <th class="text-left py-4 px-4 font-semibold text-neutral-dark">Timeline</th>
+                    <th class="text-left py-4 px-4 font-semibold text-neutral-dark">Success Metric</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-primary">Creator Growth</td>
+                    <td class="py-4 px-4 text-neutral">Launch &#34;Creator&#39;s Playbook&#34; e-book and landing page</td>
+                    <td class="py-4 px-4 text-neutral">Content Marketing Manager</td>
+                    <td class="py-4 px-4 text-neutral">Week 1-4</td>
+                    <td class="py-4 px-4 text-neutral">1,000 downloads, 100 new sign-ups</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-primary">Creator Growth</td>
+                    <td class="py-4 px-4 text-neutral">Run targeted Reddit and Discord outreach campaign</td>
+                    <td class="py-4 px-4 text-neutral">Developer Advocate</td>
+                    <td class="py-4 px-4 text-neutral">Week 2-12</td>
+                    <td class="py-4 px-4 text-neutral">50 qualified creator leads</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-secondary">Gamer Acquisition</td>
+                    <td class="py-4 px-4 text-neutral">Implement A/B tests on top 10 app store pages</td>
+                    <td class="py-4 px-4 text-neutral">Product Marketing Manager</td>
+                    <td class="py-4 px-4 text-neutral">Week 1-6</td>
+                    <td class="py-4 px-4 text-neutral">10% increase in visit-to-install rate</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-secondary">Gamer Acquisition</td>
+                    <td class="py-4 px-4 text-neutral">Launch paid ad campaign on YouTube and Twitch</td>
+                    <td class="py-4 px-4 text-neutral">Paid Acquisition Manager</td>
+                    <td class="py-4 px-4 text-neutral">Week 3-12</td>
+                    <td class="py-4 px-4 text-neutral">50,000 new installs, CPI &lt;$2.00</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-accent">Brand Sales</td>
+                    <td class="py-4 px-4 text-neutral">Create &#34;State of In-Game Advertising&#34; Q1 report</td>
+                    <td class="py-4 px-4 text-neutral">Demand Generation Manager</td>
+                    <td class="py-4 px-4 text-neutral">Week 1-6</td>
+                    <td class="py-4 px-4 text-neutral">100 downloads by target accounts</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 px-4 font-semibold text-accent">Brand Sales</td>
+                    <td class="py-4 px-4 text-neutral">Launch LinkedIn ABM campaign targeting brand managers</td>
+                    <td class="py-4 px-4 text-neutral">Paid Acquisition Manager</td>
+                    <td class="py-4 px-4 text-neutral">Week 4-12</td>
+                    <td class="py-4 px-4 text-neutral">25 qualified leads (MQLs)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Budget Allocation -->
+            <div class="grid lg:grid-cols-2 gap-8">
+              <div class="bg-white border border-slate-200 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Budget Allocation</h3>
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center p-4 bg-slate-50 rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Paid Advertising (Gamers)</div>
+                      <div class="text-sm text-neutral">YouTube, Twitch, gaming sites</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-primary font-bold">$75,000</div>
+                      <div class="text-xs text-neutral">45% of budget</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-slate-50 rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Paid Advertising (Brands)</div>
+                      <div class="text-sm text-neutral">LinkedIn ABM campaigns</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-secondary font-bold">$25,000</div>
+                      <div class="text-xs text-neutral">15% of budget</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-slate-50 rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Content Creation</div>
+                      <div class="text-sm text-neutral">E-books, case studies, videos</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-accent font-bold">$30,000</div>
+                      <div class="text-xs text-neutral">18% of budget</div>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center p-4 bg-slate-50 rounded-lg">
+                    <div>
+                      <div class="font-semibold text-neutral-dark">Influencer Partnerships</div>
+                      <div class="text-sm text-neutral">Micro-influencer campaigns</div>
+                    </div>
+                    <div class="text-right">
+                      <div class="text-primary font-bold">$20,000</div>
+                      <div class="text-xs text-neutral">12% of budget</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-slate-200">
+                  <div class="flex justify-between items-center">
+                    <div class="font-serif text-xl font-bold text-neutral-dark">Total Q1 Budget</div>
+                    <div class="text-2xl font-bold text-neutral-dark">$165,000</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white border border-slate-200 rounded-2xl p-8">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Launch Calendar</h3>
+                <div class="space-y-4">
+                  <div class="border-l-4 border-primary pl-4">
+                    <div class="font-semibold text-neutral-dark">Week 1</div>
+                    <p class="text-sm text-neutral">Launch &#34;Creator&#39;s Playbook&#34; &amp; start A/B tests</p>
+                  </div>
+                  <div class="border-l-4 border-secondary pl-4">
+                    <div class="font-semibold text-neutral-dark">Week 3</div>
+                    <p class="text-sm text-neutral">Launch paid ad campaigns for gamer acquisition</p>
+                  </div>
+                  <div class="border-l-4 border-accent pl-4">
+                    <div class="font-semibold text-neutral-dark">Week 6</div>
+                    <p class="text-sm text-neutral">Publish &#34;State of In-Game Advertising&#34; report</p>
+                  </div>
+                  <div class="border-l-4 border-primary pl-4">
+                    <div class="font-semibold text-neutral-dark">Week 8</div>
+                    <p class="text-sm text-neutral">Host first &#34;Creator Spotlight&#34; webinar</p>
+                  </div>
+                  <div class="border-l-4 border-secondary pl-4">
+                    <div class="font-semibold text-neutral-dark">Week 12</div>
+                    <p class="text-sm text-neutral">Q1 performance review and Q2 planning</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Phase 8: Control &amp; Reviews -->
+      <section id="phase-8" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-6">
+          <div class="max-w-6xl mx-auto">
+            <h2 class="font-serif text-4xl font-bold text-neutral-dark mb-8">Phase 8: Control, Reviews, and Optimization</h2>
+
+            <div class="mb-12">
+              <p class="text-xl text-neutral leading-relaxed">
+                A structured framework for monitoring performance, making data-driven decisions, and ensuring continuous optimization of the marketing strategy through regular reviews and clear success criteria.
+              </p>
+            </div>
+
+            <!-- Weekly Performance Dashboard -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm mb-12">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-8">Weekly Performance Dashboard</h3>
+              <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-primary/5 rounded-xl p-6 border border-primary/20">
+                  <div class="flex items-center justify-between mb-4">
+                    <i class="fas fa-users text-primary text-2xl"></i>
+                    <span class="text-xs text-neutral bg-white px-2 py-1 rounded">MAU</span>
+                  </div>
+                  <div class="text-2xl font-bold text-neutral-dark">100M</div>
+                  <div class="text-sm text-neutral">Monthly Active Users</div>
+                  <div class="text-xs text-primary mt-2">Target: 125M</div>
+                </div>
+                <div class="bg-secondary/5 rounded-xl p-6 border border-secondary/20">
+                  <div class="flex items-center justify-between mb-4">
+                    <i class="fas fa-download text-secondary text-2xl"></i>
+                    <span class="text-xs text-neutral bg-white px-2 py-1 rounded">7-day</span>
+                  </div>
+                  <div class="text-2xl font-bold text-neutral-dark">12.5K</div>
+                  <div class="text-sm text-neutral">New Installs</div>
+                  <div class="text-xs text-secondary mt-2">Target: 15.6K</div>
+                </div>
+                <div class="bg-accent/20 rounded-xl p-6 border border-accent/30">
+                  <div class="flex items-center justify-between mb-4">
+                    <i class="fas fa-chart-line text-primary text-2xl"></i>
+                    <span class="text-xs text-neutral bg-white px-2 py-1 rounded">Rate</span>
+                  </div>
+                  <div class="text-2xl font-bold text-neutral-dark">8.2%</div>
+                  <div class="text-sm text-neutral">Conversion Rate</div>
+                  <div class="text-xs text-primary mt-2">Target: 9.4%</div>
+                </div>
+                <div class="bg-neutral/5 rounded-xl p-6 border border-neutral/20">
+                  <div class="flex items-center justify-between mb-4">
+                    <i class="fas fa-dollar-sign text-neutral text-2xl"></i>
+                    <span class="text-xs text-neutral bg-white px-2 py-1 rounded">MTD</span>
+                  </div>
+                  <div class="text-2xl font-bold text-neutral-dark">$4.2M</div>
+                  <div class="text-sm text-neutral">Creator Payouts</div>
+                  <div class="text-xs text-neutral mt-2">Target: $5.4M</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+              <!-- Review Cadence -->
+              <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Review Cadence</h3>
+                <div class="space-y-6">
+                  <div class="border-l-4 border-primary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Weekly Operations Review</h4>
+                    <p class="text-sm text-neutral mb-2">Every Monday morning</p>
+                    <ul class="text-xs text-neutral space-y-1">
+                      <li>• Review performance dashboard</li>
+                      <li>• Discuss tactical execution</li>
+                      <li>• Identify blockers</li>
+                      <li>• Align on weekly priorities</li>
+                    </ul>
+                  </div>
+                  <div class="border-l-4 border-secondary pl-4">
+                    <h4 class="font-semibold text-neutral-dark">Monthly Strategy Review</h4>
+                    <p class="text-sm text-neutral mb-2">First week of each month</p>
+                    <ul class="text-xs text-neutral space-y-1">
+                      <li>• Assess quarterly objectives</li>
+                      <li>• Review strategy effectiveness</li>
+                      <li>• Discuss key learnings</li>
+                      <li>• Make strategic adjustments</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stop or Scale Rules -->
+              <div class="bg-white rounded-2xl p-8 shadow-sm">
+                <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-6">Stop or Scale Rules</h3>
+                <div class="space-y-4">
+                  <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                    <h4 class="font-semibold text-red-700 mb-2">Stop Rule: Paid Ads</h4>
+                    <p class="text-sm text-red-600">Pause campaign if CPL/CPI is 20% above target for 14 consecutive days</p>
+                  </div>
+                  <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
+                    <h4 class="font-semibold text-yellow-700 mb-2">Reassess Rule: Content</h4>
+                    <p class="text-sm text-yellow-600">Stop promoting content with &lt;500 page views in 30 days</p>
+                  </div>
+                  <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                    <h4 class="font-semibold text-green-700 mb-2">Scale Rule: Success</h4>
+                    <p class="text-sm text-green-600">Scale initiative by 50% if exceeding target by 50% for 2 periods</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Sources and Ownership -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm">
+              <h3 class="font-serif text-2xl font-bold text-neutral-dark mb-8">Data Sources and Ownership</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-slate-200">
+                      <th class="text-left py-3 px-4 font-semibold text-neutral-dark">Metric</th>
+                      <th class="text-left py-3 px-4 font-semibold text-neutral-dark">Data Source</th>
+                      <th class="text-left py-3 px-4 font-semibold text-neutral-dark">Update Frequency</th>
+                      <th class="text-left py-3 px-4 font-semibold text-neutral-dark">Owner (Updates)</th>
+                      <th class="text-left py-3 px-4 font-semibold text-neutral-dark">Owner (Decides)</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-100">
+                    <tr>
+                      <td class="py-3 px-4 text-neutral">MAU, Installs, Conversion</td>
+                      <td class="py-3 px-4 text-neutral">Internal Analytics</td>
+                      <td class="py-3 px-4 text-neutral">Daily</td>
+                      <td class="py-3 px-4 text-neutral">Data Analyst</td>
+                      <td class="py-3 px-4 text-neutral">Head of Growth</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-neutral">Creator Payouts</td>
+                      <td class="py-3 px-4 text-neutral">Financial System</td>
+                      <td class="py-3 px-4 text-neutral">Monthly</td>
+                      <td class="py-3 px-4 text-neutral">Finance Analyst</td>
+                      <td class="py-3 px-4 text-neutral">Head of Creator Relations</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-neutral">Ad Sales Leads</td>
+                      <td class="py-3 px-4 text-neutral">CRM (Salesforce)</td>
+                      <td class="py-3 px-4 text-neutral">Daily</td>
+                      <td class="py-3 px-4 text-neutral">Sales Ops Manager</td>
+                      <td class="py-3 px-4 text-neutral">Head of Sales</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-neutral">Content Performance</td>
+                      <td class="py-3 px-4 text-neutral">Google Analytics</td>
+                      <td class="py-3 px-4 text-neutral">Weekly</td>
+                      <td class="py-3 px-4 text-neutral">Content Marketing Manager</td>
+                      <td class="py-3 px-4 text-neutral">Head of Growth</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="bg-neutral-dark text-white py-16">
+        <div class="container mx-auto px-6">
+          <div class="max-w-4xl mx-auto text-center">
+            <h3 class="font-serif text-3xl font-bold mb-6">Ready to Grow Your Gaming Platform?</h3>
+            <p class="text-xl text-slate-300 mb-8 leading-relaxed">
+              This comprehensive framework provides the strategic foundation for growing Overwolf&#39;s user base through creator empowerment, gamer engagement, and strategic brand partnerships. Success depends on disciplined execution and continuous optimization.
+            </p>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+              <div class="text-center">
+                <div class="text-4xl font-bold text-accent mb-2">125M</div>
+                <div class="text-sm text-slate-300">Target MAU in 12 months</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-accent mb-2">$65M</div>
+                <div class="text-sm text-slate-300">Target creator payouts</div>
+              </div>
+              <div class="text-center">
+                <div class="text-4xl font-bold text-accent mb-2">25%</div>
+                <div class="text-sm text-slate-300">Market share goal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+        // Mobile TOC Toggle
+        const tocToggle = document.getElementById('toc-toggle');
+        const tocNav = document.getElementById('toc-nav');
+        
+        tocToggle.addEventListener('click', () => {
+            tocNav.classList.toggle('mobile-open');
+        });
+
+        // Close TOC when clicking outside on mobile
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 1024) {
+                if (!tocNav.contains(event.target) && !tocToggle.contains(event.target)) {
+                    tocNav.classList.remove('mobile-open');
+                }
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile TOC after navigation
+                    if (window.innerWidth <= 1024) {
+                        tocNav.classList.remove('mobile-open');
+                    }
+                }
+            });
+        });
+
+        // Highlight active section in TOC
+        const sections = document.querySelectorAll('section[id]');
+        const tocLinks = document.querySelectorAll('.toc-fixed a[href^="#"]');
+
+        function highlightActiveSection() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                if (sectionTop <= 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            tocLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-semibold');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('text-primary', 'font-semibold');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightActiveSection);
+        highlightActiveSection(); // Initial call
+
+        // Close mobile menu when resizing to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1024) {
+                tocNav.classList.remove('mobile-open');
+            }
+        });
+    </script>
+  
+
+</body>
+
+</html>
