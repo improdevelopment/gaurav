@@ -4,10 +4,10 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node fix-routes.mjs",
     "preview": "astro preview",
     "astro": "astro",
-    "pages:build": "astro build",
+    "pages:build": "astro build && node fix-routes.mjs",
     "pages:dev": "astro dev",
     "deploy": "pnpm run build && wrangler pages deploy dist",
     "deploy:prod": "pnpm run build && wrangler pages deploy dist --branch=main"

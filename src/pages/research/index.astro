@@ -87,26 +87,61 @@ try {
           <p class="research-subtitle">
             In-depth research and analysis on AI, marketing, and technology
           </p>
+          
+          <div class="search-container">
+            <div class="search-box">
+              <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+              </svg>
+              <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search research articles..."
+                autocomplete="off"
+              />
+              <button id="clearSearch" class="clear-button" style="display: none;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="6" x2="6" y2="18"/>
+                  <line x1="6" y1="6" x2="18" y2="18"/>
+                </svg>
+              </button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+          </div>
         </div>
         
         {researchArticles.length > 0 ? (
-          <div class="research-grid">
+          <div class="research-grid" id="researchGrid">
             {researchArticles.map((article, index) => (
               <a 
                 href={`/research/${article.slug}`} 
                 class={`research-card card hover-lift animate-fade-in-up stagger-${Math.min(index + 1, 5)}`}
+                data-title={article.title.toLowerCase()}
+                data-slug={article.slug}
               >
-                <div class="card-icon">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                  </svg>
+                <div class="card-thumbnail" data-slug={article.slug}>
+                  <img 
+                    src={`/research/${article.slug}.png`}
+                    alt={article.title}
+                    class="thumbnail-image"
+                    loading="lazy"
+                  />
+                  <div class="thumbnail-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                      <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                      <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                  </div>
                 </div>
-                <h2 class="card-title">{article.title}</h2>
-                <div class="card-arrow">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M5 12h14M12 5l7 7-7 7"/>
-                  </svg>
+                <div class="card-content">
+                  <h2 class="card-title">{article.title}</h2>
+                  <div class="card-arrow">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                  </div>
                 </div>
               </a>
             ))}
@@ -156,6 +191,121 @@ try {
         color: var(--color-secondary);
         max-width: 600px;
         margin: 0 auto;
+        margin-bottom: 2rem;
+      }
+      
+      .search-container {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+      }
+      
+      .search-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: white;
+        border: 2px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        padding: 0 20px;
+        transition: all 0.3s ease;
+      }
+      
+      .search-box:focus-within {
+        border-color: #000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      
+      .search-icon {
+        color: #666;
+        flex-shrink: 0;
+      }
+      
+      .search-input {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 16px 16px;
+        font-size: 1rem;
+        background: transparent;
+        color: #000;
+      }
+      
+      .search-input::placeholder {
+        color: #999;
+      }
+      
+      .clear-button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666;
+        transition: all 0.2s ease;
+        border-radius: 50%;
+      }
+      
+      .clear-button:hover {
+        background: rgba(0, 0, 0, 0.05);
+        color: #000;
+      }
+      
+      .search-results {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        right: 0;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        max-height: 400px;
+        overflow-y: auto;
+        z-index: 100;
+        display: none;
+      }
+      
+      .search-results.active {
+        display: block;
+      }
+      
+      .search-result-item {
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-decoration: none;
+        display: block;
+        color: #000;
+      }
+      
+      .search-result-item:last-child {
+        border-bottom: none;
+      }
+      
+      .search-result-item:hover {
+        background: rgba(0, 0, 0, 0.03);
+      }
+      
+      .search-result-title {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 4px;
+      }
+      
+      .search-result-match {
+        font-size: 0.875rem;
+        color: #666;
+      }
+      
+      .no-results {
+        padding: 24px 20px;
+        text-align: center;
+        color: #666;
+        font-size: 0.95rem;
       }
       
       .research-grid {
@@ -167,7 +317,6 @@ try {
       
       .research-card {
         position: relative;
-        padding: 2rem;
         background: var(--color-surface);
         border: 1px solid var(--color-border);
         border-radius: var(--radius-lg);
@@ -175,7 +324,7 @@ try {
         transition: var(--transition-normal);
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        overflow: hidden;
       }
       
       .research-card:hover {
@@ -184,20 +333,67 @@ try {
         border-color: var(--color-primary);
       }
       
-      .card-icon {
-        width: 48px;
-        height: 48px;
-        background: var(--color-primary);
-        color: white;
-        border-radius: var(--radius-md);
+      .card-thumbnail {
+        width: 100%;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.03);
         display: flex;
         align-items: center;
         justify-content: center;
+        border-bottom: 1px solid var(--color-border);
         transition: var(--transition-normal);
+        position: relative;
+        overflow: hidden;
       }
       
-      .research-card:hover .card-icon {
+      .thumbnail-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition-normal);
+        display: block;
+        position: relative;
+        z-index: 1;
+      }
+      
+      .thumbnail-image.error {
+        display: none;
+      }
+      
+      .research-card:hover .thumbnail-image {
+        transform: scale(1.05);
+      }
+      
+      .thumbnail-placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-secondary);
+        transition: var(--transition-normal);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.03);
+        z-index: 0;
+      }
+      
+      .research-card:hover .card-thumbnail {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      
+      .research-card:hover .thumbnail-placeholder {
+        color: var(--color-primary);
         transform: scale(1.1);
+      }
+      
+      .card-content {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        flex: 1;
       }
       
       .card-title {
@@ -270,5 +466,135 @@ try {
         }
       }
     </style>
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Image loading logic
+        const images = document.querySelectorAll('.research-page .thumbnail-image');
+        
+        images.forEach((element) => {
+          const img = element as HTMLImageElement;
+          const slug = img.closest('.card-thumbnail')?.getAttribute('data-slug');
+          if (!slug) return;
+          
+          const formats = ['png', 'jpg', 'webp'];
+          let currentIndex = 0;
+          
+          const tryNextFormat = () => {
+            if (currentIndex >= formats.length) {
+              img.classList.add('error');
+              return;
+            }
+            
+            const testImg = new Image();
+            testImg.onload = () => {
+              img.src = `/research/${slug}.${formats[currentIndex]}`;
+            };
+            testImg.onerror = () => {
+              currentIndex++;
+              tryNextFormat();
+            };
+            testImg.src = `/research/${slug}.${formats[currentIndex]}`;
+          };
+          
+          img.onerror = () => {
+            currentIndex++;
+            tryNextFormat();
+          };
+        });
+        
+        // Search functionality
+        const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+        const clearButton = document.getElementById('clearSearch') as HTMLButtonElement;
+        const searchResults = document.getElementById('searchResults') as HTMLDivElement;
+        const researchGrid = document.getElementById('researchGrid') as HTMLDivElement;
+        const allCards = Array.from(document.querySelectorAll('.research-card')) as HTMLAnchorElement[];
+        
+        let searchTimeout: ReturnType<typeof setTimeout>;
+        
+        function performSearch(query: string) {
+          const lowerQuery = query.toLowerCase().trim();
+          
+          if (!lowerQuery) {
+            // Show all cards
+            allCards.forEach(card => card.style.display = '');
+            searchResults.classList.remove('active');
+            return;
+          }
+          
+          // Filter cards
+          const matches = allCards.filter(card => {
+            const title = card.getAttribute('data-title') || '';
+            const slug = card.getAttribute('data-slug') || '';
+            return title.includes(lowerQuery) || slug.includes(lowerQuery);
+          });
+          
+          // Hide non-matching cards
+          allCards.forEach(card => {
+            const title = card.getAttribute('data-title') || '';
+            const slug = card.getAttribute('data-slug') || '';
+            const isMatch = title.includes(lowerQuery) || slug.includes(lowerQuery);
+            card.style.display = isMatch ? '' : 'none';
+          });
+          
+          // Show search results dropdown
+          if (matches.length > 0) {
+            searchResults.innerHTML = matches.slice(0, 5).map(card => {
+              const title = card.querySelector('.card-title')?.textContent || '';
+              const href = card.getAttribute('href') || '';
+              return `
+                <a href="${href}" class="search-result-item">
+                  <div class="search-result-title">${title}</div>
+                </a>
+              `;
+            }).join('');
+            searchResults.classList.add('active');
+          } else {
+            searchResults.innerHTML = '<div class="no-results">No articles found</div>';
+            searchResults.classList.add('active');
+          }
+        }
+        
+        searchInput?.addEventListener('input', (e) => {
+          const query = (e.target as HTMLInputElement).value;
+          
+          // Show/hide clear button
+          if (clearButton) {
+            clearButton.style.display = query ? 'flex' : 'none';
+          }
+          
+          // Debounce search
+          clearTimeout(searchTimeout);
+          searchTimeout = setTimeout(() => {
+            performSearch(query);
+          }, 300);
+        });
+        
+        clearButton?.addEventListener('click', () => {
+          if (searchInput) {
+            searchInput.value = '';
+            searchInput.focus();
+          }
+          clearButton.style.display = 'none';
+          allCards.forEach(card => card.style.display = '');
+          searchResults.classList.remove('active');
+        });
+        
+        // Close search results when clicking outside
+        document.addEventListener('click', (e) => {
+          const target = e.target as HTMLElement;
+          if (!target.closest('.search-container')) {
+            searchResults.classList.remove('active');
+          }
+        });
+        
+        // Reopen search results when focusing input
+        searchInput?.addEventListener('focus', () => {
+          if (searchInput.value.trim()) {
+            performSearch(searchInput.value);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

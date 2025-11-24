@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>B2B Lead Generation for Technical Recruitment Platforms</title>
-    <meta name="description"
-        content="Discover strategies and tools for B2B lead generation tailored to technical recruitment platforms, enhancing outreach, conversions and scalable hiring success." />
-    <meta name="keywords"
-        content="B2B lead generation, technical recruitment, hiring platforms, recruiter tools, talent acquisition, lead strategies" />
+    <meta name="description" content="Discover strategies and tools for B2B lead generation tailored to technical recruitment platforms, enhancing outreach, conversions and scalable hiring success." />
+    <meta name="keywords" content="B2B lead generation, technical recruitment, hiring platforms, recruiter tools, talent acquisition, lead strategies" />
     <meta name="author" content="gaurav-agarwal" />
     <meta property="og:image" content="https://gaurav.imapro.in/icon-192x192.png" />
-</head>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <style>
-
         * {
             margin: 0;
             padding: 0;
@@ -27,51 +23,51 @@
             line-height: 1.6;
             color: #333;
             background: #f5f5f5;
-            padding: 20px;
+            padding: 10px;
         }
         
         .container {
-            max-width: 900px;
+            max-width: 1200px;
             margin: 0 auto;
             background: white;
-            padding: 60px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 50px;
-            padding-bottom: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
             border-bottom: 2px solid #e0e0e0;
         }
         
         h1 {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: 700;
             color: #1a1a1a;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            margin-bottom: 15px;
+            line-height: 1.3;
         }
         
         h2 {
-            font-size: 1.8em;
-            margin-top: 40px;
+            font-size: 1.6em;
+            margin-top: 30px;
             margin-bottom: 20px;
             color: #2c3e50;
             font-weight: 600;
         }
         
         h3 {
-            font-size: 1.3em;
-            margin-top: 30px;
+            font-size: 1.2em;
+            margin-top: 25px;
             margin-bottom: 15px;
             color: #34495e;
             font-weight: 600;
         }
         
         .subtitle {
-            font-size: 1.1em;
+            font-size: 1em;
             color: #666;
             margin-bottom: 10px;
             font-style: italic;
@@ -83,11 +79,18 @@
             line-height: 1.7;
         }
         
+        /* Responsive Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 20px 0;
+            -webkit-overflow-scrolling: touch;
+        }
+        
         table {
             width: 100%;
+            min-width: 600px;
             border-collapse: collapse;
-            margin: 25px 0;
-            font-size: 0.95em;
+            font-size: 0.9em;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
         
@@ -96,7 +99,7 @@
         }
         
         th, td {
-            padding: 12px 15px;
+            padding: 12px 10px;
             text-align: left;
             border-bottom: 1px solid #e0e0e0;
         }
@@ -104,6 +107,7 @@
         th {
             font-weight: 600;
             color: #2c3e50;
+            white-space: nowrap;
         }
         
         tr:hover {
@@ -113,34 +117,20 @@
         .highlight-box {
             background: #fff3cd;
             border-left: 4px solid #ffc107;
-            padding: 15px 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
         }
         
         .key-point {
             background: #d4edda;
             border-left: 4px solid #28a745;
-            padding: 15px 20px;
-            margin: 25px 0;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
         }
         
-        .metric-table th {
-            background: #e3f2fd;
-        }
-        
-        .funnel-table th {
-            background: #f3e5f5;
-        }
-        
-        .tech-stack-table th {
-            background: #e0f2f1;
-        }
-        
-        .action-plan-table th {
-            background: #fff3e0;
-        }
-        
-        ul {
+        ul, ol {
             margin-left: 25px;
             margin-bottom: 20px;
         }
@@ -149,37 +139,33 @@
             margin-bottom: 8px;
         }
         
-        .footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid #e0e0e0;
-            text-align: center;
-            color: #999;
-            font-size: 0.9em;
+        .section-break {
+            height: 30px;
         }
         
-        .section-break {
-            height: 40px;
-        }
+        /* Navigation Tabs */
         .nav-tabs {
             display: flex;
             background: #f8f9fa;
             border-bottom: 2px solid #e9ecef;
             overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin: 0 -30px;
+            padding: 0 30px;
         }
         
         .nav-tab {
-            flex: 1;
-            padding: 20px;
+            flex: 0 0 auto;
+            padding: 15px 20px;
             text-align: center;
             cursor: pointer;
             border: none;
             background: none;
-            font-size: 1em;
+            font-size: 0.95em;
             font-weight: 600;
             color: #6c757d;
             transition: all 0.3s ease;
-            min-width: 150px;
+            white-space: nowrap;
         }
         
         .nav-tab.active {
@@ -194,7 +180,7 @@
         }
         
         .content {
-            padding: 40px;
+            padding: 30px 0;
         }
         
         .tab-content {
@@ -211,52 +197,56 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
+        /* Charts */
         .chart-container {
             position: relative;
-            height: 400px;
-            margin: 30px 0;
+            height: 350px;
+            margin: 20px 0;
             background: #f8f9fa;
             border-radius: 10px;
-            padding: 20px;
+            padding: 15px;
         }
         
         .chart-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 30px;
-            margin: 30px 0;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
         }
         
         .chart-box {
             background: #f8f9fa;
             border-radius: 10px;
-            padding: 20px;
+            padding: 15px;
         }
         
         .chart-title {
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 600;
             margin-bottom: 15px;
             color: #2c3e50;
         }
         
+        /* Metric Cards */
         .metric-card {
             background: white;
             color: black;
-            padding: 25px;
+            padding: 20px;
             border-radius: 15px;
             text-align: center;
             margin: 15px 0;
             cursor: pointer;
             transition: transform 0.3s ease;
-            border: 1px solid #e9ecef;      }
+            border: 1px solid #e9ecef;
+        }
         
         .metric-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
         
         .metric-value {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: 700;
             margin: 10px 0;
         }
@@ -266,10 +256,11 @@
             opacity: 0.9;
         }
         
+        /* Interactive Table */
         .interactive-table {
             width: 100%;
+            min-width: 600px;
             border-collapse: collapse;
-            margin: 20px 0;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -278,7 +269,7 @@
         .interactive-table th {
             background: #667eea;
             color: white;
-            padding: 15px;
+            padding: 15px 10px;
             cursor: pointer;
             user-select: none;
             transition: background 0.3s ease;
@@ -289,7 +280,7 @@
         }
         
         .interactive-table td {
-            padding: 15px;
+            padding: 12px 10px;
             border-bottom: 1px solid #e9ecef;
             transition: background 0.3s ease;
         }
@@ -303,10 +294,11 @@
             opacity: 0.5;
         }
         
+        /* Calculator */
         .calculator {
             background: #e3f2fd;
             border-radius: 15px;
-            padding: 30px;
+            padding: 20px;
             margin: 20px 0;
         }
         
@@ -320,14 +312,18 @@
             justify-content: space-between;
             align-items: center;
             margin: 15px 0;
+            flex-wrap: wrap;
+            gap: 10px;
         }
         
         .calc-input label {
             font-weight: 600;
             color: #2c3e50;
+            flex: 1 1 auto;
         }
         
-        .calc-input input {
+        .calc-input input,
+        .calc-input select {
             width: 150px;
             padding: 10px;
             border: 2px solid #667eea;
@@ -342,10 +338,11 @@
             border-radius: 10px;
             margin-top: 20px;
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.1em;
             font-weight: 600;
         }
         
+        /* Progress Bar */
         .progress-bar {
             width: 100%;
             height: 20px;
@@ -362,41 +359,116 @@
             transition: width 1s ease;
         }
         
+        /* Tooltip */
         .tooltip {
             position: fixed;
             background: #333;
             color: white;
-            padding: 10px;
+            padding: 8px 12px;
             border-radius: 5px;
-            font-size: 0.9em;
+            font-size: 0.85em;
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.3s ease;
             z-index: 1000;
         }
         
-         @media (max-width: 768px) {
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 5px;
+            }
+            
             .container {
-                padding: 30px;
+                padding: 20px;
+                border-radius: 4px;
+            }
+            
+            .nav-tabs {
+                margin: 0 -20px;
+                padding: 0 20px;
             }
             
             h1 {
-                font-size: 2em;
-            }
-            
-            h2 {
                 font-size: 1.5em;
             }
             
+            h2 {
+                font-size: 1.3em;
+            }
+            
+            h3 {
+                font-size: 1.1em;
+            }
+            
+            .chart-container {
+                height: 250px;
+                padding: 10px;
+            }
+            
+            .chart-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .metric-value {
+                font-size: 1.8em;
+            }
+            
+            .calc-input {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .calc-input input,
+            .calc-input select {
+                width: 100%;
+            }
+            
             table {
-                font-size: 0.85em;
+                font-size: 0.8em;
+                min-width: 500px;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+            
+            .nav-tab {
+                padding: 12px 15px;
+                font-size: 0.9em;
             }
         }
         
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.3em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+            
+            table {
+                font-size: 0.75em;
+                min-width: 400px;
+            }
+            
+            .metric-value {
+                font-size: 1.5em;
+            }
+            
+            .chart-container {
+                height: 200px;
+            }
+        }
     </style>
-<base target="_blank">
 </head>
 <body>
+    <!-- Interactive Dashboard Container -->
     <div class="container">
         <div class="header">
             <h1>Interactive Report</h1>
@@ -447,40 +519,42 @@
                 <h2>Interactive ICP Matrix</h2>
                 <p style="margin-bottom: 20px; color: #666;">Click column headers to sort • Hover for insights</p>
                 
-                <table class="interactive-table" id="icpTable">
-                    <thead>
-                        <tr>
-                            <th onclick="sortTable('icpTable', 0)">Company Type <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('icpTable', 1)">Team Size <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('icpTable', 2)">Hiring Velocity <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('icpTable', 3)">Pain Level <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('icpTable', 4)">Lead Score <span class="sort-indicator">⇅</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Startup (&lt;50)</td>
-                            <td>1-2 recruiters</td>
-                            <td>5-10 roles/mo</td>
-                            <td>High</td>
-                            <td>6/10</td>
-                        </tr>
-                        <tr style="background: #fff3cd;">
-                            <td><strong>Scale-up (50-500)</strong></td>
-                            <td>3-10 recruiters</td>
-                            <td>15-40 roles/mo</td>
-                            <td>Very High</td>
-                            <td><strong>9/10</strong></td>
-                        </tr>
-                        <tr>
-                            <td>Enterprise (500+)</td>
-                            <td>10+ recruiters</td>
-                            <td>50+ roles/mo</td>
-                            <td>Medium</td>
-                            <td>7/10</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="interactive-table" id="icpTable">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('icpTable', 0)">Company Type <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('icpTable', 1)">Team Size <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('icpTable', 2)">Hiring Velocity <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('icpTable', 3)">Pain Level <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('icpTable', 4)">Lead Score <span class="sort-indicator">⇅</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Startup (&lt;50)</td>
+                                <td>1-2 recruiters</td>
+                                <td>5-10 roles/mo</td>
+                                <td>High</td>
+                                <td>6/10</td>
+                            </tr>
+                            <tr style="background: #fff3cd;">
+                                <td><strong>Scale-up (50-500)</strong></td>
+                                <td>3-10 recruiters</td>
+                                <td>15-40 roles/mo</td>
+                                <td>Very High</td>
+                                <td><strong>9/10</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Enterprise (500+)</td>
+                                <td>10+ recruiters</td>
+                                <td>50+ roles/mo</td>
+                                <td>Medium</td>
+                                <td>7/10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
                 <div class="chart-container" style="height: 350px;">
                     <canvas id="icpRadarChart"></canvas>
@@ -535,42 +609,44 @@
                     </div>
                 </div>
                 
-                <table class="interactive-table" id="metricsTable">
-                    <thead>
-                        <tr>
-                            <th onclick="sortTable('metricsTable', 0)">Metric <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('metricsTable', 1)">Early Stage <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('metricsTable', 2)">Growth Stage <span class="sort-indicator">⇅</span></th>
-                            <th onclick="sortTable('metricsTable', 3)">Best in Class <span class="sort-indicator">⇅</span></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>CAC</strong></td>
-                            <td>$3,500</td>
-                            <td>$2,200</td>
-                            <td>$1,800</td>
-                        </tr>
-                        <tr>
-                            <td><strong>LTV</strong></td>
-                            <td>$24,000</td>
-                            <td>$36,000</td>
-                            <td>$48,000</td>
-                        </tr>
-                        <tr>
-                            <td><strong>LTV/CAC Ratio</strong></td>
-                            <td>6.8x</td>
-                            <td>16.4x</td>
-                            <td>26.7x</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Payback Period</strong></td>
-                            <td>11 months</td>
-                            <td>7 months</td>
-                            <td>5 months</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="interactive-table" id="metricsTable">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('metricsTable', 0)">Metric <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('metricsTable', 1)">Early Stage <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('metricsTable', 2)">Growth Stage <span class="sort-indicator">⇅</span></th>
+                                <th onclick="sortTable('metricsTable', 3)">Best in Class <span class="sort-indicator">⇅</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>CAC</strong></td>
+                                <td>$3,500</td>
+                                <td>$2,200</td>
+                                <td>$1,800</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LTV</strong></td>
+                                <td>$24,000</td>
+                                <td>$36,000</td>
+                                <td>$48,000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>LTV/CAC Ratio</strong></td>
+                                <td>6.8x</td>
+                                <td>16.4x</td>
+                                <td>26.7x</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Payback Period</strong></td>
+                                <td>11 months</td>
+                                <td>7 months</td>
+                                <td>5 months</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
             
             <!-- Calculator Tab -->
@@ -629,42 +705,43 @@
                     </div>
                 </div>
                 
-                <table class="interactive-table">
-                    <thead>
-                        <tr>
-                            <th>Phase</th>
-                            <th>Weeks</th>
-                            <th>Focus</th>
-                            <th>Success Metric</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
-                            <td>🎯 Foundation</td>
-                            <td>1-4</td>
-                            <td>ICP, lead scoring, case studies</td>
-                            <td>50 MQLs</td>
-                        </tr>
-                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
-                            <td>🚀 Launch</td>
-                            <td>5-8</td>
-                            <td>Outbound, ads, partnerships</td>
-                            <td>30 SQLs</td>
-                        </tr>
-                        <tr onclick="highlightRow(this)" style="cursor: pointer;">
-                            <td>📊 Optimize</td>
-                            <td>9-12</td>
-                            <td>Measure, cut, double down</td>
-                            <td>10 Customers</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-wrapper">
+                    <table class="interactive-table">
+                        <thead>
+                            <tr>
+                                <th>Phase</th>
+                                <th>Weeks</th>
+                                <th>Focus</th>
+                                <th>Success Metric</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                                <td>🎯 Foundation</td>
+                                <td>1-4</td>
+                                <td>ICP, lead scoring, case studies</td>
+                                <td>50 MQLs</td>
+                            </tr>
+                            <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                                <td>🚀 Launch</td>
+                                <td>5-8</td>
+                                <td>Outbound, ads, partnerships</td>
+                                <td>30 SQLs</td>
+                            </tr>
+                            <tr onclick="highlightRow(this)" style="cursor: pointer;">
+                                <td>📊 Optimize</td>
+                                <td>9-12</td>
+                                <td>Measure, cut, double down</td>
+                                <td>10 Customers</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="tooltip" id="tooltip"></div>
-
+    <!-- Static Content Container -->
     <div class="container">
         <div class="header">
             <h1>The Complete Guide to B2B Lead Generation for Technical Recruitment Platforms</h1>
@@ -673,9 +750,9 @@
 
         <h2>Introduction: Why B2B Lead Gen is Broken for Most Recruitment Tech Companies</h2>
         
-        <p>Most technical recruitment platforms fail at B2B lead generation because they copy generic SaaS playbooks. They blast cold emails to HR directors, sponsor job boards, and wonder why their demo requests flatline. The problem? <strong>You’re selling to the wrong person, with the wrong message, at the wrong time.</strong></p>
+        <p>Most technical recruitment platforms fail at B2B lead generation because they copy generic SaaS playbooks. They blast cold emails to HR directors, sponsor job boards, and wonder why their demo requests flatline. The problem? <strong>You're selling to the wrong person, with the wrong message, at the wrong time.</strong></p>
         
-        <p>Technical recruitment isn’t like selling CRM software. Your buyers are desperate, time-pressed, and skeptical of "another tool." Engineers are expensive and hard to hire—your platform needs to prove it can solve that <em>right now</em>. This guide gives you a systematic, multi-channel approach built specifically for recruitment tech.</p>
+        <p>Technical recruitment isn't like selling CRM software. Your buyers are desperate, time-pressed, and skeptical of "another tool." Engineers are expensive and hard to hire—your platform needs to prove it can solve that <em>right now</em>. This guide gives you a systematic, multi-channel approach built specifically for recruitment tech.</p>
 
         <div class="section-break"></div>
 
@@ -684,40 +761,42 @@
         <h3>2.1 Defining Your ICP (Beyond "HR Director at Tech Companies")</h3>
         <p>Segment by hiring maturity and urgency, not just title:</p>
         
-        <table class="metric-table">
-            <thead>
-                <tr>
-                    <th>Company Type</th>
-                    <th>Team Size</th>
-                    <th>Hiring Velocity</th>
-                    <th>Pain Level</th>
-                    <th>Lead Quality Score</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Startup</strong> (&lt;50 employees)</td>
-                    <td>1-2 recruiters</td>
-                    <td>5-10 roles/month</td>
-                    <td>High (no brand, limited budget)</td>
-                    <td>6/10</td>
-                </tr>
-                <tr style="background: #fff3cd;">
-                    <td><strong>Scale-up</strong> (50-500)</td>
-                    <td>3-10 recruiters</td>
-                    <td>15-40 roles/month</td>
-                    <td>Very High (hiring targets crushing them)</td>
-                    <td><strong>9/10</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Enterprise</strong> (500+)</td>
-                    <td>10+ recruiters</td>
-                    <td>50+ roles/month</td>
-                    <td>Medium (bureaucracy, long sales cycles)</td>
-                    <td>7/10</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company Type</th>
+                        <th>Team Size</th>
+                        <th>Hiring Velocity</th>
+                        <th>Pain Level</th>
+                        <th>Lead Quality Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Startup</strong> (&lt;50 employees)</td>
+                        <td>1-2 recruiters</td>
+                        <td>5-10 roles/month</td>
+                        <td>High (no brand, limited budget)</td>
+                        <td>6/10</td>
+                    </tr>
+                    <tr style="background: #fff3cd;">
+                        <td><strong>Scale-up</strong> (50-500)</td>
+                        <td>3-10 recruiters</td>
+                        <td>15-40 roles/month</td>
+                        <td>Very High (hiring targets crushing them)</td>
+                        <td><strong>9/10</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enterprise</strong> (500+)</td>
+                        <td>10+ recruiters</td>
+                        <td>50+ roles/month</td>
+                        <td>Medium (bureaucracy, long sales cycles)</td>
+                        <td>7/10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
         <div class="key-point">
             <strong>Target scale-ups first.</strong> They have budget, urgency, and decision-making speed.
@@ -725,37 +804,39 @@
 
         <h3>2.2 Mapping the Buying Committee</h3>
         
-        <table>
-            <thead>
-                <tr>
-                    <th>Stakeholder</th>
-                    <th>What They Care About</th>
-                    <th>Your Message</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>TA Leader</strong> (VP Talent)</td>
-                    <td>Time-to-fill, quality of hire, team efficiency</td>
-                    <td>"Cut screening time by 70%"</td>
-                </tr>
-                <tr>
-                    <td><strong>CTO</strong></td>
-                    <td>Technical assessment quality, engineer experience</td>
-                    <td>"White-label coding tests that don’t suck"</td>
-                </tr>
-                <tr>
-                    <td><strong>CFO</strong></td>
-                    <td>Cost-per-hire, ROI, budget efficiency</td>
-                    <td>"$50K saved per 100 engineers hired"</td>
-                </tr>
-                <tr>
-                    <td><strong>Hiring Manager</strong></td>
-                    <td>Getting <em>their</em> role filled <em>fast</em></td>
-                    <td>"Get 5 qualified candidates in 48 hours"</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stakeholder</th>
+                        <th>What They Care About</th>
+                        <th>Your Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>TA Leader</strong> (VP Talent)</td>
+                        <td>Time-to-fill, quality of hire, team efficiency</td>
+                        <td>"Cut screening time by 70%"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CTO</strong></td>
+                        <td>Technical assessment quality, engineer experience</td>
+                        <td>"White-label coding tests that don't suck"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>CFO</strong></td>
+                        <td>Cost-per-hire, ROI, budget efficiency</td>
+                        <td>"$50K saved per 100 engineers hired"</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Hiring Manager</strong></td>
+                        <td>Getting <em>their</em> role filled <em>fast</em></td>
+                        <td>"Get 5 qualified candidates in 48 hours"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h3>2.3 Crafting Your Category-of-One Positioning</h3>
         <p>Stop saying "AI-powered recruitment platform." Instead:</p>
@@ -776,55 +857,57 @@
         </ul>
         
         <p><strong>SEO Keyword Strategy:</strong></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Keyword Type</th>
-                    <th>Example</th>
-                    <th>Monthly Volume</th>
-                    <th>Conversion Rate</th>
-                    <th>Priority</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="background: #d4edda;">
-                    <td><strong>High-intent</strong></td>
-                    <td>"hire python developer faster"</td>
-                    <td>320</td>
-                    <td>8%</td>
-                    <td><strong>A</strong></td>
-                </tr>
-                <tr style="background: #d4edda;">
-                    <td><strong>Problem-aware</strong></td>
-                    <td>"technical screening takes too long"</td>
-                    <td>110</td>
-                    <td>5%</td>
-                    <td><strong>A</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Solution-aware</strong></td>
-                    <td>"best technical assessment platform"</td>
-                    <td>480</td>
-                    <td>6%</td>
-                    <td><strong>B</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Category</strong></td>
-                    <td>"recruitment software"</td>
-                    <td>2,900</td>
-                    <td>1%</td>
-                    <td>C</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Keyword Type</th>
+                        <th>Example</th>
+                        <th>Monthly Volume</th>
+                        <th>Conversion Rate</th>
+                        <th>Priority</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #d4edda;">
+                        <td><strong>High-intent</strong></td>
+                        <td>"hire python developer faster"</td>
+                        <td>320</td>
+                        <td>8%</td>
+                        <td><strong>A</strong></td>
+                    </tr>
+                    <tr style="background: #d4edda;">
+                        <td><strong>Problem-aware</strong></td>
+                        <td>"technical screening takes too long"</td>
+                        <td>110</td>
+                        <td>5%</td>
+                        <td><strong>A</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Solution-aware</strong></td>
+                        <td>"best technical assessment platform"</td>
+                        <td>480</td>
+                        <td>6%</td>
+                        <td><strong>B</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Category</strong></td>
+                        <td>"recruitment software"</td>
+                        <td>2,900</td>
+                        <td>1%</td>
+                        <td>C</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
-        <p><strong>Publish 2 high-intent articles/week.</strong> Scale-ups find you when they’re desperate.</p>
+        <p><strong>Publish 2 high-intent articles/week.</strong> Scale-ups find you when they're desperate.</p>
 
         <h3>3.2 Strategic Outbound (Not Cold Email Spam)</h3>
         <p><strong>Trigger-Based Prospecting (your goldmine):</strong></p>
         <ol>
             <li><strong>Funding alert:</strong> Series A/B announced → 2-week window to pitch before hiring explodes</li>
-            <li><strong>Headcount growth:</strong> LinkedIn shows +10 engineers in 90 days → they’re scaling</li>
+            <li><strong>Headcount growth:</strong> LinkedIn shows +10 engineers in 90 days → they're scaling</li>
             <li><strong>Tech stack change:</strong> Added Greenhouse/Lever → buying new tools</li>
             <li><strong>Job posting spike:</strong> 5+ engineering roles live → urgent need</li>
         </ol>
@@ -832,7 +915,7 @@
         <p><strong>The "Value-First" Sequence:</strong></p>
         <ul>
             <li><strong>Day 1:</strong> LinkedIn connect: "Saw you're hiring 8 engineers—congrats on the Series A"</li>
-            <li><strong>Day 3:</strong> Email: "Here’s a custom coding challenge for your Senior Backend role"</li>
+            <li><strong>Day 3:</strong> Email: "Here's a custom coding challenge for your Senior Backend role"</li>
             <li><strong>Day 5:</strong> Email: "Case study: How [Similar Co] cut time-to-fill from 45 to 18 days"</li>
             <li><strong>Day 7:</strong> LinkedIn: "Quick video on avoiding false positives in tech screens"</li>
         </ul>
@@ -842,32 +925,34 @@
         </div>
 
         <h3>3.3 Partnerships & Ecosystem Plays</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Partner Type</th>
-                    <th>Value Exchange</th>
-                    <th>Lead Potential</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>ATS</strong> (Greenhouse, Lever)</td>
-                    <td>Co-marketing webinar, integration badge</td>
-                    <td>20-50 leads/quarter</td>
-                </tr>
-                <tr>
-                    <td><strong>Dev Communities</strong> (Dev.to, Reddit r/cscareerquestions)</td>
-                    <td>Sponsor AMA, provide assessment tools</td>
-                    <td>100+ dev advocates</td>
-                </tr>
-                <tr>
-                    <td><strong>VC Portfolio</strong></td>
-                    <td>Preferred vendor status for portcos</td>
-                    <td>10-15 intros/month</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Partner Type</th>
+                        <th>Value Exchange</th>
+                        <th>Lead Potential</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>ATS</strong> (Greenhouse, Lever)</td>
+                        <td>Co-marketing webinar, integration badge</td>
+                        <td>20-50 leads/quarter</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Dev Communities</strong> (Dev.to, Reddit r/cscareerquestions)</td>
+                        <td>Sponsor AMA, provide assessment tools</td>
+                        <td>100+ dev advocates</td>
+                    </tr>
+                    <tr>
+                        <td><strong>VC Portfolio</strong></td>
+                        <td>Preferred vendor status for portcos</td>
+                        <td>10-15 intros/month</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
         <p><strong>Execution:</strong> Offer ATS partners 20% revenue share on referrals.</p>
 
@@ -879,38 +964,40 @@
         </ul>
         
         <p><strong>Usage-Based Lead Scoring:</strong></p>
-        <table>
-            <thead>
-                <tr>
-                    <th>Action</th>
-                    <th>Points</th>
-                    <th>Sales Trigger</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Created 10+ challenges in 7 days</td>
-                    <td>50</td>
-                    <td>Auto-email from AE</td>
-                </tr>
-                <tr>
-                    <td>Invited 3+ team members</td>
-                    <td>30</td>
-                    <td>Slack alert to sales</td>
-                </tr>
-                <tr>
-                    <td>Viewed pricing page</td>
-                    <td>20</td>
-                    <td>Add to retargeting</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th>Points</th>
+                        <th>Sales Trigger</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Created 10+ challenges in 7 days</td>
+                        <td>50</td>
+                        <td>Auto-email from AE</td>
+                    </tr>
+                    <tr>
+                        <td>Invited 3+ team members</td>
+                        <td>30</td>
+                        <td>Slack alert to sales</td>
+                    </tr>
+                    <tr>
+                        <td>Viewed pricing page</td>
+                        <td>20</td>
+                        <td>Add to retargeting</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <h3>3.5 LinkedIn & Community-Led Lead Gen</h3>
         <p><strong>Build a "TA Insights" Brand:</strong></p>
         <ul>
-            <li>Post 3x/week: Not product demos, but "here’s what 1000+ engineering hires taught us"</li>
-            <li>Example: "The 3 Red Flags in a Senior Dev’s GitHub Profile (That Aren’t Code Quality)"</li>
+            <li>Post 3x/week: Not product demos, but "here's what 1000+ engineering hires taught us"</li>
+            <li>Example: "The 3 Red Flags in a Senior Dev's GitHub Profile (That Aren't Code Quality)"</li>
         </ul>
         
         <p><strong>Community Engagement:</strong></p>
@@ -939,61 +1026,63 @@
         <h2>From MQL to SQL: The Nurturing & Qualification System</h2>
         
         <h3>4.1 Lead Scoring Model</h3>
-        <table class="funnel-table">
-            <thead>
-                <tr>
-                    <th>Criteria</th>
-                    <th>Points</th>
-                    <th>Example</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="3"><strong>Firmographic</strong></td>
-                </tr>
-                <tr>
-                    <td>Scale-up (50-500 employees)</td>
-                    <td>+30</td>
-                    <td>"Series B SaaS, 120 headcount"</td>
-                </tr>
-                <tr>
-                    <td>Hiring 10+ engineers</td>
-                    <td>+40</td>
-                    <td>12 open reqs on careers page</td>
-                </tr>
-                <tr>
-                    <td colspan="3"><strong>Behavioral</strong></td>
-                </tr>
-                <tr>
-                    <td>Downloaded "Scale-up Hiring Playbook"</td>
-                    <td>+10</td>
-                    <td>Last week</td>
-                </tr>
-                <tr>
-                    <td>Visited pricing page 2+ times</td>
-                    <td>+15</td>
-                    <td>Past 14 days</td>
-                </tr>
-                <tr>
-                    <td>Requested demo</td>
-                    <td>+50</td>
-                    <td><strong>Instant SQL</strong></td>
-                </tr>
-                <tr>
-                    <td colspan="3"><strong>Negatives</strong></td>
-                </tr>
-                <tr>
-                    <td>Gmail address</td>
-                    <td>-20</td>
-                    <td>Not B2B</td>
-                </tr>
-                <tr>
-                    <td>Company &lt;10 employees</td>
-                    <td>-15</td>
-                    <td>Too early</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Criteria</th>
+                        <th>Points</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="3"><strong>Firmographic</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Scale-up (50-500 employees)</td>
+                        <td>+30</td>
+                        <td>"Series B SaaS, 120 headcount"</td>
+                    </tr>
+                    <tr>
+                        <td>Hiring 10+ engineers</td>
+                        <td>+40</td>
+                        <td>12 open reqs on careers page</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Behavioral</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Downloaded "Scale-up Hiring Playbook"</td>
+                        <td>+10</td>
+                        <td>Last week</td>
+                    </tr>
+                    <tr>
+                        <td>Visited pricing page 2+ times</td>
+                        <td>+15</td>
+                        <td>Past 14 days</td>
+                    </tr>
+                    <tr>
+                        <td>Requested demo</td>
+                        <td>+50</td>
+                        <td><strong>Instant SQL</strong></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><strong>Negatives</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Gmail address</td>
+                        <td>-20</td>
+                        <td>Not B2B</td>
+                    </tr>
+                    <tr>
+                        <td>Company &lt;10 employees</td>
+                        <td>-15</td>
+                        <td>Too early</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
         <div class="highlight-box">
             <strong>Score threshold: 75+ points = SQL</strong>. Manually reviewed by SDR within 2 hours.
@@ -1001,10 +1090,10 @@
 
         <h3>4.2 The Automated Nurturing Sequence</h3>
         <ul>
-            <li><strong>Day 0 (Demo Request):</strong> Instant calendar link + "While you wait, here’s a 2-min product tour"</li>
+            <li><strong>Day 0 (Demo Request):</strong> Instant calendar link + "While you wait, here's a 2-min product tour"</li>
             <li><strong>Day 2:</strong> Email: "3 questions to ask when vetting tech assessment platforms"</li>
             <li><strong>Day 5:</strong> LinkedIn: Connect from AE, share relevant case study</li>
-            <li><strong>Day 7:</strong> Email: "Free challenge review: Send us one of your tech screens, we’ll improve it"</li>
+            <li><strong>Day 7:</strong> Email: "Free challenge review: Send us one of your tech screens, we'll improve it"</li>
         </ul>
 
         <h3>4.3 Speed to Lead</h3>
@@ -1019,94 +1108,98 @@
         <h2>Metrics That Matter: Measuring What Actually Drives Revenue</h2>
         
         <h3>5.1 The B2B Recruitment SaaS Funnel</h3>
-        <table class="funnel-table">
-            <thead>
-                <tr>
-                    <th>Stage</th>
-                    <th>Volume</th>
-                    <th>Conversion Rate</th>
-                    <th>Benchmark</th>
-                    <th>Your Target</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>Visitor</strong></td>
-                    <td>10,000</td>
-                    <td>3% → Lead</td>
-                    <td>Industry: 2%</td>
-                    <td>3%</td>
-                </tr>
-                <tr>
-                    <td><strong>Lead (MQL)</strong></td>
-                    <td>300</td>
-                    <td>25% → SQL</td>
-                    <td>Industry: 20%</td>
-                    <td><strong>30%</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>SQL</strong></td>
-                    <td>75</td>
-                    <td>60% → Opportunity</td>
-                    <td>Industry: 50%</td>
-                    <td><strong>65%</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Opportunity</strong></td>
-                    <td>45</td>
-                    <td>25% → Customer</td>
-                    <td>Industry: 20%</td>
-                    <td><strong>30%</strong></td>
-                </tr>
-                <tr>
-                    <td><strong>Customer</strong></td>
-                    <td>11</td>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stage</th>
+                        <th>Volume</th>
+                        <th>Conversion Rate</th>
+                        <th>Benchmark</th>
+                        <th>Your Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Visitor</strong></td>
+                        <td>10,000</td>
+                        <td>3% → Lead</td>
+                        <td>Industry: 2%</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lead (MQL)</strong></td>
+                        <td>300</td>
+                        <td>25% → SQL</td>
+                        <td>Industry: 20%</td>
+                        <td><strong>30%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SQL</strong></td>
+                        <td>75</td>
+                        <td>60% → Opportunity</td>
+                        <td>Industry: 50%</td>
+                        <td><strong>65%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Opportunity</strong></td>
+                        <td>45</td>
+                        <td>25% → Customer</td>
+                        <td>Industry: 20%</td>
+                        <td><strong>30%</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Customer</strong></td>
+                        <td>11</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
-        <p><strong>Focus on SQL→Opp conversion.</strong> That’s where most recruitment platforms leak revenue.</p>
+        <p><strong>Focus on SQL→Opp conversion.</strong> That's where most recruitment platforms leak revenue.</p>
 
         <h3>5.2 CAC, LTV, and Payback Period</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th>Metric</th>
-                    <th>Early Stage</th>
-                    <th>Growth Stage</th>
-                    <th>Best in Class</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>CAC</strong></td>
-                    <td>$3,500</td>
-                    <td>$2,200</td>
-                    <td>$1,800</td>
-                </tr>
-                <tr>
-                    <td><strong>LTV</strong></td>
-                    <td>$24,000</td>
-                    <td>$36,000</td>
-                    <td>$48,000</td>
-                </tr>
-                <tr>
-                    <td><strong>LTV/CAC Ratio</strong></td>
-                    <td>6.8x</td>
-                    <td>16.4x</td>
-                    <td>26.7x</td>
-                </tr>
-                <tr>
-                    <td><strong>Payback Period</strong></td>
-                    <td>11 months</td>
-                    <td>7 months</td>
-                    <td>5 months</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Early Stage</th>
+                        <th>Growth Stage</th>
+                        <th>Best in Class</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>CAC</strong></td>
+                        <td>$3,500</td>
+                        <td>$2,200</td>
+                        <td>$1,800</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LTV</strong></td>
+                        <td>$24,000</td>
+                        <td>$36,000</td>
+                        <td>$48,000</td>
+                    </tr>
+                    <tr>
+                        <td><strong>LTV/CAC Ratio</strong></td>
+                        <td>6.8x</td>
+                        <td>16.4x</td>
+                        <td>26.7x</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Payback Period</strong></td>
+                        <td>11 months</td>
+                        <td>7 months</td>
+                        <td>5 months</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         
         <div class="key-point">
             <strong>Rule of thumb:</strong> If payback &gt;12 months, cut paid ads and double down on organic.
@@ -1139,19 +1232,19 @@
         
         <ol>
             <li>
-                <strong>1. Copying Generic SaaS Playbooks</strong>
+                <strong>Copying Generic SaaS Playbooks</strong>
                 <ul><li><em>Fix:</em> Every campaign must mention "technical hiring" in the first sentence.</li></ul>
             </li>
             <li>
-                <strong>2. Ignoring Seasonal Hiring</strong>
+                <strong>Ignoring Seasonal Hiring</strong>
                 <ul><li><em>Fix:</em> Q1 and Q3 are dead zones. Ramp spend 30% in Q2 and Q4.</li></ul>
             </li>
             <li>
-                <strong>3. Underinvesting in Customer Advocacy</strong>
+                <strong>Underinvesting in Customer Advocacy</strong>
                 <ul><li><em>Fix:</em> Turn every successful hire into a LinkedIn case study. Offer $500 referral for peer intro.</li></ul>
             </li>
             <li>
-                <strong>4. Chasing Enterprise Too Early</strong>
+                <strong>Chasing Enterprise Too Early</strong>
                 <ul><li><em>Fix:</em> 12-month sales cycles kill momentum. Win 10 scale-ups first.</li></ul>
             </li>
         </ol>
@@ -1159,36 +1252,38 @@
         <div class="section-break"></div>
 
         <h2>90-Day Action Plan</h2>
-        <table class="action-plan-table">
-            <thead>
-                <tr>
-                    <th>Week</th>
-                    <th>Focus</th>
-                    <th>Deliverable</th>
-                    <th>Success Metric</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>1-4</strong></td>
-                    <td>Foundation</td>
-                    <td>ICP refined, lead scoring built, 3 case studies published</td>
-                    <td>50 MQLs from content</td>
-                </tr>
-                <tr>
-                    <td><strong>5-8</strong></td>
-                    <td>Launch Channels</td>
-                    <td>Outbound sequences live, 2 LinkedIn ads running, 1 partnership secured</td>
-                    <td>30 SQLs generated</td>
-                </tr>
-                <tr>
-                    <td><strong>9-12</strong></td>
-                    <td>Measure & Cut</td>
-                    <td>Kill lowest-performing channel, double budget on top 2</td>
-                    <td>10 new customers</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Focus</th>
+                        <th>Deliverable</th>
+                        <th>Success Metric</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1-4</strong></td>
+                        <td>Foundation</td>
+                        <td>ICP refined, lead scoring built, 3 case studies published</td>
+                        <td>50 MQLs from content</td>
+                    </tr>
+                    <tr>
+                        <td><strong>5-8</strong></td>
+                        <td>Launch Channels</td>
+                        <td>Outbound sequences live, 2 LinkedIn ads running, 1 partnership secured</td>
+                        <td>30 SQLs generated</td>
+                    </tr>
+                    <tr>
+                        <td><strong>9-12</strong></td>
+                        <td>Measure & Cut</td>
+                        <td>Kill lowest-performing channel, double budget on top 2</td>
+                        <td>10 new customers</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="section-break"></div>
 
@@ -1196,6 +1291,8 @@
         <p>Start with <strong>one</strong> channel from Section 3. Master it. Then stack. The scale-ups are waiting.</p>
     </div>
     
+    <div class="tooltip" id="tooltip"></div>
+
     <script>
         // Tab switching functionality
         function showTab(tabName) {
@@ -1549,12 +1646,14 @@
                             label: 'MQLs',
                             data: [5, 12, 20, 35, 50, 65, 75, 80, 85, 90, 95, 100],
                             borderColor: 'rgb(54, 162, 235)',
-                            backgroundColor: 'rgba(54, 162, 235, 0.1)'
+                            backgroundColor: 'rgba(54, 162, 235, 0.1)',
+                            tension: 0.4
                         }, {
                             label: 'SQLs',
                             data: [0, 2, 5, 10, 15, 20, 25, 28, 30, 32, 34, 35],
                             borderColor: 'rgb(255, 99, 132)',
-                            backgroundColor: 'rgba(255, 99, 132, 0.1)'
+                            backgroundColor: 'rgba(255, 99, 132, 0.1)',
+                            tension: 0.4
                         }]
                     },
                     options: {
@@ -1590,28 +1689,9 @@
         }
         
         // Initialize on load
-        window.onload = function() {
+        window.addEventListener('load', function() {
             initOverviewCharts();
-            
-            // Add hover tooltips to table rows
-            document.querySelectorAll('tr').forEach(row => {
-                row.addEventListener('mouseenter', function(e) {
-                    const tooltip = document.getElementById('tooltip');
-                    tooltip.textContent = 'Click to highlight';
-                    tooltip.style.opacity = '1';
-                });
-                row.addEventListener('mousemove', function(e) {
-                    const tooltip = document.getElementById('tooltip');
-                    tooltip.style.left = e.clientX + 10 + 'px';
-                    tooltip.style.top = e.clientY - 30 + 'px';
-                });
-                row.addEventListener('mouseleave', function() {
-                    const tooltip = document.getElementById('tooltip');
-                    tooltip.style.opacity = '0';
-                });
-            });
-        };
+        });
     </script>
 </body>
-
 </html>
